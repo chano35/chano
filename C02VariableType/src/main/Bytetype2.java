@@ -5,7 +5,7 @@ public class Bytetype2 {
 		byte minus = -128;
 		byte plus = 127;
 
-		System.out.println("> minus(-128) : " + minus);
+		System.out.println("> minus(-128) asdasd : " + minus);
 		System.out.println("> plus(127) : " + plus);
 
 		byte plusone = (byte) (plus + 1);
