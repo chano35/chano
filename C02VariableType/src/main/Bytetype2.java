@@ -8,7 +8,7 @@ public class Bytetype2 {
 		System.out.println("> plus(127) : " + plus);
 		
 		byte plusone = (byte)(plus + 1);
-		System.out.println("> plusone(127+1) : " + plusone);
+		System.out.println("> plusone(127+1) asdfasdfasdf: " + plusone);
 		
 		byte minusone = (byte)(minus-1);
 		System.out.println("> minusone(-128-1):" + minusone);
