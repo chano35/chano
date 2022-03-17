@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        div {
+            width : 500px;
+            height: 300px;
+        }
+        .radial-gradient {
+            background: radial-gradient(circle closest-corner at 60% 30%,green, white, black);
+        }
+        .radial-gradient-ellipse {
+            background: radial-gradient(ellipse closest-corner at 60% 30%,green, white, black);
+        }
+    </style>
+</head>
+<body>
+    <h1>원형 그러데이션(Radial Gradient) - 크기(closest-corner)</h1>
+    <p>그러데이션 가장 자리가 그러데이션 중심에서 가장 가까운 요소의
+        코너에 만나는 지점
+    </p>
+    <hr>
+    <div class="radial-gradient"></div>
+    <div class="radial-gradient-ellipse"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - substr(시작위치, 문자갯수) 함수</h2>
+    <p>문자열의 시작위치에서 지정된 갯수만큼 문자열을 리턴</p>
+    <ul>
+        <li>문자열 = 문자열.substr(시작위치, 문자갯수)</li>
+        <li>시작위치 : 가져올 문자열의 시작위치</li>
+        <li>문자갯수 : 가져올 문자의 갯수</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "http://abc.com/upfile/filename.txt";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var substr = str.substr(15, 6);
+        document.write('substr: [', substr, ']', '<br>');
+    </script>
+    
+</body>
+</html>

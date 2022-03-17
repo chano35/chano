@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h2>배열 - join() 함수</h2>
+    <p>join은 배열 객체의 데이터를 연결 문자 기준으로 1개의 문자형 데이터로 반환 </p>
+    <ul>
+        <li>배열.join(연결문자열)</li>
+        <li>연결문자열 : 배열의 각 요소를 연결시킬 문자열</li>
+        <li>리턴값 : 연결 문자열로 생성된 새로운 문자열</li>
+        <li>기존의 배열의 내용은 변하지 않음</li>
+    </ul>
+    <hr>
+    <script>
+        var tel = ["010", "1234", "4567"];
+
+        var result = tel.join('-');
+        document.write('원본 배열:', tel, '<br>');
+        document.write('새로운 결과:', result, '<br>');
+    </script>
+    
+</body>
+</html>

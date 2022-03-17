@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm</title>
+</head>
+<body>
+    <h1>confirm()은 웹브라우저에서 제공하는 Built-In 함수</h1>
+    <p> 팝업창을 통해서 '확인', '취소'여부를 묻는다.</p>
+    <hr>
+    <script>
+        var result = confirm("정말로 로그아웃 하시겠습니까?");
+        if(result) {
+            document.write("로그아웃 되었습니다.");
+        }
+        else {
+            document.write("취소 되었습니다.");
+        }
+    </script>
+</body>
+</html>

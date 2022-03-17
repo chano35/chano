@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <script src="js/println.js"></script>
+</head>
+<body>
+    <h1>익명 함수(Anonymous Function)</h1>
+    <p>함수의 이름이 없는 함수 : counter 변수에 대입</p>
+    <hr>
+    <script>
+        var count = 0;
+
+        // Uncaught TypeError: counter is not a function
+        // 변수 counter가 아직 선언되어 있지 않기 때문에 호출할 수 없다.
+        // 익명함수는 호이스팅이 되지 않음
+        // counter();  // 익명함수 호출
+
+        var counter = function() { // 익명함수
+            count++;
+        }
+
+        for(var cnt=0; cnt < 10; cnt++) {
+            counter();
+            println('count=', count);
+        }
+    </script>
+    
+</body>
+</html>

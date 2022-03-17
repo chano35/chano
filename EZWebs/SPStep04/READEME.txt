@@ -1,0 +1,60 @@
+[SPStep04]
+
+1. 스프링 프레임워크 MVC
+	- 모델2 기반의 아키텍처
+	- 웹 서비스
+
+(스프링 MVC 구조)
+1. DispatcherServlet
+	- 클라이언트 요청 처리
+2. HandlerMapping
+	- 클라이언트가 요청한 URL을 처리할 컨트롤러를 지정
+3. Controller
+	- 클라이언트의 요청을 처리한 후 결과를 DispatcherServlet으로 전달
+4. ModelAndView
+	- 컨트롤러가 처리한 결과 및 뷰 선택에 필요한 정보를 지정
+5. ViewResolver
+	- 컨트롤러의 처리 결과를 전달할 뷰를 지정
+6. View	
+	- 컨트롤러의 처리 결과 화면을 생성
+	
+	
+(pom.xml)
+  <properties>
+  	<spring.mavan.artifact.version>5.0.2.RELEASE</spring.mavan.artifact.version>
+  </properties>
+
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${spring.mavan.artifact.version}</version>
+	</dependency>
+	
+	
+	
+(web.xml)
+  <servlet-mapping>
+  	<servlet-name>spstep04</servlet-name>
+  	<url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>spstep04</servlet-name>
+  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup> <!-- 톰캣이 메모리에 미리 로딩 -->
+  </servlet>
+	
+
+(스프링 빈 설정)	
+위치: WEB-INF/spstep04-servlet.xml
+이름: web.xml에서 설정된 서블릿이름(servlet-name)에 "-servlet.xml"를 뒤에 붙여서 지정
+	
+------------------------------------------------------------------------
+(서버실행)
+실행: Run As -> Run on Server
+주소: 
+	http://localhost:8090/SPStep04/services/index.do
+	http://localhost:8090/SPStep04/services/index2.do
+	
+	

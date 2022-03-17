@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Origin</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 12px dotted red;
+            padding: 40px;
+            margin-bottom:20px;
+            color: red;
+        }
+
+        .border-box {
+            background-image:url("images/background-1.jpg");
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+
+        .padding-box {
+            background-image:url("images/background-1.jpg");
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+        }
+
+        .content-box {
+            background-image:url("images/background-1.jpg");
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Background Origin</h1>
+    <p>background-origin은 배경 이미지의 배치할 때 기준 위치 지정한다.</p>
+    <hr>
+    <p>background-origin: border-box | padding-box | content-box</p>
+    <ul>
+        <li>border-box: 외곽선 테두리(border) 기준</li>
+        <li>padding-box: 테두리를 제외 한 패딩(padding) 기준</li>
+        <li>content-box: 컨텐츠(내용) 기준</li>
+    </ul>
+    <hr>
+    <div class="border-box">border-box: 배경 이미지를 배치할 때 기준 위치 </div>
+    <div class="padding-box">padding-box: 배경 이미지를 배치할 때 기준 위치</div>
+    <div class="content-box">content: 배경 이미지를 배치할 때 기준 위치</div>
+</body>
+</html>

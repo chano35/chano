@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - charCodeAt(인덱스) 함수</h2>
+    <p>문자열에서 인덱스에 해당하는 위치의 문자를 ASCII(아스키) 코드값으로 반환</p>
+    <ul>
+        <li>아스키 = 문자열.charCodeAt(인덱스)</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "Good Morning!";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var ascii = str.charCodeAt(4);  // 스페이스(32)
+        var asciiM = str.charCodeAt(5);  // 스페이스(77)
+        document.write('ASCII(sp): [', ascii, ']', '<br>');
+        document.write('ASCII(M): [', asciiM, ']', '<br>');
+    </script>
+    
+</body>
+</html>

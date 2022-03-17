@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산자</title>
+</head>
+<body>
+    <h1>자바스크립트 비교연산자</h1>
+    <p>비교연산자: >, <, >=, <=, ==, !=, ===, !==</p>
+    <hr>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = "10";
+        var x = a == c;   // a와 c가 같은가?
+        var y = a != c;   // a와 c가 다른가?
+        var d = a === b;  // a와 b가 같은 타입이면서 값이 같은가?
+        var e = a === c;  // a와 c가 같은 타입이면서 값이 같은가?
+        var f = a !== b;  // a와 b가 같은 타입이면서 값이 다른가?
+        var g = a !== c;  // a와 c가 같은 타입이면서 값이 다른가?
+
+        document.write('    a : ', a, '<br>');
+        document.write('    b : ', b, '<br>');
+        document.write('    c : ', c, '<br>');
+        document.write('> a ==  c : ', x, '<br>');
+        document.write('> a !=  c : ', y, '<br>');
+        document.write('  a === b : ', d, '<br>');
+        document.write('> a === c : ', e, '<br>');
+        document.write('  a !== b : ', f, '<br>');
+        document.write('  a !== c : ', g, '<br>');
+
+    </script>
+    
+</body>
+</html>

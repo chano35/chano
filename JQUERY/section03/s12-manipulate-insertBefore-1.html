@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 추가될 요소를 미리 기술하고, 기준이 되는 요소를 선택하여 요소를 추가 */
+            $("<p>엘리먼트0</p>").insertBefore("#container p:eq(0)");
+        });
+    </script>
+    <style>
+        #base-elm {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>요소의 추가 - insertBefore</h2>
+    <p>선택한 요소의 이전 위치에 새 요소를 추가</p>
+    <hr>
+    <div id="container">
+        <p id="base-elm">엘리먼트1</p>
+        <p>엘리먼트2</p>
+        <p>엘리먼트3</p>
+        <p>엘리먼트4</p>
+    </div>
+</body>
+</html>

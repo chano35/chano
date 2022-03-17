@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Attachment</title>
+    <style>
+        body {
+            background: url("images/background-2.png") no-repeat center top;
+            background-size: cover;
+        }
+
+        div {
+            width: 500px;
+            height: auto;
+            margin: 20px auto;
+            padding:20px;
+        }
+
+        h1 {
+            background-color: #222;
+            color:white;
+            text-align:center;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>background 속성을 하나로 묶어서 지정</h1>
+    <hr>
+    <div>
+        <h1>Background Attachment</h1>
+        <p>background-attachment는 배경 이미지를 고정</p>
+    </div>
+    <hr>
+    <div>
+        <h1>background-attachment: scroll | fixed</h1>
+        <ul>
+            <li>scroll: 기본값, 화면이 스크롤되면 이미지도 함께 스크롤 된다.</li>
+            <li>fixed: 화면이 스크롤 되어도 배경 이미지는 고정</li>
+        </ul>
+    </div>
+</body>
+</html>

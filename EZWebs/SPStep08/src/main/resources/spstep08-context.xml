@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+	
+	<context:component-scan base-package="com.spstep"></context:component-scan>
+	
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<value>classpath:jdbc.properties</value>
+		</property>
+	</bean>
+	
+	<!-- propertyConfigurer 방법과 동일 -->
+	<!--
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+	-->
+	
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+	
+	<!--
+	<bean id="simpleDataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl" />
+		<property name="username" value="SOLUSER"></property>
+		<property name="password" value="SOLUSER"></property>
+	</bean>
+	-->
+
+	<!--  member -->
+	<!--
+	<bean id="memberService" class="com.member.service.MemberServiceImpl">
+		<property name="memberDAO" ref="memberDAO" />
+	</bean>
+	
+	<bean id="memberDAO" class="com.member.dao.MemberDAOImpl">
+		<property name="dataSource" ref="simpleDataSource" />
+	</bean>
+	-->
+
+</beans>

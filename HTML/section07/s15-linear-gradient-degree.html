@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        div {
+            width : 200px;
+            height: 200px;
+        }
+        .linear-gradient-right-bottom {
+            background: linear-gradient(to right bottom, red, blue);
+        }
+
+        .linear-gradient-135deg { /* 각도(100도), 각도deg */
+            background: linear-gradient(100deg, red, blue);
+        }
+
+        .linear-gradient-350deg { /* 각도(350도) */
+            background: linear-gradient(350deg, red, black);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>선형 그러데이션(Linear Gradient)</h1>
+    <hr>
+    <div class="linear-gradient-right-bottom"></div>
+    <hr>
+    <div class="linear-gradient-135deg"></div>
+    <hr>
+    <div class="linear-gradient-350deg"></div>
+</body>
+</html>

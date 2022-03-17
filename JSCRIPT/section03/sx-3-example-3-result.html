@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 - 문제</title>
+    <style>
+        table {
+            caption-side: top; /* 기본값 */
+            border: 2px solid royalblue;
+            border-collapse: collapse;  /* 테이블 속성 */
+        }
+
+        table, th, td {
+            border: 1px solid royalblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table tr:nth-child(2n+1) { /* 홀수라인 */
+            background-color: sandybrown;
+        }
+
+        table tr:nth-child(2n) { /* 짝수라인 */
+            background-color: seagreen;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+        document.write("<table>");
+
+            for(var x=2; x <= 9; x++) {
+            for(var y=1; y<=9; y++) {
+                document.write("<tr>");
+                document.write("<td>", x, "</td>");
+                document.write("<td>*</td>");
+                document.write("<td>", y, "</td>");
+                document.write("<td>=</td>");
+                document.write("<td>", x * y, "</td>");
+                document.write("</tr>")
+            }
+        }
+
+        document.write("</table>");
+    </script>
+    
+</body>
+</html>

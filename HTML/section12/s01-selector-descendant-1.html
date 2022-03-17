@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        #container ul {
+            border: 1px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>연결 선택자 - 하위 선택자(descendant selector)</h1>
+    <p>연결 선택자는 콤비네이션 선택자(combination selector)라고 하며 
+        지정한 모든 하위 요소에 스타일을 적용</p>
+    <hr>
+    <section id="container">
+        <header>
+            <h1>여행 가이드</h1>
+        </header>
+        <p>동해안 해안길</p>
+        <ul>
+            <li>해안 도로
+                <ul>
+                    <li>경포대</li>                        
+                    <li>해조대</li>
+                </ul>
+            </li>                
+            <li>해안 기찻길
+                <ul>
+                    <li>포항 기찻길</li>
+                    <li>영덕 기찻길</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>

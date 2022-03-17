@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow</title>
+    <style>
+        .content1 {
+            border: 1px solid #ccc;
+            width : 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+            background-color: lightgreen;
+        }
+
+        .content2 {
+            border: 1px solid #ccc;
+            width : 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            background-color: mediumseagreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Text Overflow는 지정된 크기보다 텍스트가 클 때 표시할 방법을 지정</h2>
+    <hr>
+    <p>text-overflow: clip | ellipsis
+    <hr>
+    <ul>
+        <li>clip: 넘치는 텍스트를 자름</li>
+        <li>ellipsis: 말 줄임표(...) 즉 문자열 생략부호 표시</li>
+    </ul>
+    <hr>
+    <p>text-overflow(none) : 텍스트의 오버플로우를 위한 텍스트 문자열입니다.</p>
+    <p class="content1">text-overflow(clip) : 텍스트의 오버플로우를 위한 텍스트 문자열입니다. 
+        clip은 지정된 범위보다 텍스트가 크면 자른다.</p>
+    <p class="content2">text-overflow(ellipsis) : 텍스트의 오버플로우를 위한 텍스트 문자열입니다. 
+        ellipssis 지정된 범위보다 텍스트가 크면 말 줄임표로 표시한다.</p>
+</body>
+</html>

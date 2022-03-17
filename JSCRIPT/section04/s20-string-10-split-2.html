@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - split(문자) 함수</h2>
+    <p>지정된 문자로 문자열을 나누어 배열로 리턴</p>
+    <ul>
+        <li>배열 = 문자열.split(문자)</li>
+        <li>문자 : 분할할 문자(delimiter)</li>
+        <li>배열 : 분할 된 문자열을 배열로 리턴</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "010-1234-5678";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var arrhttp = str.split('-');
+        document.write('분할된 크기: length(', arrhttp.length, ')', '<br>');
+
+        for(var cnt=0; cnt < arrhttp.length; cnt++) {
+            var val = arrhttp[cnt];
+            document.write('[', val, ']', '<br>');
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Class</title>
+    <style>
+        .container {
+            /*width:1000px; */
+            margin: 10px auto; /* 가운데 배치(top, bottom은 0으로 주고 left, right는 자동) */
+            /* border: 1px solid black; */
+        }
+
+        .navi {
+            /*width: 1000px;
+            height: 60px; */
+            padding-bottom: 10px;
+            border-bottom: px solid #ccc;
+        }
+
+        .navi ul {
+            list-style: none;
+            /*
+            padding-top: 10px;
+            padding-bottom: 5px;
+            */
+        }
+
+        .navi ul li {
+            display: inline-block;
+            /*width: 150px; */
+            padding: 2px;
+            border: 1px solid black;
+        }
+
+        .navi a:link {
+            font-size: 14px;
+            padding: 10px;
+            text-decoration: none; /* 밑줄 없음*/
+            color:black;
+        }
+
+        .navi a:visited {
+            font-size: 14px;
+            padding: 10px;
+            text-decoration: none; /* 밑줄 없음*/
+            color:dimgrey;
+        }
+
+        .navi a:hover {
+            background-color:cyan;
+            color:crimson;
+        }
+
+        .navi a:focus {
+            background-color:darkseagreen;
+            color:crimson;
+        }
+
+        .navi a:active {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 - pseudo</h1>
+    <hr>    
+    <div class="container">
+        <nav class="navi">
+            <ul>
+                <li><a href="#">파일</a></li>
+                <li><a href="#">편집</a></li>
+                <li><a href="#">보기</a></li>
+                <li><a href="#">옵션</a></li>
+                <li><a href="#">도움말</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+
+</html>

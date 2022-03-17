@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - type</title>
+</head>
+<body>
+    <h3>입력 태그 - 타입(range)</h3>
+    <hr>
+    <p>입력 태그의 타입(range)은 숫자를 입력 받는 필드이다.
+        숫자타입과 관련된 속성은 다음과 같다. </p>
+    <ul>
+        <li>min(최솟값 지정)</li>
+        <li>max(최댓값 지정)</li>
+        <li>step(숫자 간격, 기본값 1이며 생략 기능)</li>
+        <li>value(초기값)</li>
+    </ul>        
+    <hr>
+    <form>
+        <label>숫자<input type="range"></label><br>
+        <label>숫자<input type="range" min="10", max="99", step="3"></label><br>
+        <label>숫자<input type="range" value="2" min="10", max="99", step="2"></label><br>
+        <input type="submit" value="입력">
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .sx:hover {
+            transform: scaleX(2.0);
+        }
+
+        .sy:hover {
+            transform: scaleY(1.5);
+        }
+
+        .sxy:hover {
+            transform: scale(1.5, 2.0);
+        }
+
+        .sm1:hover {
+            transform: scale(1.5, 0.5);
+        }
+
+        .sm2:hover {
+            transform: scale(0.5, 1.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Transform - scale</h1>
+    <p>scale 함수는 확대/축소</p>
+    <ul>
+        <li>scaleX(sx) : x축으로 sx만큼 확대/축소</li>
+        <li>scaleY(sy) : y축으로 sy만큼 확대/축소</li>
+        <li>scale(sx, sy) : x, y축을 sx, sy만큼 확대/축소</li>
+    </ul>
+    <p>sx, sy는 확대 비율로서 1보다 크면 확대이며 1보다 작은면 축소</p>
+    <hr>
+    <div class="org">
+        <div class="sx">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div class="org">
+        <div class="sy">
+            <img src="../images/image2.jpg">
+        </div>
+    </div>
+
+    <div class="org">
+        <div class="sxy">
+            <img src="../images/image3.jpg">
+        </div>
+    </div>
+    <div class="org">
+        <div class="sm1">
+            <img src="../images/image4.jpg">
+        </div>
+    </div>
+    <div class="org">
+        <div class="sm2">
+            <img src="../images/image4.jpg">
+        </div>
+    </div>
+
+
+</body>
+</html>

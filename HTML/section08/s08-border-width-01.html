@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <style>
+        div {
+            width : 400px;
+            height : 200px;
+            margin: 10px;
+        }
+
+        .border-solid-width { 
+            border-style: solid; 
+            border-top-width: thin;
+            border-right-width: medium;
+            border-bottom-width: thick;
+        }
+
+        .border-solid-width-all { 
+            border-style: solid; 
+            border-width: thin medium thick thin; /* top -> right -> bottom -> left */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>테두리 두께</h1>
+    <p>테두리의 두께를 지정할 수 있으며 위쪽, 오른쪽, 아래쪽, 왼쪽 테두리의 
+        두께를 개별적으로 지정할 수 있다.
+    </p>
+    <hr>
+    <p>border-top-width: 크기 | thin | medium | thick</p>
+    <p>border-right-width: 크기 | thin | medium | thick</p>
+    <p>border-botom-width: 크기 | thin | medium | thick</p>
+    <p>border-left-width: 크기 | thin | medium | thick</p>
+    <p>border-width: 크기 | thin | medium | thick</p>
+    <hr>
+    <ul>
+        <li>두께 : thin < medium < thick</li>
+        <li>방향 : top -> right -> bottom -> left</li>
+    </ul>
+    <div class="border-solid-width">
+        border-top-width: thin<br>
+        border-right-width: medium<br>
+        border-bottom-width: thick
+    </div>
+    <div class="border-solid-width-all">border-width: thin medium thick thin</div>
+</body>
+</html>

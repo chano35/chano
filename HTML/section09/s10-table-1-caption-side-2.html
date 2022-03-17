@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        table, td, th {
+            caption-side: bottom;
+            border: 1px solid black;
+            text-align:center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>caption-side - 표 제목 위치</h2>
+    <p>caption-side : top | bottom</p>
+    <ul>
+        <li>top: 기본값, 캡션을 표의 상단에 표시</li>
+        <li>bottom: 캡션을 표의 하단에 표시</li>
+    </ul>
+    <hr>
+    <table>
+        <caption>IT 전문 개발자 코스</caption>
+        <tr>
+            <th>과정</th>
+            <th>언어</th>
+        </tr>
+        <tr>
+            <td>분석과정</td>
+            <td>요구사항확인, 분석</td>
+        </tr>
+        <tr>
+            <td>개발자과정</td>
+            <td>프로그래밍 언어</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

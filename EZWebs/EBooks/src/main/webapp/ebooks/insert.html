@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>책 등록</title>
+<style>
+table {
+	width: 30%;
+	border: 1px solid #444444;
+	margin: auto;
+}
+
+td {
+	border: 1px solid #444444;
+	padding: 10px;
+}
+
+tr {
+	text-align: center;
+	background-color: skyblue;
+}
+</style>
+</head>
+<body>
+	<form method="POST" action="insert.jsp">
+		<h1 style="text-align: center">책 등록</h1>
+		<table>
+			<tr>
+				<td>책 이름</td>
+				<td><input type="text" name="title"></td>
+			</tr>
+			<tr>
+				<td>저자</td>
+				<td><input type="text" name="author"></td>
+			</tr>
+			<tr>
+				<td>가격</td>
+				<td><input type="text" name="price"></td>
+			</tr>
+			<tr>
+				<td>수량</td>
+				<td><input type="text" name="qty"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="책 등록"></td> 
+			</tr>
+			<tr>
+				<td colspan="2"><input type="reset" value="다시 입력"></td>
+			</tr>
+		</table>
+	</form>
+		
+</body>
+</html>

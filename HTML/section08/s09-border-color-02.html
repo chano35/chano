@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style - Color</title>
+    <style>
+        div {
+            width : 400px;
+            height : 200px;
+            margin: 10px;
+            border-style: dotted;
+            border-width: 15px;
+        }
+
+        .border-color { 
+            border-color : red blue green; /* top(red) right(blue) bottom(green) left?(right=blue) */
+        }
+    </style>
+</head>
+<body>
+    <h1>테두리 색상</h1>
+    <p>테두리의 색상을 지정할 수 있으며 위쪽, 오른쪽, 아래쪽, 왼쪽 테두리의 
+        색상을 개별적으로 지정할 수 있다.
+    </p>
+    <hr>
+    <p>border-top-color: 색상</p>
+    <p>border-right-color: 색상</p>
+    <p>border-bottom-color: 색상</p>
+    <p>border-left-color: 색상</p>
+    <p>border-color: 색상</p>
+    <hr>
+    <ul>
+        <li>방향 : top -> right -> bottom -> left</li>
+    </ul>
+    <div class="border-color"></div>
+</body>
+</html>

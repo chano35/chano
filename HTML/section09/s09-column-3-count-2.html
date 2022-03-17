@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단 편집</title>
+    <style>
+        .multi-col {
+            column-count: auto;
+            column-width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>column-count: 단의 갯수를 고정 다단 구성</h2>
+    <p>column-count: <갯수> | auto</p>
+    <hr>
+    <div class="multi-col">
+        <p><b>숫자는</b> 단의 갯수를 지정하며 단의 갯수를 고정하고 화면의 크기에 따라 단의 너비가 결정된다.</p>
+        <p><b>auto</b>는 column-width에 따라서 단의 갯수가 자동 계산된다.
+            예제는 column-count가 3으로 단의 갯수는 3으로 고정되고 화면의 너비에 따라 단의 크기가 변한다.</p>
+    </div>
+</body>
+</html>

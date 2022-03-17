@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector Style</title>
+    <style>
+        .redtext { /* 클래스 선택자 */
+            color:red;
+        }
+        .bluetext { /* 클래스 선택자 */
+            color:blue;
+        }
+        .boldtext {
+            font-weight:bold;
+        }
+        .underlinetext {
+            text-decoration:underline;
+        }
+  
+    </style>
+</head>
+<body>
+    <h1>스타일을 여러개 적용하는 클래스 선택자</h1>
+    <hr>
+    <p>스타일을 여러개 적용하기 위해서는 태그의 클래스에
+        클래스 선택자를 나열해서 지정한다.
+    </p>
+    <hr>
+    <p class="redtext">간절함은 성공의 자극제이다.</p>
+    <p class="redtext boldtext">간절함은 성공의 자극제이다.</p>
+    <p class="redtext">공부의 <span class="bluetext">왕도</span>는 없다.</p>
+    <p class="redtext">공부의 <span class="bluetext boldtext">왕도</span>는 없다.</p>
+    <p>성공의 지름은 없다.</p>
+    <p>이루고자 하는 <span class="underlinetext">희망을 끝까지 추구하는 것</span> 만이 성공으로 가는 길이다.</p>
+    <p>그렇게 하기 위해서는 <span class="bluetext">좋은 습관</span>을 가져야 한다.</p>
+    <p>그렇게 하기 위해서는 <span class="bluetext boldtext">좋은 습관</span>을 가져야 한다.</p>
+</body>
+</html>

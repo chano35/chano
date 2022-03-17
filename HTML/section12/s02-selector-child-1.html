@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        #container > ul {
+            border: 1px solid blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>자식 선택자(child selector)</h1>
+    <p>자식 선택자는 하위 요소 전체에 스타일을 적용하는 것이 아니라 자식요소에만 스타일을 적용한다.</p>
+    <hr>
+    <section id="container">
+        <header>
+            <h1>여행 가이드</h1>
+        </header>
+        <p>동해안 해안길</p>
+        <ul>
+            <li>해안 도로
+                <ul>
+                    <li>경포대</li>                        
+                    <li>해조대</li>
+                </ul>
+            </li>                
+            <li>해안 기찻길
+                <ul>
+                    <li>포항 기찻길</li>
+                    <li>영덕 기찻길</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+</body>
+</html>

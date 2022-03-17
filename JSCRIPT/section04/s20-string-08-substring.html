@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - substring(시작위치, 종료위치) 함수</h2>
+    <p>문자열의 시작위치와 종료위치 사이의 문자열을 리턴</p>
+    <ul>
+        <li>문자열 = 문자열.substring(시작위치, 종료위치)</li>
+        <li>시작위치 : 가져올 문자열의 시작위치</li>
+        <li>종료위치 : 가져올 문자열 끝 - 1의 위치</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "http://abc.com/upfile/filename.txt";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var slice = str.slice(15, 21);
+        var substring = str.substring(15, 21);
+        document.write('slice: [', slice, ']', '<br>');
+        document.write('substring: [', substring, ']', '<br>');
+    </script>
+    
+</body>
+</html>

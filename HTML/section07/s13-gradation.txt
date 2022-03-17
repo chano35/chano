@@ -1,0 +1,50 @@
+Gradation(배경 효과)
+
+(브라우저 접두사)
+1. 사파리: -webkit-
+    -webkit-linear-gradient(left top, blue, white)
+
+2. 파이어폭스: -moz-
+    -moz-linear-gradient(left top, blue, white)
+
+3. 오페라: -o-
+    -o-linear-gradient(left top, blue, white)
+
+4. HTML5 표준
+    linear-gradient(to right bottom, blue, white)
+
+<style>
+    .gradient {
+        background: green;
+        background: -webkit-linear-gradient(left top, blue, white)
+        background: -moz-linear-gradient(left top, blue, white)
+        background: -o-linear-gradient(left top, blue, white)
+        background: linear-gradient(to left top, blue, white)
+    }
+</style>
+
+(Linear Gradient)
+선형 그러데이션
+
+linear-gradient(각도 to 방향, color-stop, [color-stop, ...]);
+
+각도: 끝나지 지금의 각도
+    - 원을 기존(전체가 360도, 12시부터 시작해서 시계방향으로 증가)
+    - 0도   : 12시 방향
+    - 90도  : 3시 방향
+    - 180도 : 6시 방향
+    - 270도 : 9시 방향
+
+방향:
+    to top    : 아래에서 시작해서 위로
+    to left   : 오른쪽에서 시작해서 왼쪽으로
+    to right  : 왼쪽에서 시작해서 오른쪽으로
+    to bottom : 위해서 시작해서 아래로
+
+
+(Radial Gradient)    
+원형 그러데이션
+
+radial-gradient(최종모양 크기 at 위치, color-stop, [color-stop, ...]);
+
+최종모양: circle(원형), ellipse(타원형) 기본값

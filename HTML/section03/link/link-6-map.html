@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Tag</title>
+</head>
+<body>
+    <h3>맵 태그</h3>
+    <hr>
+    <p>맵 태그는 하나의 이미지에 여러 개의 링크를 걸 수 있다.</p>
+    이미상에 클릭 위치에 따라서 서로 다른 링크가 열리도록 한다.
+    <hr>
+    <img id="mainmenu" src="images/korea.jpg" usemap="#korea" width="400" height="400">
+    <map name="korea">
+        <area shpae="rect" coords="0,0,200,200" href="#northwest">
+        <area shpae="rect" coords="200,0,400,200" href="#northeast">
+        <area shpae="rect" coords="0,200,200,400" href="#southwest">
+        <area shpae="rect" coords="200,200,400,400" href="#southeast">
+    </map>
+
+    <hr>
+    <h2 id="northwest">북서쪽</h2>
+    <p>북서쪽은 중국과 경계가 있으면 압록강이 있습니다.</p>
+    <p><a href="#mainmenu">지도로 이동</a></p>
+
+    <hr>
+    <h2 id="northeast">북동쪽</h2>
+    <p>북동쪽은 백두산 천지가 있습니다.</p>
+    <p><a href="#mainmenu">지도로 이동</a></p>
+
+    <hr>
+    <h2 id="southwest">남동쪽</h2>    
+    <p>남동쪽은 대한민국의 서울이 있습니다.</p>
+    <p><a href="#mainmenu">지도로 이동</a></p>
+
+    <hr>
+    <h2 id="southeast">남서쪽</h2>
+    <p>남서쪽은 항구도시 부산이 있습니다.</p>
+    <p><a href="#mainmenu">지도록 이동</a></p>
+</body>
+</html>

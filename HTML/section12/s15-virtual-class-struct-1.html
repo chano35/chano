@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Class - Struct</title>
+</head>
+<body>
+    <h1>구조 가상 클래스</h1>
+    <p>웹 문서 구조(DOM)를 기준으로 특정 위치에 있는 요소를 찾아서 스타일을 지정</p>
+    <ul>
+        <li>:root : 문서 전체에 스타일 적용, HTML 전체 요소에 스타일이 적용</li>
+        <li>:nth-child(n), :nth-last-child(n) : 자식 요소의 위치에 따라 스타일 적용
+            요소가 몇 번째에 있는지에 따라 스타일 적용, 
+            부모를 같이 하는 같은 레벨에 n번째 요소에 적용
+        </li>
+        <li>:nth-of-type(n), :nth-last-of-type(n) : 특정 태그 위치에 n번째 요소에 스타일 적용</li>
+        <li>:first-child, :last-child : 특정 태그의 속한 첫 번째 자식, 마지막 자식 요소에 스타일 적용</li>
+        <li>:first-of-type, :last-of-type : 형제 관계 요소의 위치에 따라 스타일 적용</li>
+        <li>:only-child, :only-of-type : 하나뿐이 작싱 요소에 스타일 적용,<br>
+            :only-child : 부모 요소 안의 자식 요소가 유일하게 하나일 때 스타일 적용,<br>
+            :only-of-type: 해당 요소가 유일한 요소일 때 스타일 적용
+        </li>
+    </ul>
+</body>
+</html>

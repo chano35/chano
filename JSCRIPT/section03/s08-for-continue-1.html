@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문(for)</title>
+</head>
+<body>
+    <h1>반복문(for)</h1>
+    <p>for(초깃값; 조건식; 증감식) { ... }</p>
+    <label>처리순서</label>
+    <ol>
+        <li>초깃값</li>
+        <li>조건식</li>
+        <li>코드블럭</li>
+        <li>증감식</li>
+        <li>조건식</li>
+        <li>코드블럭</li>
+        <li>...</li>
+    </ol>
+    <hr>
+    <script>
+        /*
+        // 1부터 n까지 1씩 무한히 증가하는 어떤 수에서
+        // 3의 배수와 5의 배수를 제외한 합을 구하라.
+        // 그 합이 3000을 넘으면 종료하라.
+        // while -> for 바꿈
+        */
+
+        var s = 0;
+        for(var n = 0; s <= 3000; n++) { // for : 무한반복
+            if(n % 3 != 0 && n % 5 != 0) {
+                s += n;
+                document.write("n=", n, ", s=", s, '<br>');
+            }
+        }
+
+        document.write("1부터 ", n, "까지의 3과 5의 배수를 제외한 합은 ", s);
+    </script>
+</body>
+</html>

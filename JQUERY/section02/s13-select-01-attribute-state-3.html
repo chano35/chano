@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - select</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            var s1 = $("#g1 :checked").val();
+            console.log('s1=', s1);
+        });
+    </script>
+</head>
+<body>
+    <h2>속성의 상태값</h2>
+    <form>
+        <p id="g1">
+            <input type="radio" name="course1" value="java" checked> 자바
+            <input type="radio" name="course2" value="javascript"> 자바스크립트
+            <input type="radio" name="course3" value="dbms"> DBMS
+        </p>
+    </form>
+</body>
+</html>

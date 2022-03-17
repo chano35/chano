@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style</title>
+    <style>
+        div {
+            width : 200px;
+            height : 200px;
+            margin: 10px;
+        }
+
+        .border-width-tb-rl-1 { 
+            border-style: solid; 
+            border-width: thin thick; /* top-bottom(thin), left-right(thick) */
+        }
+
+        .border-width-tb-rl-2 { 
+            border-style: solid; 
+            border-width: 5px 10px; /* top-bottom(5px) left-right(10px) */
+        }
+
+        .border-width-top-right-bottom { 
+            border-style: solid; 
+            border-width: 3px 7px 15px; /* top(3px) right(7px) bottom(15px) left?(right=7px) */
+        }
+    </style>
+</head>
+<body>
+    <h1>테두리 두께</h1>
+    <p>테두리의 두께를 지정할 수 있으며 위쪽, 오른쪽, 아래쪽, 왼쪽 테두리의 
+        두께를 개별적으로 지정할 수 있다.
+    </p>
+    <hr>
+    <div class="border-width-tb-rl-1"></div>
+    <div class="border-width-tb-rl-2"></div>
+    <div class="border-width-top-right-bottom"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model - width & height</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 100px;
+            background: #ff6b00;
+        }
+
+        .box2 {
+            width: 50%;
+            height: 100px;
+            background: #0086ff;
+        }
+
+        div.auto {
+             margin: 10px;
+             background-color: brown;
+             width: auto; /* 기본값, 컨텐츠의 양에 따라서 자동으로 너비와 높이가 결정 */
+        }
+        div.fixed {
+             margin: 10px;
+             background-color: cornflowerblue;
+             width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model - width & height</h1>
+    <hr>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="auto">컨텐츠(내용)에 따라서 크기가 결정 된다. 내용이 많으면 어떻게 되는가?</div>
+    <div class="fixed">컨텐츠(내용)에 따라서 크기가 결정 된다. 내용이 많으면 어떻게 되는가?</div>
+</body>
+</html>

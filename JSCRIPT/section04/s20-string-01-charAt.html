@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - charAt(인덱스) 함수</h2>
+    <p>문자열에서 인덱스의 해당하는 위치의 문자을 리턴</p>
+    <ul>
+        <li>문자 = 문자열.charAt(인덱스)</li>
+        <li>인덱스는 0부터 문자열의 (길이 - 1)</li>
+        <li>리턴된 문자는 바이트 단위가 아니라 논리적인 문자단위이다.</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "영일이삼사오육칠팔구십";
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        for(var cnt = 0; cnt < str.length; cnt++) {
+            var data = str.charAt(cnt);
+            document.write('[', cnt, ']=[', data, ']', '<br>');
+        }
+
+    </script>
+    
+</body>
+</html>

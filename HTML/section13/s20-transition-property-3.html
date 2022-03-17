@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .trx {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 1px solid black;
+            transition-property: background-color, transform; /* 트랜지션 적용 대상 속성(배경색, 변경) */
+            transition-duration: 10s, 3s; /* 배경색(5초), 변경(3초) */
+        }
+
+        .trx:hover {
+            width: 200px;
+            height: 200px;
+            background-color:floralwhite;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>transition-property</h1>
+    <p>transition-property : all | none | 속성이름</p>
+    <p>트랜지션을 적용할 속성을 지정</p>
+    <ul>
+        <li>all : 기본값, 모든 속성이 트랜지션 대상이 됨</li>
+        <li>none : 트랜지션 동안 아무 속성도 바뀌지 않음</li>
+        <li>속성이름 : 트랜지션 효과를 적용할 대상 속성 이름, 여러 대상이면 콤마로 구분</li>
+    </ul>
+    <hr>
+    <div class="trx"><h1>Hi</h1></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <style>
+        div {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            margin-right: 10px;
+            text-align: center;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+
+        .collapse {
+            visibility: collapse;
+        }        
+    </style>
+</head>
+<body>
+    <h1>visibility - 요소를 보이게 하거나 보이지 않게 하기</h1>
+    <p>visibility: visible | hidden | collapse</p>
+    <ul>
+        <li>visible: 기본값, 화면에 요소를 표시</li>
+        <li>hidden: 화면에서 요소를 감춤</li>
+        <li>collapse: 요소들이 겹침(표의 행, 열, 행 그룹 등), 그 외의 요소들은 hidden처럼 동작</li>
+    </ul>
+    <p>hidden으로 하면 보이지 않지만 영역은 차지한다.</p>
+    <hr>
+    <div class="invisible">디비전1</div>
+    <div>디비전2</div>
+    <div class="collapse">디비전3</div>
+    <div class="collapse">디비전4</div>
+    <div>디비전5</div>
+</body>
+</html>

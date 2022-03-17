@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h2>배열(array)</h2>
+    <p>배열의 요소를 완전히 삭제 : splice<br>
+        splice(시작인덱스, 삭제할갯수, 대체할요소...)
+    </p>
+    <ul>
+        <li>시작인덱스: 배열의 시작위치</li>
+        <li>삭제할갯수: 배열에서 삭제할 갯수</li>
+        <li>대체할요소: 삭제된 위치에 대신 들어갈 값, 옵션</li>
+    </ul>
+    <hr>
+    <script>
+        var arr = [2,4,6,8,10];
+
+        arr.splice(1,3); // 삭제 [4,6,8] -> [2,10]
+
+        document.write('arr.length=', arr.length, '<br>');
+
+        for(var cnt=0; cnt < arr.length; cnt++) {
+            document.write("[", cnt, "] =(", arr[cnt], '), typeof(', typeof arr[cnt], ')', '<br>');
+        }
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Position</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px double red;
+            margin-bottom:20px;
+            color: blue;
+        }
+
+        .bp1 {
+            background-image:url("images/background-1.jpg");
+            background-repeat: no-repeat;
+            background-position: 50px 50px;
+        }
+
+        .bp2 {
+            background-image:url("images/background-1.jpg");
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Background Position</h1>
+    <p>background-position은 배경 이미지의 위치를 조절한다.</p>
+    <hr>
+    <p>background-position: 수평위치 수직위치</p>
+    <ul>
+        <li>수평위치: left | center | right | 백분율 | 길이값</li>
+        <li>수직위치: top | center | bottom | 백분율 | 길이값</li>
+    </ul>
+    <hr>
+    <div class="bp1">수평위치(50px)와 수직위치(50px) </div>
+    <div class="bp2">수평위치(right)와 수직위치(center)</div>
+</body>
+</html>

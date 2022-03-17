@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - toUpperCase() 함수</h2>
+    <p>문자열을 대문자로 변경</p>
+    <ul>
+        <li>문자열 = 문자열.toUpperCase()</li>
+        <li>원본 문자열은 변경되지 않음</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "Good Morning!";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var ret = str.toUpperCase();
+        document.write('결과: [', str, '] 원본의 변화는 없음', '<br>');
+        document.write('리턴: [', ret, ']', '<br>');
+    </script>
+    
+</body>
+</html>

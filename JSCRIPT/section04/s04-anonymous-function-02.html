@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <script src="js/println.js"></script>
+</head>
+<body>
+    <h1>익명 함수(Anonymous Function)</h1>
+    <p>함수의 이름이 없는 함수 : sum 변수에 익명함수 대입</p>
+    <hr>
+    <script>
+        var sum = function(count) { // 익명함수
+            var sum = 0;
+            for(var cnt=1; cnt <= count; cnt++) {
+                sum += cnt;
+            }
+            return sum;
+        }
+
+        var tot = sum(10);  // 익명함수 호출
+        println('tot=', tot);
+    </script>
+    
+</body>
+</html>

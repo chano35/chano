@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - type</title>
+</head>
+<body>
+    <h3>입력 태그 - 타입(datetime)</h3>
+    <hr>
+    <p>입력 태그의 타입(time, datetime, datetime-local)은 시간을 선택할 수 있다.</p>
+    <ul>
+        <li>time: 사용자 지역 날짜(시,분,초, 분할 초) 입력 필드</li>
+        <li>datetime: 국제표준시(UTC)로 설정된 날짜와 시간 입력 필드</li>
+        <li>datetime-local: 사용자 지역의 날짜와 시간 입력 필드</li>
+    </ul>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>날짜 선택</legend>
+            <p>원하는 날짜를 선택하세요</p>
+            <label><input type="time">날짜 시분초</label>
+            <label><input type="datetime">국제표준시(UTC)</label>
+            <label><input type="datetime-local">사용자 지역 일시</label>
+        </fieldset>
+    </form>
+</body>
+</html>

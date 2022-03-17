@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout CSS</title>
+    <style>
+        div {
+            border: 1px solid rgb(102, 134, 194);
+        }
+
+        #container {
+            width: 1200px;
+            padding: 20px;
+            margin: 0 auto;
+            clear: both;
+        }
+
+        .main-menu {
+            padding: 20px;
+            margin-right: 10px;
+            background: yellowgreen;
+            float: left;
+        }
+
+        #header {
+            padding: 20px;
+            margin-bottom:20px;
+            background: slateblue;
+        }
+
+        #left-sidebar {
+            width: 200px;
+            padding: 20px;
+            float: left;
+            margin-right: 20px;
+            background:tomato;
+        }
+        #contents {
+            width: 600px;
+            padding: 20px;
+            float: left;
+            margin-bottom: 20px;
+            background: slategrey
+        }
+
+        #right-sidebar {
+            width: 200px;
+            padding: 20px;
+            float: right;
+            margin-bottom: 20px;
+            background: sandybrown;
+        }
+
+        #footer {
+            clear: both; /* float 해제 */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="main-menu">메뉴1</div>
+        <div class="main-menu">메뉴2</div>
+        <div class="main-menu">메뉴3</div>
+        <div class="main-menu">메뉴3</div>
+    </div>
+
+    <div id="container"> <!-- 가장 바깥 테두리 -->
+        <div id="header"> <!-- 제목 -->
+            <h1>별 헤는 밤</h1>
+        </div>
+
+        <div id="left-sidebar"> <!--왼쪽 사이드 메뉴 -->
+            <h2>책 선택</h2>
+            <ul>
+                <li>소설책</li>
+                <li>교양서적</li>
+                <li>전문서적</li>
+            </ul>
+        </div>
+
+        <div id="contents"> <!-- 본문 -->
+            <h2>내용</h2>
+            <p>
+                어머니, 둘 밤을 지나가는 한 덮어 잠, 거외다. 잔디가 둘 많은 하늘에는 헤일 별 봅니다. 가득 옥 자랑처럼 남은 청춘이 이름과, 아무 소녀들의 까닭입니다. 책상을 나는 피어나듯이 이름을 비둘기, 가슴속에 봅니다. 새워 계절이 벌레는 어머니 내 이네들은 노새, 패, 봅니다. 나는 걱정도 나의 계절이 소학교 벌써 부끄러운 다 파란 봅니다. 나는 너무나 패, 별에도 별 나의 하나에 별 버리었습니다. 벌써 아스라히 덮어 어머님, 벌레는 된 비둘기, 무덤 까닭입니다. 별을 아스라히 파란 지나가는 어머님, 거외다. 이국 소학교 이웃 했던 까닭입니다. 아침이 이름과, 이제 멀듯이, 이름을 나는 별 나는 많은 봅니다.
+                하늘에는 없이 내 불러 언덕 릴케 무덤 가난한 이름자를 있습니다. 추억과 마디씩 때 속의 듯합니다. 프랑시스 위에 하늘에는 봅니다. 다 아름다운 오는 다 잔디가 위에도 까닭입니다. 묻힌 자랑처럼 별 라이너 위에 하나에 가을로 가득 계십니다. 내린 새겨지는 때 별 나의 별이 거외다. 아직 계집애들의 했던 써 프랑시스 동경과 잔디가 까닭입니다. 시인의 별이 겨울이 청춘이 우는 오면 책상을 듯합니다. 언덕 경, 이름을 이름과, 말 남은 계절이 봅니다. 덮어 소녀들의 된 부끄러운 어머님, 그리고 있습니다. 벌레는 별에도 하나에 별이 별빛이 가을 너무나 했던 까닭이요, 봅니다.
+                둘 이웃 어머니, 별에도 쉬이 까닭입니다. 하나에 이름과 잠, 어머니, 노루, 별 없이 까닭입니다. 그리고 별을 하나에 있습니다. 그리워 어머님, 쓸쓸함과 추억과 까닭입니다. 어머니, 마디씩 노루, 잠, 하나에 까닭입니다. 언덕 아무 벌써 이런 잠, 봅니다. 흙으로 이름과, 부끄러운 토끼, 헤일 걱정도 둘 계십니다. 아침이 다하지 자랑처럼 슬퍼하는 이국 별 하나 청춘이 까닭입니다. 무성할 소학교 사람들의 쉬이 딴은 봅니다. 이름과 이제 이름을 강아지, 봅니다.                
+            </p>
+
+        </div>
+
+        <div id="right-sidebar"> <!-- 오른쪽 사이드 메뉴 -->
+            <h2>사이드 메뉴</h2>
+            <ul>
+                <li>소개말</li>
+                <li>본문</li>
+                <li>작가소개</li>
+                <li>관련서적</li>
+            </ul>
+        </div>
+
+        <div id="footer"> <!-- 푸터 -->
+            <h2>맺음말</h2>
+            <p>
+                비둘기, 릴케 가난한 된 이국 하나의 아름다운 흙으로 어머님, 있습니다. 벌써 나는 별 까닭입니다.
+                오면 소녀들의 이 보고, 자랑처럼 다 이네들은 나는 한 거외다. 그리고 강아지, 이름을 계집애들의 위에 이름자 다 소학교 까닭입니다.
+                마리아 동경과 무덤 있습니다. 추억과 소녀들의 아름다운 이네들은 있습니다. 나의 벌레는 이름을 흙으로 릴케 봄이 까닭입니다. 위에 청춘이 다하지 라이너 내 버리었습니다.                
+            </p>
+        </div>
+    </div>
+</body>
+</html>

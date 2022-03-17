@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<script>
+	function loginvalidate() { /* 아이디와 비번 체크 */
+		var formlogin = document.formlogin;
+		var userid = formlogin.userid.value;
+		var userpw = formlogin.userpw.value;
+		
+		if(userid.length == 0 || userid == "" || userpw == "" || userpw.length == 0) {
+			alert("아이디와 비밀번호를 입력하세요.");
+			return;
+		}
+		
+		formlogin.submit();
+	}
+</script>
+</head>
+<body>
+	<form name="formlogin" method=post action="login" encType="UTF-8">
+		<label>아이디 : <input type="text" name="userid"></label><br>
+		<label>비밀번호 : <input type="password" name="userpw"></label><br>
+		<input type="button" value="로그인" onClick="loginvalidate()">
+		<input type="reset" value="다시입력">
+		<input type="hidden" name="useraddress" value="경기도 성남시 분당구">
+	</form>
+</body>
+</html>

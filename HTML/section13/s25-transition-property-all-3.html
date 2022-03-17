@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            border: 1px solid blueviolet;
+            background-color: crimson;
+            transition: transform 3s ease-in 0.5s; /* transition-property(transform), 트랜지션 시간, timing-function, delay */
+        }
+
+        #container:hover {
+            width: 50px;
+            height: 50px;
+            background-color: cyan;
+            transform: rotate(300deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Transition - transition 속성을 한 번에 모두 지정하기</h1>
+    <p>transition : transition-property | transition-duration | transition-timing-function | transition-delay</p>
+    <ul>
+        <li>위의 나열된 순서대로 지정을 해야 한다.</li>
+        <li>생략하면 해당하는 속성의 기본값이 적용된다.</li>
+    </ul>
+    <hr>
+    <div id="container"></div>
+</body>
+</html>

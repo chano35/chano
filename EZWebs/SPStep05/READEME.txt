@@ -1,0 +1,15 @@
+[SPStep05]
+
+1. 스프링 프레임워크 MVC
+2. MultiActionController
+	- spring framework version : 4.3.x deprecated
+	- spring framework version : 4.0.3
+
+------------------------------------------------------------------------
+(서버실행)
+실행: Run As -> Run on Server
+주소: 
+	http://localhost:8090/SPStep05/user/loginForm.jsp
+	http://localhost:8090/SPStep05/user/loginForm2.jsp
+	
+	

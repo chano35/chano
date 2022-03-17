@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - select</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            var s1 = $("#g1 :selected").val();
+            console.log('s1=', s1);
+        });
+    </script>
+</head>
+<body>
+    <h2>속성의 상태값</h2>
+    <form>
+        <p id="g1">
+            <select>
+                <option value="op1">선택1</option>
+                <option value="op2" selected>선택2</option>
+                <option value="op3">선택3</option>
+            </select>
+        </p>
+    </form>
+</body>
+</html>

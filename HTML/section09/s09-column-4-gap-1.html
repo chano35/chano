@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단 편집</title>
+    <style>
+        .multi-col-1em {
+            column-count: auto;
+            column-width: 100px;
+            column-gap:1em;
+            background: deepskyblue;
+        }
+        .multi-col-2em {
+            column-count: auto;
+            column-width: 100px;
+            column-gap:2em;
+            background: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <h2>column-gap: 단과 단 사이의 여백 지정</h2>
+    <p>column-gap: <크기> | normal</p>
+    <p><b>크기</b>는 단과 단 사이의 여백을 숫자로 지정</p>
+    <p><b>normal</b>은 여백을 자동으로 지정, 권장여백은 1em</p>
+    <hr>
+    <div class="multi-col-1em">
+        <p>단과 단 사이의 여백을 지정하는 예제로서 <b>크기</b>는 단과 단 사이의 여백을 숫자로 지정하며
+        <b>normal</b>은 여백을 자동으로 지정한다. 권장여백은 1em이다.
+        이 예제에서는 column-gap을 2em으로 지정하였다.</p>
+    </div>
+    <div class="multi-col-2em">
+        <p>단과 단 사이의 여백을 지정하는 예제로서 <b>크기</b>는 단과 단 사이의 여백을 숫자로 지정하며
+        <b>normal</b>은 여백을 자동으로 지정한다. 권장여백은 1em이다.
+        이 예제에서는 column-gap을 2em으로 지정하였다.</p>
+    </div>
+</body>
+</html>

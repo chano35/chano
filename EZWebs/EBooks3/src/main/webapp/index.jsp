@@ -1,0 +1,1 @@
+<%response.sendRedirect("/EBooks3/ebooksvc.do");%>

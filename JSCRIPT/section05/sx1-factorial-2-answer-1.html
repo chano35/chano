@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        table {
+            caption-side: top; /* 기본값 */
+            border: 2px solid royalblue;
+            border-collapse: collapse;  /* 테이블 속성 */
+        }
+
+        table, th, td {
+            border: 1px solid royalblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table tr:nth-child(odd) { /* 홀수라인 */
+            background-color:darkseagreen;
+        }
+
+        table tr:nth-child(even) { /* 짝수라인 */
+            background-color:gold;
+        }
+    </style>
+
+    <script>
+        function Calc(val, col) {
+            this.val = val;
+            this.col = col;
+            this.tbl = new Array(val);
+        }
+        
+        Calc.prototype.calc = function(val) {
+            if(val !== undefined) {
+                this.val = val;
+            }
+
+            for(var n=0; n < this.val; n++) {
+                this.tbl[n] = (n > 0) ? this.tbl[n-1] * (n + 1) : 1;
+                document.write('n=', n+1, ', s=', this.tbl[n], '<br>');
+            }
+        }
+
+        Calc.prototype.print = function(col) {
+            if(col !== undefined) {
+                this.col = col;
+            }
+
+            document.write("<table>")
+            for(var n=0; n < this.val; ) {
+
+                document.write("<tr>")
+                for(var col=0; col < this.col && n < this.val; col++, n++) {
+                    document.write('<td>', this.tbl[n], '</td>');
+                }
+                document.write("</tr>")
+            }
+            document.write("</table>")
+        }
+
+    </script>
+</head>
+<body>
+    <script>
+        var calc = new Calc(10, 3);
+        calc.calc();
+        calc.print();
+    </script>
+    
+</body>
+</html>

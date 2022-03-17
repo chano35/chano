@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - select</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $("#menu li:odd").css({"background-color" : "#0ff" });  /* 홀수 번째 */
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <p>메뉴에서 홀수 번째 요소를 선택(1,3,5, ..)하며 
+        첫 번째 요소는 인덱스(0)으로 짝수 번째이다.
+        그러므로 홀수 번째는 인덱스(1)인 두번째 요소부터 해당한다.
+    </p>
+    <ul id="menu">
+        <li>파일</li>
+        <li>편집</li>
+        <li>보기</li>
+        <li>실행</li>
+        <li>옵션</li>
+        <li>도움말</li>
+    </ul>
+</body>
+</html>

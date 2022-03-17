@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 선택된 요소 맨 마지막 위치에 새로운 요소를 추가 */
+            $("<p>추가요소</p>").appendTo("#container"); /* div의 맨 마지막 하위 요소에 추가 */
+        });
+    </script>
+    <style>
+        div {
+            background-color: darkcyan;
+        }
+        .elm {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h2>요소의 추가 - appendTo</h2>
+    <p>선택된 요소 맨 마지막 위치에 새로운 요소를 추가</p>
+    <hr>
+    <div id="container">
+        <p>엘리먼트1</p>
+        <p>엘리먼트2</p>
+        <p>엘리먼트3</p>
+        <p>엘리먼트4</p>
+    </div>
+</body>
+</html>

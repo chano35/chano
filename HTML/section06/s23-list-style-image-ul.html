@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style</title>
+    <style>
+        .none-image { list-style-image : none; }
+        .image-bullet2 { list-style-image : url("images/ul-image-2.png"); }
+        .image-bullet { list-style-image : url("images/ul-image.png"); }
+    </style>
+</head>
+<body>
+    <h2>목록 스타일 - 순서 없는 목록에 이미지 넣기</h2>
+    <p>순서없는 목록의 불릿(bullet) 대신에 이미지를 넣을 수 있다.</p>
+    <hr>
+    <p>list-style-image : none | url("...")</p>
+    <ul>
+        <li>none: 기본값, list-style-type에서 지정한 속성으로 표시</li>
+        <li>이미지: url("bullet-image.jpg")</li>
+    </ul>
+    <hr>
+    <p>list-style-image : image</p>
+    <ul class="image-bullet">
+        <li>자기소개서</li>
+        <li>이력서</li>
+        <li>포트폴리오</li>
+    </ul>
+    <hr>
+    <p>list-style-image : none</p>
+    <ul class="none-image">
+        <li>자기소개서</li>
+        <li>이력서</li>
+        <li>포트폴리오</li>
+    </ul>
+    <hr>
+    <p>list-style-image : image</p>
+    <ul class="image-bullet2">
+        <li>자기소개서</li>
+        <li>이력서</li>
+        <li>포트폴리오</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+
+        .t1 {
+            width: 300px;
+            table-layout: fixed;
+            word-break: break-all; /* 컨텐츠가 셀의 범위를 벗어나지 않도록 지정 */
+            height: auto; /* 자동으로 높이가 지정 */
+        }
+
+        td {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>table-layout - 컨텐츠에 맞게 셀 너비 지정</h2>
+    <ul>
+        <li>auto: 기본값, 셀 내용에 따라서 셀의 너비가 결정</li>
+        <li>fixed: 셀 너비를 고정</li>
+    </ul>
+    <p>셀의 너비를 지정하고 table-layout:fixed이며, 영문이 여백이 없는 경우 셀의 범위를 벗어나서 컨텐츠가 출력된다.</p>
+    <hr>
+    <table class="t1">
+        <tr>
+            <td>테이블은 시각적 의사소통과 자료의 정렬 양식이다.</td>
+            <td>A_table_is_an_arrangement_of_information.</td>
+        </tr>
+    </table>
+</body>
+</html>

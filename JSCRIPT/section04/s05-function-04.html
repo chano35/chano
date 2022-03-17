@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <script src="js/println.js"></script>
+    <script>
+        function sum() {
+            var s = 0;
+            for(var cnt=0; cnt < arguments.length; cnt++) {
+                s += arguments[cnt];
+            }
+            return s;
+        }
+
+        function avg() {
+            var s = 0;
+            for(var cnt=0; cnt < arguments.length; cnt++) {
+                s += arguments[cnt];
+            }
+            return s / arguments.length;
+        }
+    </script>
+</head>
+<body>
+    <h1>자바스크립트 함수의 가변인자를 활용하여 합계와 평균 구하기</h1>
+    <script>
+        var tot1 = sum(10,20,30);
+        var tot2 = sum(70,80,90,100);
+        var avg1 = avg(10,20,30)
+        var avg2 = avg(70,80,90,100);
+
+        println('tot1 : ', tot1);
+        println('avg1 : ', avg1);
+
+        println('tot2 : ', tot2);
+        println('avg2 : ', avg2);
+
+    </script>
+</body>
+</html>

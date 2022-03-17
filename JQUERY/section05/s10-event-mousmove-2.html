@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(document).on("mousemove", function(evt) {
+                var clientxy = evt.clientX + ", " + evt.clientY;    /* 마우스 포인터(스크롤 무시) */
+                var pagexy = evt.pageX + ", " + evt.pageY;          /* 마우스 포인터(스크롤 반영) */
+                var screenxy = evt.screenX + ", " + evt.screenY;    /* 마우스 포인터(화면 모니터 기준) */
+                $(".client-xy").text(clientxy);
+                $(".page-xy").text(pagexy);
+                $(".screen-xy").text(screenxy);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>mousemove event</h1>
+    <hr>
+    <div>
+        <p>> client x,y : <span class="client-xy"></span></p>
+        <p>>   page x,y : <span class="page-xy"></span></p>
+        <p>> screen x,y : <span class="screen-xy"></span></p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Class - State</title>
+    <style>
+        body {
+            background-color:lightsalmon;
+        }
+
+        form fieldset {
+            margin-bottom: 20px;
+        }
+
+        form legend {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        input:disabled {
+            background:grey;
+            border: 1px #ccc solid;
+        }
+
+        input:checked + span {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 - 상태</h1>
+    <form>
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label>이름 <input type="text" value="홍길동" disabled></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>상품결재방법</legend>
+            <p>결재할 방법을 선택하세요</p>
+            <label><input type="radio" name="product" value="cd"><span>카드</span></label>
+            <label><input type="radio" name="product" value="bk"><span>무통장입금</span></label>
+            <label><input type="radio" name="product" value="ca"><span>캐시카드</span></label>
+            <label><input type="radio" name="product" value="pt"><span>포인트</span></label>
+        </fieldset>
+    </form>
+</body>
+</html>

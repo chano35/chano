@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - select</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 전체 이전 선택자 */
+            $("#desc").prevAll().css({"border" : "1px solid #f00", "background-color" : "#ccc" });
+        });
+    </script>
+</head>
+<body>
+    <h1>What is jQuery</h1>
+    <h2 class="title">JavaScript Web Framework</h2>
+    <p id="desc">jQuery is a fast, small, and feature-rich JavaScript library. 
+        It makes things like HTML document traversal and manipulation, event handling, animation, 
+        and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. 
+        With a combination of versatility and extensibility, 
+        jQuery has changed the way that millions of people write JavaScript.
+    </p>
+    <p class="api">Note that this is the API documentation for jQuery core.</p>
+    <ul id="wrap">
+        <h3>Other projects have API docs in other locations:</h3>
+        <div>
+            <p>Application Prgramming Interface</p>
+            <ul>
+                <li id="ui-api">UI APIs</li>
+                <li>Mobile APIs</li>
+                <li>QUnit APIs</li>
+            </ul>
+        </div>
+    </ul>
+</body>
+</html>

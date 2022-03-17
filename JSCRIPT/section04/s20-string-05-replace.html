@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - replace(바뀔문자열, 바꿀문자열) 함수</h2>
+    <p>지정된 문자열에서 찾을 문자열과 일치하는 첫 번째 문자열 리턴</p>
+    <ul>
+        <li>문자열 = 문자열.replace(기존문자열, 새로운문자열)</li>
+        <li>지정된 문자열에서 기존문자열을 찾아서 새로운 문자열로 바꿔서 그 결과를 리턴한다.</li>
+        <li>원본 문자열은 변경되지 않는다.</li>
+        <li>기존 문자열을 찾지 못하면 원본 문자열을 리턴</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "http://abc.com/upfile/filename.txt";
+
+        document.write('원본: [', str, ']', '<br>');
+
+        var ret = str.replace("upfile", "updnfile");
+        var ret2 = str.replace("dnfile", "updnfile"); // 바뀔 문자열이 없음
+        document.write('결과: [', str, ']', '<br>');
+        document.write('리턴: [', ret, ']', '<br>');
+        document.write('리턴: [', ret2, ']', '<br>'); // 기존 문자열을 리턴
+    </script>
+    
+</body>
+</html>

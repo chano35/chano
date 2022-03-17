@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(document).on("mousemove", function(evt) {
+                $(".pos-x").text(evt.pageX);
+                $(".pos-y").text(evt.pageY);
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>mousemove event</h1>
+    <hr>
+    <div>
+        <p>document x : <span class="pos-x"></span></p>
+        <p>document y : <span class="pos-y"></span></p>
+    </div>
+    
+</body>
+</html>

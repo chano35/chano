@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function(){
+		$(".btn_1.on").on("mouseover focus", function() {
+			alert("버튼1 마우스 이동 이벤트!");
+		});
+
+		/*
+		 * 이벤트가 등록후에 class를 생성하면 이벤트가 작동하지 않음
+		 */
+		$(".btn_1").addClass("on");
+
+		/*
+		 * [라이브 이벤트 등록]
+		 * 동적으로 생성된 요소에도 이벤트를 등록
+		 * 이벤트를 등록한 이후에 새롭게 생성되거나 복제된 요소에 이벤트 적용
+		 * -------------------------------------------------------------------
+		 * $(document | "이벤트대상의 상위 요소 선택").on("이벤트종류", "이벤트 대상 선택", function() { ...});
+		 */
+		$(document).on("mouseover focus",".btn_2.on", function() {
+				alert("버튼2 마우스 이동(라이브 이벤트)!");
+		});
+		$(".btn_2").addClass("on");
+});
+</script>
+</head>
+<body>
+	<div id="container">
+		<p><button class="btn_1">버튼1</button></p>
+		<p><button class="btn_2">버튼2</button></p>
+	</div>
+</body>
+</html>

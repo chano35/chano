@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .trx {
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+        }
+
+        .trx:hover {
+            transform: scale(2) perspective(120px) rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition - transition-timing-function</h1>
+    <p>transition-timing-function : ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n)</p>
+    <ul>
+        <li>ease: 기본값, 처음에는 천천히 시작해서 점점 속도가 빨라지다가 마지막에는 천천히 종료</li>
+        <li>linear: 시작부터 종료까지 동일한 속도로 진행</li>
+        <li>ease-in: 느리게 시작</li>
+        <li>ease-out: 느리게 종료</li>
+        <li>ease-in-out: 느리게 시작하고 느리게 종료</li>
+        <li>cubic-bezier(n,n,n,n): 베지어 함수를 직접 정의, n(0~1) 사이 값</li>
+    </ul>
+    <hr>
+    <div class="org">
+        <div class="trx">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+</body>
+</html>

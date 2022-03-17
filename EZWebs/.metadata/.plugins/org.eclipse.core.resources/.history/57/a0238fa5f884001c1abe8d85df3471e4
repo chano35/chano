@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSP 게시판 웹 사이트</title>
+</head>
+<body>
+<!-- 네비게이션 영역 -->
+<nav class="navbar-header">
+	<!-- 헤더 영역(홈페이지 로고 등을 담담) -->
+	<div class = "navbar-header">
+	<button type="button" class="navbar-toggle collapsed"
+	data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+	aria-expanded="false">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	
+	<!-- 로그인 페이지로 이동하는 스크립트 코드 -->
+	<a class="navbar-brand" href="main.jsp"> JSP 게시판 웹 사이트</a>
+	</div>
+</nav>
+</body>
+</html>

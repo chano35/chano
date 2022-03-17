@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Space</title>
+    <style>
+        p.nowrap { white-space: nowrap; }
+        p.pre { white-space: pre; }
+        p.pre-line { white-space: pre-line; }
+        p.pre-wrap { white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h2>White Space(공백처리)</h2>
+    <hr>
+    <p>텍스트 안에 있는 공백을 어떻게 처리할지 지정한다.</p>
+    <hr>
+    <ul>
+        <li>normal: 기본값, 여러 개의 공백을 하나로 표시</li>
+        <li>nowrap: 공백이 여러개 있는 경우 하나로 줄이고
+            영역을 넘어가는 내용의 줄을 바꾸지 않는다(한줄로 표시).</li>
+        <li>pre: 공백을 있는 그대로 표시하고 영역을 넘어가는
+            내용의 줄을 바꾸지 않는다(한줄로 표시).</li>
+        <li>pre-line: 공백을 하나로 표시하고 자동 줄바꿈</li>
+        <li>pre-wrap: 공백을 있는 그대로 표시하고 자동 줄바꿈</li>
+    </ul>
+    <hr>
+    <p>normal:                       기본값</p>
+    <p class="nowrap">nowrap:        공백이 여러개 있는 경우 하나로 줄이고 영역을 넘어가는 내용의 줄을 바꾸지 않는다(한줄로 표시).</p>
+    <p class="pre">pre:              공백을 있는 그대로 표시하고 영역을 넘어가는 내용의 줄을 바꾸지 않는다(한줄로 표시).</p>
+    <p class="pre-line">pre-line:    공백을 하나로 표시하고 자동 줄바꿈, 줄바꿈 테스트를 위해서 내용을 많이 표시했습니다. </p>
+    <p class="pre-wrap">pre-wrap:    공백을 있는 그대로 표시하고 자동 줄바꿈, 줄바꿈 테스트를 위해서 내용을 많이 표시했습니다.
+    </p>
+</body>
+</html>

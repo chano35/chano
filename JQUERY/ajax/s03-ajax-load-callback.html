@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax - load</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        /*
+         * $(요소선택).load(url, data, callback)
+         *  - url      : 서버 주소
+         *  - data     : 서버에 전송할 데이터
+         *  - callback : 서버에 전송이 완료되면 실행될 함수
+         */
+        $(function() {
+            /* 해당하는 url 주소에서 데이터를 가져와서 해당하는 위치에 삽입
+             */
+            var url = "s02-ajax-load-data.html";    /* 요청할 서버 주소 */
+            var pos = "#content-data";              /* 삽입할 위치 */
+            var fullurl = url + " " + pos;
+            $("#content").load(fullurl); 
+        });
+    </script>
+</head>
+<body>
+    <h2>ajax - load</h2>
+    <hr>
+    <h4>load data</h4>
+    <div id="content"></div>
+</body>
+</html>

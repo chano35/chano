@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio MP3 Player</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>video tag - 비디오 파일 삽입</h1>
+    <p><b>source</b> 태그는 여러 미디어 파일을 지정하여 브라우저에서 재생할 파일을 선택한다.
+        브라우저가 지원하는 미디어 포맷을 선택한다.
+    </p>
+    <p><b>type</b> 속성은 웹 브라우저가 해당 미디어 파일을 재생할 수 있는지 여부를 확인할 수 있도록
+        미디어 파일의 유형을 알려 준다.
+    </p>
+    <hr>
+    <video controls autoplay loop poster="images/video.png">
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.webm" type="video/webm">
+        <source src="media/video.ogv" type="video/ogg">
+    </video>
+</body>
+</html>

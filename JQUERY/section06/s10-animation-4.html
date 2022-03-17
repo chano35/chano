@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        /*
+         * queue() 큐에 사용자 정의 함수를 추가하거나 큐에 대기중인 함수를 배열에 담아서 반환, 애니메이션 효과는 모두 취소
+         * dequeue() 큐(queue)에 의해서 제거 되고 있는 애니메이션의 메서드의 제거를 막음
+         * queue()와 dequeue()를 사용하여 계속해서 애니메이션이 적용 됨
+         */
+        $(function() {
+            $(".txt").animate({ marginLeft: "400px" }, 100)
+                .queue(function() {
+                    $(this).css({ background: "yellow"});
+                    $(this).dequeue();  
+                })
+                .animate({ marginTop: "400px"}, 1000)
+                .queue(function() {
+                    $(this).css({ background: "orange"});
+                    $(this).dequeue();
+                })
+                .animate({ marginLeft: 0}, 1000)
+                .queue(function() {
+                    $(this).css({ background: "red"});
+                    $(this).dequeue();
+                })
+                .animate({ marginTop:  0}, 1000);
+        });
+    </script>
+
+    <style>
+        * { margin: 0; }
+        .txt {
+            width:80px;
+            text-align: center;
+            background-color: deepskyblue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p class="txt">애니</p>
+</body>
+</html>

@@ -1,0 +1,5 @@
+section {
+    width: 300px;   /* 너비 */
+    padding: 15px;  /* 테두리와 내용 사이의 여백 */
+    border:5px solid rgb(143, 165, 46); /* 테두리의 스타일 */
+}

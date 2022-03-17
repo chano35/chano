@@ -1,0 +1,13 @@
+https://fonts.google.com/specimen/Nanum+Gothic?query=Nanum
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+</style>
+
+
+font-family: 'Nanum Gothic', sans-serif;

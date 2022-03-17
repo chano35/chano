@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Timeout</title>
+    <script>
+        /*
+         * setTimeout()
+         * 1. 지정된 시간이 되면 등록된 함수의 코드를 실행하고 종료
+         * 2. 한 번만 실행한다.
+         * 3. 시작
+         *    var 타임아웃변수 = setTimeout(실행함수, 시간간격); // 밀리초(1000분의 1초)
+         * 4. 종료
+         *    clearTimeout(타임아웃변수)
+         * 5. 사용예
+         *    - 알람(자명종)
+         *    - 예약작업
+         */
+
+        var sumfunc = null;
+
+        (function() {
+            if(sumfunc != null) {
+                return;
+            }
+
+            console.log("*** 작업등록 ***");
+
+            var sum = 0;
+            sumfunc = setTimeout(function() { // 5초(5000ms)후에 실행
+                console.log(">>> 작업시작 <<<");
+                for(var cnt=1; cnt<=10; cnt++) {
+                    sum += cnt;
+                }
+                console.log("sum=", sum);
+            }, 5000);
+        })();
+
+        function stopWorking() {
+            console.log(">>> 작업취소 <<<");
+            clearTimeout(sumfunc);
+            sumfunc = null;
+        }
+    </script>
+</head>
+<body>
+    <h2>타입아웃(timeout) 테스트</h2>
+    <button onclick="stopWorking()">작업취소</button>
+</body>
+</html>

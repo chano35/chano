@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../common/menu.css">
+    <link rel="stylesheet" type="text/css" href="../common/main.css">
+
+    <title>Samsung Lions</title>
+    <script src="../js/jquery.js"></script>
+    <script>
+        var isAppend = false;
+
+        function more() {
+            if (isAppend === false) {
+                $("#contianer").append('<a href="#" onclick="popupOpne(\'https://www.samsunglions.com/upload/player/A0399_player_img_square(2).JPG\',\'원태인\',\'지난 시즌 신인 선수들의 활약을 이어갈 주인공\')"> <img src="https://www.samsunglions.com/upload/player/A0399_player_img_square(2).JPG"></a>');
+                $("#contianer").append('<a href="#" onclick="popupOpne(\'https://www.samsunglions.com/upload/player/A0361_player_img_square(3).JPG\',\'양창섭\',\'삼성 라이온즈 마운드의 희망\')"> <img src="https://www.samsunglions.com/upload/player/A0361_player_img_square(3).JPG"></a>');
+                $("#contianer").append('<a href="#" onclick="popupOpne(\'https://www.samsunglions.com/upload/player/A0281_player_img_square(5).JPG\',\'김대우\',\'마운드의 허리를 지키는 잠수함 투수\')"> <img src="https://www.samsunglions.com/upload/player/A0281_player_img_square(5).JPG"></a>');
+                isAppend = true
+                $("#btn_more").hide()
+            }
+        }
+
+        function popupOpne(imgPath, name, info) {
+            $('#popupView').fadeIn(350);
+            $('#popup-img').attr("src", imgPath)
+            $('#popup-name').text(name)
+            $('#popup-content').text(info);
+
+        }
+
+        function popupClose() {
+            $('#popupView').fadeOut(350);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="tab_menu">
+        <div class="logo_img_box">
+            <a href="./Pitcher.html" class="btn"><img class="logo_img" src="../common/images/samsung_logo.png" /></a>
+        </div>
+        <ul class="list">
+            <li class="is_on">
+                <a href="#" class="btn">Pitcher</a>
+            </li>
+            <li>
+                <a href="./Hitter.html" class="btn">Hitter</a>
+            </li>
+            <li>
+                <a href="./Coach.html" class="btn">Coach</a>
+            </li>
+        </ul>
+    </div>
+    <h5>이미지를 클릭하면 선수 정보를 확인할 수 있습니다.</h5>
+    <div class="content">
+
+        <div class="container" id="contianer">
+
+            <a href="#" onclick="popupOpne('https://www.samsunglions.com/upload/player/A0432_player_img_square(3).JPG','오승환','끝판왕 오승환, 삼성라이온즈 복귀')">
+                <img src="https://www.samsunglions.com/upload/player/A0432_player_img_square(3).JPG">
+            </a>
+            <a href="#" onclick="popupOpne('https://www.samsunglions.com/upload/player/A0334_player_img_square(6).JPG','우규민','최정상급 제구력을 갖춘 마운드의 새 주인공')">
+                <img src="https://www.samsunglions.com/upload/player/A0334_player_img_square(6).JPG">
+            </a>
+            <a href="#" onclick="popupOpne('https://www.samsunglions.com/upload/player/77446_player_img_square(9).JPG','백정현','큰 무대에 강한 그를 주목하라')">
+                <img src="https://www.samsunglions.com/upload/player/77446_player_img_square(9).JPG">
+            </a>
+            <a href="#" onclick="popupOpne('https://www.samsunglions.com/upload/player/A0195_player_img_square(6).JPG','장필준','삼성 라이온즈 마운드의 히든 카드')">
+                <img src="https://www.samsunglions.com/upload/player/A0195_player_img_square(6).JPG">
+            </a>
+            <a href="#" onclick="popupOpne('https://www.samsunglions.com/upload/player/A0433_player_img_square(2).JPG','뷰캐넌','안정적인 제구력을 갖춘 땅볼 유도형 투수')">
+                <img src="https://www.samsunglions.com/upload/player/A0433_player_img_square(2).JPG">
+            </a>
+            <a href="#" onclick="popupOpne('https://www.samsunglions.com/upload/player/A0462_player_img_square.jpg','수아레즈','속구 강점이며 다양한 구종과 안정된 제구력')">
+                <img src="https://www.samsunglions.com/upload/player/A0462_player_img_square.jpg">
+            </a>
+
+        </div>
+        <div class="popup" data-popup="example" id="popupView">
+            <div class="popup-inner">
+                <div class="popup-contents">
+                    <a class="popup-close" data-popup-close="example" href="#" onclick="popupClose()">X</a>
+                    <div style="width:100%; text-align: center;">
+                        <img id="popup-img" alt="NoImage" style="display: inline-block; margin: auto 0;" />
+                    </div>
+                    <div id="popup-name" style="font-weight: bold;"> </div>
+                    <div id="popup-content"> </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn_more" id="btn_more" onclick="more()"> more </button>
+    </div>
+
+
+</body>
+
+
+</html>

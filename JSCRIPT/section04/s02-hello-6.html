@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <script>
+        function hello(str, ver) {
+            return str +  '-' + ver;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var ver5  = hello('javascript', 5);
+        var ver51 = hello('javascript', 5.1);
+        var ver52 = hello('javascript', '5.x');
+
+        document.write(ver5, '<br>');
+        document.write(ver51, '<br>');
+        document.write(ver52, '<br>');
+
+    </script>
+
+    
+</body>
+</html>

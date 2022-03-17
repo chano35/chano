@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In Function</title>
+</head>
+<body>
+    <h1>Built-In Function - Number()</h1>
+    <p>Number(문자열) : 문자열을 숫자형(정수형,실수형) 데이터로 변환해서 리턴</p>
+    <p>숫자 = Number(문자열)</p>
+    <script>
+        var sf = "123.567";
+        var si = "12345";
+        var px = "150.12px";    // 변환하지 못함
+        var nn = "px140";       // 변환하지 못함
+
+        document.write(sf, ', Number ->', Number(sf), '<br>');
+        document.write(si, ', Number ->', Number(si), '<br>');
+        document.write(px, ', Number ->', Number(px), '<br>');  // NaN
+        document.write(px, ', parseFloat ->', parseFloat(px), '<br>');
+        document.write(nn, ', Number ->', Number(nn), '<br>');
+    </script>
+    
+</body>
+</html>

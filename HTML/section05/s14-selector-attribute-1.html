@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        ul { /* 태그 선택자 */
+            list-style: none; 
+        }
+
+        li { /* 태그 선택자 */
+            width: 100px;
+            margin: 5px;
+            /*display: inline-block; */
+        }
+
+        li a { /* 하위 선택자 */
+            padding: 5px 10px;
+            font-size: 14px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        a[href] { /* 속성 선택자(a 태그의 href 속성을 선택) */
+            background: rgb(121, 150, 168);
+        }
+    </style>
+</head>
+<body>
+    <h1>속성 선택자(Attribute Selector)</h1>
+    <h3>속성 선택자는 지정한 속성에 스타일을 적용</h3>
+    <hr>
+    <ul>
+        <li><a>메인 메뉴</a></li>
+        <li><a href="#">파일메뉴</a></li>
+        <li><a href="#">편집메뉴</a></li>
+        <li><a href="#">보기메뉴</a></li>
+        <li><a href="#">도움말메뉴</a></li>
+    </ul>
+    
+</body>
+</html>

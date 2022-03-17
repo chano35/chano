@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 </title>  
+<script src="js/jquery.js"></script>
+<script>
+$(function() {
+	$(".menu-main a").on("click", function(e) {
+		e.preventDefault();
+
+		$(".menu-main a").css({"background-color":"#fff"});
+
+		/*
+		 * $(this) 선택자는 이벤트가 발생한 소요
+		*/
+		$(this).css({"background-color":"#ff0"});
+	});
+
+	$(".menu-help a").on("click", function(e) {
+		e.preventDefault();
+
+		$(".menu-help a").css({"background-color":"#fff"});
+
+		/*
+		 * index() 이벤트를 등록한 요소 중 이벤트가 발생한 요소의 인덱스 값
+		*/
+		var idx = $(".menu-help a").index(this);
+		$(".menu-help a").eq(idx).css({"background-color":"#0ff"});
+		
+		$(".idx-menu-help").text("메뉴인덱스:" + idx);
+	});
+});
+</script>
+</head>
+<body>
+	<h2>$(this)</h2>
+	<ul class="menu-main">
+		<li><a href="#">파일</a></li>
+		<li><a href="#">편집</a></li>
+		<li><a href="#">보기</a></li>
+		<li><a href="#">실행</a></li>
+	</ul>
+	<h2>Index(x)</h2>   
+	<ul class="menu-help">
+		<li><a href="#">도움말</a></li>
+		<li><a href="#">가이드</a></li>
+		<li><a href="#">온라인</a></li>
+	</ul>
+	<p class="idx-menu-help"></p>
+</body>
+</html>

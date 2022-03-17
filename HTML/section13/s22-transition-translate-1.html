@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .trx {
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+
+        .trx:hover {
+            transform: translateX(60px); /* x축으로 60px 이동 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition - translate</h1>
+    <hr>
+    <div class="org">
+        <div class="trx">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+</body>
+</html>

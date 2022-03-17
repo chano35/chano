@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문(for)</title>
+</head>
+<body>
+    <h1>반복문(for)</h1>
+    <p>for(초깃값; 조건식; 증감식) { ... }</p>
+    <label>처리순서</label>
+    <ol>
+        <li>초깃값</li>
+        <li>조건식</li>
+        <li>코드블럭</li>
+        <li>증감식</li>
+        <li>조건식</li>
+        <li>코드블럭</li>
+        <li>...</li>
+    </ol>
+    <hr>
+    <script>
+        /*
+        // 1부터 10까지 수에서 홀수의 합
+        */        
+        var s = 0;
+        var m = 10;
+        for(var n=1; n <= m; n += 2) { // 1,3,5,7,9
+            s += n;
+        }
+
+        document.write("1부터 ", m, "까지의 수중에서 홀수의 합은 ", s);
+    </script>
+</body>
+</html>

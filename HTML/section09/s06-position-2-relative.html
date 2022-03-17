@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .m1 {
+            float:left;
+            width: 200px;
+            background: yellowgreen;
+            /*margin-right: 20px;*/
+            padding: 20px;
+        }
+
+        .m2 {
+            position: relative;
+            left: 40px; /* 기준이 되는 이전 요소로부터 왼쪽으로 40px 이동 */
+            top: 40px;  /* 기준이 되는 이전 요소로부터 아래로 40px 이동 */
+            float:left;
+            width: 200px;
+            background:violet;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+        .m3 {
+            position: relative;
+            top: 40px;  /* 기준이 되는 이전 요소로부터 아래로 40px 이동 */
+            float:left;
+            width: 200px;
+            background:turquoise;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>relative</h1>
+    <p>나열한 순서대로 배치하며 top, left, right, bottom 속성을 사용할 수 있다.
+        또는 좌표값을 사용해서 위치를 지정할 수 있다.
+    </p>
+    <hr>
+    <div class="m1">디비전1</div>
+    <div class="m2">디비전2</div>
+    <div class="m3">디비전3</div>
+</body>
+</html>

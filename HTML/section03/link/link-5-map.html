@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Tag</title>
+</head>
+<body>
+    <h3>맵 태그</h3>
+    <hr>
+    <p>맵 태그는 하나의 이미지에 여러 개의 링크를 걸 수 있다.
+        이미상에 클릭 위치에 따라서 서로 다른 링크가 열리도록 한다.<br>
+        coords 사각형 좌표 : left-x, left-top, right-x, right-y
+    </p>
+    <hr>
+    <img src="images/korea.jpg" usemap="#korea" width="400" height="400">
+    <map name="korea">
+        <area shpae="rect" coords="0,0,400,200" href="https://www.naver.com" target="_blank">
+        <area shpae="rect" coords="0,200,400,400" href="https://www.daum.net" target="_blank">
+    </map>
+</body>
+</html>

@@ -1,0 +1,157 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.container {
+    /*    height: 1000px;*/
+}
+
+h1 {
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 60px;
+}
+
+h2 {
+    margin: 0px;
+}
+
+
+h4 {
+    margin: 0px;
+    font-size: 18px;
+}
+
+p {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-box {
+    width: 30%;
+    height: 500px;
+    float: left;
+    position: sticky;
+    top: 10px;
+
+}
+
+.sticky {
+    top: 10px;
+    position: sticky;
+}
+
+.nav-letter {
+    margin-left: 30px;
+}
+
+
+.category {
+    margin-top: 90px;
+}
+
+.category li {
+    list-style: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: transform 0.5s;
+
+
+}
+.category li:hover{
+    transform: translateX(5px);
+}
+
+.category a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+.sub-li li {
+    list-style-type: circle;
+    margin-left: 10px;
+    transition: transform 0.5s;
+
+}
+.sub-li li:hover{
+    transform: translateX(5px);
+}
+
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: grey;
+}
+
+
+
+.main-box {
+    width: 70%;
+    height: 2000px;
+    float: right;
+    background: rgb(211, 211, 211, 0.5);
+}
+
+.main-div {
+    float: left;
+    width: 50%;
+}
+
+
+
+.main-letter {
+    margin-top: 40px;
+    margin-left: 90px;
+    font-family: 'Gowun Dodum', sans-serif;
+
+}
+
+.main-size {
+    width: 80%;
+    margin-left: 70px;
+        transition: transform 0.5s;
+
+}
+.main-size:hover{
+    transform: translateY(-5px);
+
+}
+
+
+.main-navbar li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 40px;
+
+}
+#description{
+    float:left;
+}
+
+
+#description-p {
+/*    display: none;*/
+    float:right;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.box-margin {
+    margin-bottom: 50px;
+}
+
+
+.clear-box {
+    clear: both;
+}
+

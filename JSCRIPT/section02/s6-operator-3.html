@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>복합 대입 연산자</title>
+</head>
+<body>
+    <h1>자바스크립트 연산자</h1>
+    <p>복합대입 연산자: +=, -=, *=, /=, %=</p>
+    <hr>
+    <script>
+        var a = 10;
+        var b = 3;
+
+        document.write('        a : ', a, '<br>');
+        document.write('        b : ', b, '<br>');
+
+        a += b; // 더해서 대입(a = a + b)
+        document.write('(a += b) : ', a, '<br>');
+
+        a -= b; // 빼서 대입(a = a - b)
+        document.write('(a -= b)   : ', a, '<br>');
+
+        a *= b; // 곱해서 대입(a = a * b)
+        document.write('(a *= b) : ', a, '<br>');
+        
+        a /= b; // 나눠서 대입(a = a / b)
+        document.write('(a /= b) : ', a, '<br>');
+        
+        a %= b; // 나눈 후 나머지 대입(a = a % b)
+        document.write('(a %= b) : ', a, '<br>');
+
+    </script>
+    
+</body>
+</html>

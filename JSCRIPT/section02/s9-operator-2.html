@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항 조건 연산자</title>
+</head>
+<body>
+    <h1>삼항 조건 연산자</h1>
+    <p>기준체중 = (본인신장 - 100) * 0.9</p>
+    <p>기준체중에 10보다 작으면 '체중미달'.
+        기준체중에 10보다 크면 '과체중'</p>
+    <p>삼항 조건 연산자를 사용하여 신장과 몸무게를
+        변수로 받아서 적정 체중인지 판단하라.
+        (적정체중, 체중미달, 과체중)
+    </p>
+    <hr>
+    <script>
+        var height = 170; // cm
+        // var weight = 52;
+        // var weight = 80;  // kg
+        // var weight = 53;  // kg
+        var weight = 73;  // kg
+
+        var normal = (height - 100) * 0.9; // 기준체중
+
+        var underweight = normal - 10; // 체중미달
+        var overweight = normal + 10;  // 과체중
+
+        var result = (weight < underweight) ? "체중미달" :
+                     (weight > overweight) ? "과체중" : "정상체중";
+ 
+        document.write("height=", height, 'cm<br>');
+        document.write("weight=", weight, 'kg<br>');
+        document.write("normal=", normal, '<br>');
+        document.write("underweight=", underweight, '<br>');
+        document.write("overweight=", overweight, '<br>');
+        document.write("result=", result, '<br>');
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+</head>
+<body>
+    <h2>AddEventListener</h2>
+    <hr>
+    <form id="form">
+        <label>입력필드: <input type="text"></label>
+        <br><br>
+        <button type="submit">서버전송</button>
+    </form>
+    <p id="log"></p>
+
+    <script>
+        function logSubmit(event) {
+            // log.textContent = 'logsubmit: ' + event.timeStamp;
+            // console.log('logsubmit: ' + event.timeStamp);
+            alert('logsubmit: ' + event.timeStamp);
+        }
+
+        var form = document.getElementById('form');
+        var log = document.getElementById('log');
+        form.addEventListener('submit', logSubmit);
+    </script>
+
+</body>
+</html>

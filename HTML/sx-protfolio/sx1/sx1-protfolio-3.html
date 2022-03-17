@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Example</title>
+    <style>
+        .devel-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .devel-list li {
+            position: relative;
+            float: left;
+            padding: 0;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .devel-list img {
+            margin: 0;
+            padding: 0;
+            float: left;
+            z-index: 5;
+        }
+
+        .devel-list .caption {
+            position: absolute;
+            /*top:200px; */
+            width: 300px;
+            height: 200px;
+            padding-top: 20px;
+            background: rgba(0,0,0,0.6);
+            /*opacity: 0; */
+            opacity: 1;
+            z-index : 10;
+        }
+
+        .devel-list .caption h1, .devel-list .caption p {
+            color: #fff; /* while */
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>개발자 과정</h1>
+    <div id="container">
+        <ul class="devel-list">
+            <li>
+                <img src="../images/image2.jpg">
+                <div class="caption">
+                    <h1>과정1</h1>
+                    <p>자바과정</p>
+                    <p>자바언어 : 자바언어기초, 응용, 활용</p>
+                </div>
+            </li>
+
+            <li>
+                <img src="../images/image3.jpg">
+                <div class="caption">
+                    <h1>과정2</h1>
+                    <p>데이터베이스</p>
+                    <p>오라클 : SQL, PL/SQL 응용 및 활용</p>
+                </div>
+            </li>
+
+            <li>
+                <img src="../images/image4.jpg">
+                <div class="caption">
+                    <h1>과정3</h1>
+                    <p>HTML</p>
+                    <p>HTML : HTML, CSS, 자바스크립트</p>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</body>
+</html>

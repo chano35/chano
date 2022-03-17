@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="baselayout" template="/WEB-INF/views/common/layout.jsp">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"/>
+		<put-attribute name="side" value="/WEB-INF/views/common/side.jsp"/>
+		<put-attribute name="body" value=""/>
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"/>
+	</definition>
+	
+	<definition name="main" extends="baselayout">
+		<put-attribute name="title" value="메인 페이지"/>
+		<put-attribute name="body" value="/WEB-INF/views/main.jsp"/>
+	</definition>
+
+	<definition name="/user/loginform" extends="baselayout">
+		<put-attribute name="title" value="로그인 폼"/>
+		<put-attribute name="body" value="/user/loginform.jsp"/>
+	</definition>
+
+	<definition name="/user/login" extends="baselayout">
+		<put-attribute name="title" value="로그인 확인"/>
+		<put-attribute name="body" value="/user/login.jsp"/>
+	</definition>
+	
+	<definition name="/user/logout" extends="baselayout">
+		<put-attribute name="title" value="로그아웃 확인"/>
+		<put-attribute name="body" value="/user/logout.jsp"/>
+	</definition>
+	
+	<definition name="/user/memberlist" extends="baselayout">
+		<put-attribute name="title" value="회원정보"/>
+		<put-attribute name="body" value="/user/memberList.jsp"/>
+	</definition>
+	
+	<definition name="/user/memberview" extends="baselayout">
+		<put-attribute name="title" value="회원상세정보"/>
+		<put-attribute name="body" value="/user/memberView.jsp"/>
+	</definition>
+
+	<definition name="/user/memberedit" extends="baselayout">
+		<put-attribute name="title" value="회원정보수정"/>
+		<put-attribute name="body" value="/user/memberEdit.jsp"/>
+	</definition>
+
+	<definition name="/user/memberform" extends="baselayout">
+		<put-attribute name="title" value="회원정보입력"/>
+		<put-attribute name="body" value="/user/memberForm.jsp"/>
+	</definition>
+	
+</tiles-definitions>

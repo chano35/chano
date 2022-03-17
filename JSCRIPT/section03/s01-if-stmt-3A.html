@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(if)</title>
+</head>
+<body>
+    <h1>조건문(if)</h1>
+    <hr>
+    <p>조건식에 논리형 데이터가 아닌 다른 데이터 형이 오는 경우,
+        조건식이 참이 아닌경우, 조건식이 false가 되는 경우</p>
+    <ul>
+        <li>숫자 0인 경우</li>
+        <li>빈문자열(''), ("")</li>
+        <li>null인 경우</li>
+        <li>undefined 경우</li>
+    </ul>
+    <hr>
+    <script>
+        document.write("조건식이 거짓인 경우", '<br>');
+
+        var zero = 0;
+        if(!zero) {
+            document.write("zero=", zero, '<br>');
+        }
+
+        var empty = '';
+        if(!empty) {
+            document.write("empty=", empty, '<br>');
+        }
+
+        var nullval = null;
+        if(!nullval) {
+            document.write("null=", nullval, '<br>');
+        }
+
+        var unval;  // undefined
+        if(!unval) {
+            document.write("undefined=", unval, '<br>');
+        }
+    </script>
+</body>
+</html>

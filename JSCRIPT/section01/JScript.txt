@@ -1,0 +1,39 @@
+1. C/C++ -> 컴파일 -> 실행모듈 -> 독립적으로 실행
+   - 시스템 프로그램
+   - 핵심 모듈
+   - 영상처리
+   - 디바이스 드라이버
+   - 커널
+   - IoT 핵심 모듈
+   - 개발용 툴
+   - 개발용 라이브러리(API)
+   - 프레임워크
+   - 데이터베이스 엔진
+   - 자바스크립트 엔진
+   - 웹브라우 개발
+   - 인공지능(엔진, 알고리즘, 프레임워크)
+   - 네이버, 카카오, 삼성, 모비스, SKT
+   - 응용프로그래머는 다른 언어 개발자와 차이가 없다.
+     -> 생산성이 나오지 않기 때문에 파이썬
+	 -> 자바
+	 -> 자바스크립트
+   
+
+2. 자바(Java) -> 컴파일 -> 바이트코드 -> JVM이 실행
+
+3. 자바스크립트(Java Script)
+   - 프론트엔드(Front-End) 개발에 사용되는 스크립트 언어
+   - 인터프리터 방식의 언어, 인터프리터 
+   - 자바스크립트 인터프리터 엔진(JIT)
+     -> Google : V8
+     -> Apple : JavaScriptCore
+   - Web Browser에 자바스크립트 엔진이 탑재
+     -> Chrome, Microsoft-Edge
+	 -> Safari
+	 -> Firefox
+	 -> Opera
+   - Web Assembly(C/C++ -> 웹어셈블리코드 -> WebBrowser)
+   - 백엔드(Back-End)
+     -> Node.js(JavaScript)
+   - Web(WebBrowser, HTML, DOM, CSS, JS)
+   - DOM(Document Object Model)

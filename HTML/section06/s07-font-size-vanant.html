@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Variant</title>
+    <style>
+        h3.normal { font-variant: normal; }
+        h3.small-caps { font-variant: small-caps; }
+        .accent-caps { font-variant: small-caps; }
+    </style>
+</head>
+<body>
+    <h2>Font Variant는 소문자를 소문자의 크기에 맞춰서 대문자로 출력(작은 대문자)</h2>
+    <label>font-variant 속성값</label>
+    <ul>
+        <li>normal: 기본값</li>
+        <li>small-caps: 작은 대문자</li>
+    </ul>
+    <hr>
+    <h3>font-variant</h3>
+    <h3 class="normal">영문 대문자 abcdefg</h3>
+    <h3 class="small-caps">영문 작은 대문자 Abcdefg</h3>
+    <h3>abcdefg<span class="accent-caps">Abcdefg</span></h3>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+		<!--
+		<property name="prefix" value="/user/" />
+		<property name="suffix" value=".jsp" />
+		-->
+	</bean>
+
+	<!--  login.do -->	
+	<bean id="loginServiceController" class="com.services.login.LoginServiceController">
+		<property name="methodNameResolver" ref="loginMethodNameResolver">
+		</property> 
+	</bean>
+	
+	<bean id="loginMethodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<prop key="/user/login.do">login</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- login, member -->
+	<bean id="serviceUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="/user/login.do">loginServiceController</prop>
+				<prop key="/user/*.do">memberServiceController</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!--  member -->
+	<bean id="memberService" class="com.member.service.MemberServiceImpl">
+		<property name="memberDAO" ref="memberDAO" />
+	</bean>
+	
+	<bean id="memberServiceController" class="com.member.controller.MemberServiceController">
+		<property name="methodNameResolver" ref="userMethodNameResolver"/>
+		<property name="memberService" ref="memberService"/>
+	</bean>
+
+	<bean id="userMethodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+		<property name="mappings">
+			<props>
+				<prop key="/user/memberinsert.do">insertMember</prop>
+				<prop key="/user/memberdelete.do">deleteMember</prop>
+				<prop key="/user/memberupdate.do">updateMember</prop>
+				<prop key="/user/memberview.do">viewMember</prop>
+				<prop key="/user/memberedit.do">editMember</prop>
+				<prop key="/user/memberlist.do">listMember</prop>
+			</props>
+		</property>
+	</bean>
+
+
+</beans>

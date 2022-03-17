@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - type</title>
+</head>
+<body>
+    <h3>입력 태그 - 타입(checkbox)</h3>
+    <hr>
+    <p>입력 태그의 타입(checkbox)은 여러 항목중에서 원하는
+        여러 항목을 선택할 때 사용하는 타입이다.</p>
+    <ul>
+        <li>관련된 속성(checked)는 선택 유무를 표시한다.</li>
+    </ul>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>수업과목</legend>
+            <p>원하는 모든 과목을 복수로 선택하세요</p>
+            <label><input type="checkbox" name="subject_java" value="java">자바</label>
+            <label><input type="checkbox" name="subject_cpp" value="c++" checked="true">C++</label>
+            <label><input type="checkbox" name="subject_go" value="go">Go</label>
+        </fieldset>
+    </form>
+</body>
+</html>

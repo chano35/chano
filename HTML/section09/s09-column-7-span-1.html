@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단 편집</title>
+    <style>
+        .multi-col {
+            column-count: 4;
+            column-gap: 20px;
+            column-rule: 2px dashed grey;
+            background:rgb(231, 229, 229);
+        }
+
+        .multi-span {
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    <h2>column-span - 여러 단을 하나로 합치기</h2>
+    <p>column-span : 1 | all</p>
+    <ul>
+        <li>1 : 기본값, 단을 하나만 합치므로 합치지 않는 것과 같다.</li>
+        <li>all : 전체 단을 하나로 통합한다.</li>
+    </ul>
+    <hr>
+    <h2>개발자 코스</h2>
+    <h3>자바웹 과정</h3>
+    <p>자바웹 과정을 풀 스텍과정으로 자바를 기반으로 HTML을 포함한 프론트엔드 과정과
+        JAVA 언어를 기반으로한 백엔드 과정으로 구성되어 있습니다.
+    </p>
+    <div class="multi-col">
+        <h3>자바언어</h3>
+        <p>자바언어는 업무용 프로그램밍을 위한 기본으로 데이터 처리에 최적화된 언어이다.</p>
+        <h3>데이터베이스</h3>
+        <p>데이터베이스는 데이터 처리를 위한 DBMS 과정으로 오라클과 같은 데이터베이스 시스템을 학습하는 과정이다.</p>
+        <h3>HTML</h3>
+        <p>HTML은 웹을 위한 마크업 언어로서 사용자 인터페이스를 제공하는 방법을 학습하는 과정이다.</p>
+        <div class="multi-span">
+            <h3>포트폴리오</h3>
+            <p>포트폴리오는 위의 전 과정을 총정리하는 프로젝트로서 자신이 배운 것을 프로젝트를 통해서 검증하기 위한 과정이다.</p>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

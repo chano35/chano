@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In Function</title>
+</head>
+<body>
+    <h1>Built-In Function - parseInt()</h1>
+    <p>parseInt(문자열) : 문자열을 정수형 데이터로 변환해서 리턴</p>
+    <p>정수 = parseInt(문자열)</p>
+    <script>
+        var str = "123.567";
+        var px = "150px";
+        var px2 = "px150";
+        
+        var num = parseInt(str);    // 소숫점 이하는 잘림
+        document.write(str, '->', num, '<br>');
+        document.write(str, '->', nm2, '<br>');
+
+        var npx = parseInt(px);     // 앞에 있는 숫자만 추출해서 정수로 변환
+        var npx2 = parseInt(px2);   // 앞에 있는 문자가 나오면 변환을 하지 못함(NaN, Not a Number)
+
+        document.write(px2, '->', npx2, '<br>'); // NaN
+        document.write(px2, '->', isNaN(px2), '<br>');
+        document.write(npx2, '->', isNaN(npx2), '<br>');
+    </script>
+    
+</body>
+</html>

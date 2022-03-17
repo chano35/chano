@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        /*
+        $(function() { 
+            $("#p2").removeClass("green");
+            $("#p4").removeClass("blue");
+        });
+        */
+
+        function removeClass() {
+            $("#p2").removeClass("green");
+            $("#p4").removeClass("blue");
+        }
+    </script>
+
+    <style>
+        .red { background-color: red;}
+        .green { background-color: green;}
+        .blue { background-color: blue;}
+        .blueviolet { background-color: blueviolet;}
+    </style>
+
+</head>
+<body>
+    <h1>객체 조작 - removeClass</h1>
+    <p>클래스 삭제</p>
+    <hr>
+    <div>
+        <p id="p1">주요내용1</p>
+        <p id="p2" class="green">주요내용2</p>
+        <p id="p3">주요내용3</p>
+        <p id="p4" class="blue">주요내용4</p>
+        <p id="p5">주요내용5</p>
+        <p id="p6" class="blueviolet">주요내용6</p>
+        <p id="p7">주요내용7</p>
+    </div>
+    <button onclick="removeClass();">클래스삭제</button>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Class - Struct</title>
+    <style>
+        .container {
+            /*text-align: center; */
+            color: #2c2c2c;
+        }
+
+        table {
+            width: 400px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table, td {
+            border: 1px solid #ccc;
+        }
+
+        table tr:nth-child(2n + 1) { /* table에서 홀수 번째로 나타나는 자식요소 tr에 스타일 적용 */
+            background: lightgrey;
+            color: black;
+        }
+
+        table tr:nth-child(2n) { /* table에서 짝수 번째로 나타나는 자식요소 tr에 스타일 적용 */
+            background:cadetblue;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>구조 가상 클래스</h1>
+    <p>웹 문서 구조(DOM)를 기준으로 특정 위치에 있는 요소를 찾아서 스타일을 지정</p>
+    <hr>
+    <div class="container">
+        <h2>프로그래밍 과정</h2>
+        <table>
+            <tr>
+                <td>자바</td>
+                <td>범용 업무용 프로그래밍 언어</td>
+            </tr>
+            <tr>
+                <td>C/C++</td>
+                <td>시스템 프로그래밍 언어</td>
+            </tr>
+            <tr>
+                <td>DBMS</td>
+                <td>데이터베이스 시스템</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>웹 서비스를 위한 마크업 언어</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>디자인 제용을 위한 스타일 언어</td>
+            </tr>
+            <tr>
+                <td>파이선</td>
+                <td>빅데이터 처리를 위한 범용 언어</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

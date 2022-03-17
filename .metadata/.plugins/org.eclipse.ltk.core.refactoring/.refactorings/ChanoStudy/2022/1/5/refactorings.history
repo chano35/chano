@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ThreadTest.java&apos; to &apos;study06.ch20.ThreadTest.java&apos;&#x0D;&#x0A;- Original project: &apos;ChanoStudy&apos;&#x0D;&#x0A;- Destination element: &apos;study06.ch20.ThreadTest.java&apos;&#x0D;&#x0A;- Original element: &apos;study06.ch20.ThreadTest.java&apos;" description="Copy compilation unit" destination="/src&lt;study06.ch20{ThreadTest.java" element1="/src&lt;study06.ch20{ThreadTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1643033877732" units="1" version="1.0"/>
+</session>

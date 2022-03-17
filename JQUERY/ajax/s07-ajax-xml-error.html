@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax - ajax</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* xml */
+            $.ajax({
+                url : "data/s06-ajax-xml-error.xml",
+                dataType: "xml",
+                success : function(data) {
+                    var $data = $(data).find("record");
+
+                    if($data.length <= 0) {
+                        return;
+                    }
+
+                    var table = $("<table />");
+
+                    $.each($data, function(idx, obj) { /* XML에서 record */
+                        console.log("idx=", idx, "obj=", obj);
+
+                        var $id = $(obj).find("id").text();
+                        var $first_name = $(obj).find("first_name").text();
+                        var $last_name = $(obj).find("last_name").text();
+                        var $email = $(obj).find("email").text();
+                        var $gender = $(obj).find("gender").text();
+
+                        var tr = $("<tr />").append(
+                            $("<td />").text($id),
+                            $("<td />").text($first_name),
+                            $("<td />").text($last_name),
+                            $("<td />").text($email),
+                            $("<td />").text($gender)
+                        );
+
+                        table.append(tr);
+                    });
+
+                    $("#content").append(table);
+                }, /* success */
+
+                error: function() {
+                    var errmsg = $("<p />").text("통신 오류가 발생하였습니다.");
+                    $("#content").append(errmsg);
+                } /* error */
+            }); /* $.ajax(...) */
+        }); /*  $(function() */
+    </script>
+</head>
+<body>
+    <h2>ajax - ajax(...), xml</h2>
+    <hr>
+    <h4>회원목록</h4>
+    <div id="content"></div>
+</body>
+</html>

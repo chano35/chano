@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In Function</title>
+</head>
+<body>
+    <h1>Built-In Function - eval()</h1>
+    <p>eval(문자형) : 문자형에 포함된 자바스크립트 코드를 실행</p>
+    <p>리턴값은 없으며 자바스크립트 코드를 동적으로 실행한다.</p>
+    <hr>
+    <script>
+        var script = "var x = 10;";
+        script += "var y = 20;"
+        script += "var z = x + y;"
+        script += "document.write('x=', x, ', y=', y, ', z=', z, '<br>');";
+        script += "console.log('*** x=', x, ', y=', y, ', z=', z);";
+        
+        eval(script);
+    </script>
+    
+</body>
+</html>

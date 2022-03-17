@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Scope</title>
+    <script src="js/println.js"></script>
+</head>
+<body>
+    <h1>함수 스코프</h1>
+    <p>전역변수를 선언하고 함수 안에서 전역변수와 동일한 이름으로 재선언하면? <br>
+        함수 안에서 선언된 변수는 로컬변수가 되며 
+        함수의 실행이 종료되면 사라진다.
+    </p>
+    <hr>
+    <script>
+        var gval = 99;
+
+        function compute() {
+            var gval = 77; // 로컬에서 재선언
+            printlist('[compute] ', 'gval: ', gval);
+        }
+
+        compute();
+
+        printlist('[global] ', 'gval: ', gval);
+
+    </script>
+    
+</body>
+</html>

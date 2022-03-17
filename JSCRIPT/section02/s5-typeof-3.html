@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeof</title>
+</head>
+<body>
+    <h1>typeof</h1>
+    <p>데이터나 변수에 저장된 자료형 검사</p>
+    <hr>
+    <script>
+        var unval = undefined;
+        var untof = typeof(unval);
+
+        document.write('typeof(unval) : ', typeof(unval), '<br>');
+        document.write('typeof(untof) : ', typeof(untof), '<br>');
+
+        if(typeof(unval) == 'undefined') {
+            document.write("result: typeof(unval) is 'undefined'", '<br>');
+        }
+
+    </script>
+    
+</body>
+</html>

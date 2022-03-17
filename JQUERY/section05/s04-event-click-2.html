@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(".btn1").on(
+                "mouseover focus", function() {
+                    $(".btn1").parent().next().css({"color":"#f00"});
+                }
+            );
+            
+            $(".btn1").on(
+                "mouseout blur", function() {
+                    $(".btn1").parent().next().css({"color":"#000"});
+                }
+            );
+
+            $(".btn2").on(
+                "mouseover focus", function() {
+                    $(".btn2").parent().next().css({"color":"#00f"});
+                }
+            );
+            
+            $(".btn2").on(
+                "mouseout blur", function() {
+                    $(".btn2").parent().next().css({"color":"#000"});
+                }
+            );
+
+        });
+    </script>
+</head>
+<body>
+    <h1>마우스 이벤트</h1>
+    <hr>
+    <p>아래 버튼에 마우스를 이동하면 설명1의 색상이 변경됩니다.</p>
+    <p>
+        <button class="btn1">클릭1</button>
+    </p>
+    <p>설명1</p>
+    <p>
+        <button class="btn2">클릭2</button>
+    </p>
+    <p>설명2</p>
+</body>
+</html>

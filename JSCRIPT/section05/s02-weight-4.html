@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Object</title>
+    <script>
+        function Weight(name, height, weight) {
+            this.name = name;
+            this.height = height;
+            this.weight = weight;
+            this.normal = (this.height - 100) * 0.9;
+
+            this.infomation = function() {
+                document.write('이    름: ', this.name, '<br>');
+                document.write('신    장: ', this.height, '<br>');
+                document.write('몸 무 게: ', this.weight, '<br>');
+                document.write('기준체중: ', this.normal, '<br>');
+            }
+
+            this.getCheck = function() {
+                if(this.weight < (this.normal - 10)) {
+                    return -1;
+                }
+                else if(this.weight > (this.normal + 10)) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var park = new Weight('박세리', 167, 61);
+        park.infomation();
+        var resultPark = park.getCheck();
+        document.write('>> 박세리: ', 
+            (resultPark < 0) ? '체중미달' : 
+            (resultPark > 0) ? '과체중' : '정상체중', '<br>');
+
+        var lee = new Weight('이영화', 177, 80);
+        lee.infomation();
+        var resultLee = lee.getCheck();
+        document.write('>> 이영화: ', 
+            (resultLee < 0) ? '체중미달' : 
+            (resultLee > 0) ? '과체중' : '정상체중', '<br>');
+    </script>
+    
+</body>
+</html>

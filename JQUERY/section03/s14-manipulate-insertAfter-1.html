@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 선택된 요소 0번째 요소 다음에 새로운 요소를 추가 */
+            $("<p id='insert-elm'>엘리먼트1-1</p>").insertAfter("#container p:eq(0)");
+        });
+    </script>
+    <style>
+        #base-elm {
+            background-color: cadetblue;
+        }
+
+        #insert-elm {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h2>요소의 추가 - insertAfter</h2>
+    <p>선택한 요소의 다음 위치에 새 요소를 추가</p>
+    <hr>
+    <div id="container">
+        <p id="base-elm">엘리먼트1</p>
+        <p>엘리먼트2</p>
+        <p>엘리먼트3</p>
+        <p>엘리먼트4</p>
+    </div>
+</body>
+</html>

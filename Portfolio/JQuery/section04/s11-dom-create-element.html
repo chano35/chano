@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - createElement</title>
+</head>
+<body>
+    <div id="container">
+        <h1>유저 목록 생성</h1>
+        <form action="">
+            <input type="text" id="username" placeholder="이름" required>
+            <button onclick="newUsername();">신청</button>
+        </form>
+        <hr>
+        <div id="userlist"></div>
+    </div>
+
+    <script>
+        function newUsername() {
+            var p = document.createElement("p");
+            var userName = document.querySelector("#username");
+            var userText = document.createTextNode(userName.value);
+            p.appendChild(userText); // <p>userName.value</p>
+
+            var userList = document.querySelector("#userlist");
+            userlist.appendChild(p);
+            username.value = "";
+        }
+    </script>
+    
+</body>
+</html>

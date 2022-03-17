@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border - Radius</title>
+    <style>
+        div {
+            width : 400px;
+            height : 400px;
+            margin: 10px;
+        }
+
+        .border-round { /* 왼쪽 위, 오른쪽 아래를 개별적으로 지정 */
+            border: 4px solid blueviolet;
+            border-top-left-radius: 20px; /* 반지름(20px) */
+            border-bottom-right-radius: 20px; /* 반지름(20px) */
+            background:url("images/image3.jpg") no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>테두리의 모서리를 둥글게 처리</h1>
+    <p>테두리의 모서리를 둥글게 처리할 수 있다.
+        모서리의 방향과 반지름을 지정한다.
+    </p>
+    <hr>
+    <p>border-top-left-radius: 크기 | 백분율</p>
+    <p>border-top-right-radius: 크기 | 백분율</p>
+    <p>border-bottom-right-radius: 크기 | 백분율</p>
+    <p>border-bottom-left-radius: 크기 | 백분율</p>
+    <p>border-radius: 크기 | 백분율</p>
+    <hr>
+    <ul>
+        <li>크기: 둥글게 처리할 반지름의 크기(px, em, ...)</li>
+        <li>백분율: 지정된 태그의 크기를 기준으로 처리한 반지름의 비율(%)</li>
+    </ul>
+
+    <div class="border-round"></div>
+</body>
+</html>

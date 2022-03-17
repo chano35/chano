@@ -1,0 +1,27 @@
+애니메이션(Animation)
+
+
+1. HTML5(CCS3)
+   - transform : 변형함수;
+   - 변형 함수 : 2, 3차원 변형함수
+
+2. 변형(transform)
+   - 이동
+   - 회전
+   - 왜곡
+   - 2차원 변형(2D) : x, y축
+   - 3차원 변형(3D) : x, y, z축
+
+3. 변이(transition)
+   - 하나의 스타일이 다른 스타일로 완전히 바뀜
+   - 시간 조절
+   - 애니메이션 효과
+   - 모양의 변화
+   - 색상의 변화
+
+4. 트랜지션 속성
+   - transition-property : 트랜지션 대상 설정
+   - transition-duration : 트랜지션 진행 시간 설정
+   - transition-timing-function : 트랜지션 속도 곡선 설정
+   - transition-delay : 트랜지션 지연 시간 설정
+   - transition : 위 4개의 속성을 한 번에 지정

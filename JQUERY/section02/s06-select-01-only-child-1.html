@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - select</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 선택한 요소가 부모 요소에게 하나뿐인 경우 선택 */
+            $("li:only-child").css({"background-color" : "#0ff" }); /* 챗봇 */
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <p>선택한 요소가 부모 요소에게 하나뿐인 경우 선택</p>
+    <ul id="menu1">
+        <li>파일</li>
+        <li>편집</li>
+        <li>보기</li>
+        <li>실행</li>
+        <li>옵션</li>
+        <li>도움말</li>
+    </ul>
+    <ul id="menu2">
+        <li>챗봇</li>
+    </ul>
+</body>
+</html>

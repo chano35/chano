@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotate:hover {
+            transform: rotate(45deg); /* 45도 시계방향으로 회전 */
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Transform - rotate</h1>
+    <p>rotate 함수는 지정한 각도만큼 회전</p>
+    <ul>
+        <li>rotate(각도) : 2차원 함수, 각도 만큼 회전</li>
+    </ul>
+    <hr>
+    <div class="org">
+        <div class="rotate">
+            <img src="../images/image2.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

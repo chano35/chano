@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h2>배열(array)</h2>
+    <p>배열의 크기(length)를 명시적으로 변경할 수 있다.
+        배열의 크기를 원래 크기보가 작은 값으로 줄이면 범위를 벗어나는 나머지 요소는 삭제된다.
+    </p>
+    <hr>
+    <script>
+        var arr = [1,3,5,7,9];    // 요소가 5개인 배열
+        document.write('arr.length=', arr.length, '<br>');
+        for(var cnt=0; cnt < arr.length; cnt++) {
+            document.write("[", cnt, "] =", arr[cnt], '<br>');
+        }
+
+        var orglength = arr.length;
+
+        arr.length = 3;
+        document.write('arr.length=', arr.length, ' 로 확장<br>');
+        for(var cnt=0; cnt < arr.length; cnt++) {
+            document.write("[", cnt, "] =", arr[cnt], '<br>');
+        }
+
+        // 배열의 크기를 원래 크기보가 작은 값으로 줄이면 범위를 벗어나는 나머지 요소는 삭제된다.
+        for(var cnt=arr.length; cnt < orglength; cnt++) {
+            document.write("[", cnt, "] =", arr[cnt], ' (삭제됨)<br>');
+        }
+
+    </script>
+    
+</body>
+</html>

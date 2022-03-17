@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax - ajax</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        /*
+         * $.ajax(...)
+         */
+        $(function() {
+            $.ajax({
+                url : "data/s04-ajax-json-err.json",
+                dataType: "json",
+                success : function(data) {
+                    if(data.length <= 0) {
+                        return;
+                    }
+
+                    var table = $("<table />");
+
+                    for(var row in data) {
+                        var $id = data[row].id;
+                        var $first_name = data[row].first_name;
+                        var $last_name = data[row].last_name;
+                        var $email = data[row].email;
+                        var $gender = data[row].gender;
+
+                        var tr = $("<tr />").append(
+                            $("<td />").text($id),
+                            $("<td />").text($first_name),
+                            $("<td />").text($last_name),
+                            $("<td />").text($email),
+                            $("<td />").text($gender)
+                        );
+
+                        table.append(tr);
+                    }
+
+                    $("#content").append(table);
+                },
+
+                error: function() { /* 통신 오류 */
+                    var errmsg = $("<p />").text("통신 오류가 발생하였습니다.");
+                    $("#content").append(errmsg);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>ajax - ajax(...)</h2>
+    <hr>
+    <h4>회원목록</h4>
+    <div id="content"></div>
+</body>
+</html>

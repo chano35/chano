@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;README.txt&apos; to &apos;C12Threads/src&apos;&#x0D;&#x0A;- Original project: &apos;C14Lambda&apos;&#x0D;&#x0A;- Destination element: &apos;C12Threads/src&apos;&#x0D;&#x0A;- Original element: &apos;README.txt&apos;" description="Copy file" destination="=C12Threads/src" element1="README.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1643013926239" units="0" version="1.0"/>
+</session>

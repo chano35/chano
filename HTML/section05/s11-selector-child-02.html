@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+    <style>
+        #container > ul { /* 자식 선택자, #container에 속한 자식 태그에 적용*/
+            border: 2px dotted red;
+        }
+
+        #container > ul > li { /* 손자(자식의 자식) 선택자, #container에 속한 손자 태그에 적용*/
+            border: 2px solid mediumpurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>자식 선택자(Descendant Selector)</h1>
+    <h3>자식 선택자는 부모 요소에 포함된 자식 요소에 적용된다.</h3>
+    <p>손자 또는 자손에게까지 적용하기 위해서는 명시적으로 지정을 해야 한다.</p>
+    <hr>
+    <section id="container">
+        <h1>자바 개발자 과정</h1>
+        <ul>
+            <li>프로그래밍 언어</li>
+                <ul>
+                    <li>자바</li>
+                    <li>자바스크립트</li>
+                </ul>
+            <li>데이터 베이스</li>
+                <ul>
+                    <li>오라클</li>
+                    <li>마이SQL</li>
+                    <li>MS-SQL</li>
+                </ul>
+            <li>요구사항</li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Null Value</title>
+</head>
+<body>
+    <h1>undefined</h1>
+    <hr>
+    <script>
+        var unvalue = undefined;    // undefined
+        var unvalue2;               // undefined
+
+        document.write('unvalue :' + typeof unvalue);
+        document.write('<br>');
+
+        document.write('unvalue2 :' + typeof unvalue2);
+        document.write('<br>');
+
+        if(unvalue === null) { /* 출력되지 않음, 자료형(type)이 일치하는지 비교 */
+            console.log('* unvalue is null');
+            document.write('* unvalue is null');
+            document.write('<br>');
+        }
+
+        if(unvalue === undefined) { /* 자료형(type)이 일치하는지 비교 */
+            console.log('* unvalue is undefined');
+            document.write('** unvalue is undefined');
+            document.write('<br>');
+        }
+
+        if(unvalue2 === undefined) { /* 자료형(type)이 일치하는지 비교 */
+            console.log('* unvalue2 is undefined');
+            document.write('*** unvalue2 is undefined');
+            document.write('<br>');
+        }
+
+        if(unvalue != undefined) /* 출력되지 않음 */
+        {
+            document.write('**** unvalue is undefined');
+            document.write('<br>');
+        }
+
+        if(unvalue == undefined) /* 출력 */
+        {
+            document.write('***** unvalue is undefined');
+            document.write('<br>');
+        }
+
+        if(unvalue2 !== undefined) /* 출력되지 않음 */
+        {
+            document.write('****** unvalue2 is undefined');
+            document.write('<br>');
+        }
+
+
+    </script>
+    
+</body>
+</html>

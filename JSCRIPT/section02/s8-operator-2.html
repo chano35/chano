@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <h1>자바스크립트 논리연산자</h1>
+    <p>논리연산자: ||, &&, !</p>
+    <hr>
+    <ul>
+        <li>|| : OR, 피연자 중에 하나라도 참이면 참(true)</li>
+        <li>&& : AND, 피연자 중에 하나라도 거짓이면 거짓(false)</li>
+        <li>! : NOT, 피연자의 값이 true이면 false, false이면 true</li>
+    </ul>
+    <hr>
+    <script>
+        var a = 0;
+        var b = 20;
+        var c = 30;
+        var na = !a;    // !은 부정으로 논리값으로 변경, 값이 있으면 0(false) -> true
+        var g1 = !a>b;  // 연산자 우선순위에 의해서 !a가 먼저 계산 비교연산
+        var g2 = false > b;
+
+        document.write('a = ', a, '<br>');
+        document.write('b = ', b, '<br>');
+        document.write('c = ', c, '<br>');
+        document.write('!a = ', na, '<br>');
+        document.write('g1 = ', g1, '<br>');
+        document.write('g2 = ', g2, '<br>');
+    </script>
+    
+</body>
+</html>

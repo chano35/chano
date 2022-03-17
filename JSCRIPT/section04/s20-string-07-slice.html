@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - slice(시작위치, 종료위치) 함수</h2>
+    <p>문자열의 처음부터 시작위치와 종료위치에서 끝까지의 내용을 자른 후 남은 문자를 리턴</p>
+    <ul>
+        <li>문자열 = 문자열.slice(시작위치, 종료위치)</li>
+        <li>시작위치, 종료위치 사이의 문자열을 리턴</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "http://abc.com/upfile/filename.txt";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var ret = str.slice(15, 21);
+        document.write('남은 문자열: [', ret, ']', '<br>');
+    </script>
+    
+</body>
+</html>

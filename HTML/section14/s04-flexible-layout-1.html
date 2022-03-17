@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexible Layout</title>
+    <style>
+        #container {
+            width: 100%; /* 960px / 960px * 100 */
+            margin: 0 auto;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            background: cornflowerblue;
+            border-bottom: 1px solid black;
+        }
+
+        .header-caption {
+            font-size: 32px;
+            color:burlywood;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .content {
+            float: left;
+            width: 62.5%;
+            height: 400px;
+            padding: 1.4583%; /* 14px / 960px * 100 */
+            background: darkcyan;
+        }
+
+        .right-side {
+            float: right;
+            width: 31.25%; /* 300px / 960px * 100 */
+            height: 400px;
+            padding: 1.4583%; /* 14px / 960px * 100 */
+            background: darkolivegreen;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 class="header-caption">가변 레이아웃</h1>
+        </header>
+        <section class="content">
+            <h4>본문 내용</h4>
+        </section>
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+        <footer>
+            <h4>꼬릿말</h4>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        .lizard {
+            width: 200px;
+            height: 200px;
+            transform: rotateZ(10deg);
+        }
+
+        .lt .lizard:hover { /* left, top */
+            transform-origin: left top;
+        }
+
+        .rt .lizard:hover { /* right, top */
+            transform-origin: right top;
+        }
+
+        .lb .lizard:hover { /* left, bottom */
+            transform-origin: left bottom;
+        }
+
+        .rb .lizard:hover { /* right, bottom */
+            transform-origin: right bottom;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>transform-origin</h1>
+    <p>변경 기준점 설정 : 변형할 때 기준이 되는 지점을 바꿈으로써 요소의 원근감을 표현할 수 있다.</p>
+    <p>transform-origin: x축 y축 z축 | initial | inherit</p>
+    <ul>
+        <li>x축: 원점 기준의 x좌표, 길이, 값, 분분율, left, center, right</li>
+        <li>y축: 원점 기준의 x좌표, 길이, 값, 분분율, top, center, bottom</li>
+        <li>z축: 원점 기준의 x좌표, 길이, 값</li>
+    </ul>
+    <hr>
+    <div class="origin">
+        <div>
+            <img src="../images/image1.jpg" class="lizard">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="lt">
+            <img src="../images/image1.jpg" class="lizard">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rt">
+            <img src="../images/image1.jpg" class="lizard">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="lb">
+            <img src="../images/image1.jpg" class="lizard">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rb">
+            <img src="../images/image1.jpg" class="lizard">
+        </div>
+    </div>
+
+</body>
+</html>

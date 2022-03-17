@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        var car = new Object();
+        car.name  = "GENESIS";
+        car.color = "blue";
+        car.price = 25000000;
+        car.engine = 'GDI';
+        car.spec = function() {
+            document.write('색상: ', this.color, '<br>');
+            document.write('가격: ', this.price, '<br>');
+            document.write('엔진: ', this.engine, '<br>');
+        }
+
+        document.write('name: ', car.name, '<br>');
+        
+        car.spec();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

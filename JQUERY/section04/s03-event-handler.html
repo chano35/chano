@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <style>
+        .detail {
+            width:400px;
+            text-align:left;
+            line-height: 1.8;
+            display:none;
+        }
+
+        button {
+            background-color:rgba(255,255,255,0.7);
+            padding:5px;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+        }
+
+        .over {
+            position: absolute;
+            left:30px;
+            bottom: 30px;
+        }
+
+        #item {
+            position:relative;
+            width:500px;
+            height:auto;
+            padding: 15px 20px;
+            margin: auto;
+        }
+
+        #cover {
+            border: 5px solid transparent;
+            /* border: 5px solid blue; */
+        }
+
+    </style>
+    <script>
+        function showDetail() { // 상제정보
+            document.querySelector("#desc").style.display = "block";
+            document.querySelector("#open").style.display = "none";
+        }
+
+        function hideDetail() { // 상세정보 닫기
+            document.querySelector("#desc").style.display = "none";
+            document.querySelector("#open").style.display = "block";
+        }
+
+        
+    </script>
+</head>
+<body>
+    <div id="item">
+        <img id="cover" src="images/sample-1.jpg" alt="">
+        <button id="open" class="over"  onclick="showDetail();">상세정보</button>
+        <div id="desc" class="detail">
+            <h3>제품상세정보</h3>
+            <p>이 컴퓨터는 일체형으로서 아름다운 디자인과 
+                공간절약형 데스크 톱 컴퓨터입니다.
+                성능은 모듈형과 차이가 없습니다.
+            </p>
+            <button id="close" onclick="hideDetail();">상세정보 닫기</button>
+        </div>
+    </div>
+
+    <script>
+        var coverImage = document.querySelector("#cover");
+        coverImage.onclick = function() {
+            alert("제품구매사이트로 이동");
+        }
+
+        coverImage.onmouseover = function() {
+            coverImage.style.border = "5px black solid";
+        }
+
+        coverImage.onmouseout = function() {
+            coverImage.style.border = "";
+        }        
+    </script>
+    
+</body>
+</html>

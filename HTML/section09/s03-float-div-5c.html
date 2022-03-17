@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+</head>
+<body>
+    <p>화면이 작아지면 첫 번째 div에 바깥마진 만큼 영역이 크기로 계산된다.
+        그래서 두 번째 영역을 첫 번째 영역과 같이 표시할 수 없으면 밑에 표시된다.
+    </p>
+    <hr>
+    <div style="width:350px; height:150px; border:1px solid red; float:left; margin-right:50px">
+        첫 번째 영역: 여기에 그림이나 글자 도는 광고 등을 넣음<br>
+        왼쪽에 위치배치(float:left)<br>
+        오른쪽에 바깥여백(margin-right:50px)
+    </div>
+    <div style="width:350px; height:150px; border:1px solid green; float:right">
+        두 번째 영역: 여기에 그림이나 글자 도는 광고 등을 넣음<br>
+        오른쪽 끝에 맞춤(float:right)
+    </div>
+</body>
+</html>

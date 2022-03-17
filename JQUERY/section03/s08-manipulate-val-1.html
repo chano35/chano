@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        function setFormzen() {
+            $("#userid").val("HGD");
+            $("#username").val("홍길동");
+        }
+
+        function getFormzen() {
+            var userid = $("#userid").val();
+            var username = $("#username").val();
+            $("#desc").html("<p>" + userid + ', ' + username + "</p>");
+        }
+
+    </script>
+
+    <style>
+        .red { background-color: red;}
+        .green { background-color: green;}
+        .blue { background-color: blue;}
+        .blueviolet { background-color: blueviolet;}
+        .yellow { background-color:yellow;}
+    </style>
+
+</head>
+<body>
+    <h1>객체 조작 - val</h1>
+    <p>폼에서 value 속성값을 가져오거나 지정한다.</p>
+    <hr>
+    <form id="formzen">
+        <p>
+            <label class="blueviolet" for="userid">아이디</label>
+            <input type="text" name="userid" id="userid" value="ezengo">
+        </p>
+        <p>
+            <label class="green" for="username">이름</label>
+            <input type="text" name="username" id="username" value="이젠고">
+        </p>
+    </form>
+    <button onclick="setFormzen()">지정</button>
+    <button onclick="getFormzen()">조회</button>
+    <div id="desc"></div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $("#container").on("mousemove", function(evt) {
+                var clientxy = evt.clientX + ", " + evt.clientY;
+                var pagexy = evt.pageX + ", " + evt.pageY;
+                var screenxy = evt.screenX + ", " + evt.screenY;
+                var offsetxy = evt.offsetX + ", " + evt.offsetY;
+                $(".client-xy").text(clientxy);
+                $(".page-xy").text(pagexy);
+                $(".screen-xy").text(screenxy);
+                $(".offset-xy").text(offsetxy);
+            });
+        });
+    </script>
+
+    <style>
+        div {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <p> client x,y : <span class="client-xy"></span></p>
+        <p>   page x,y : <span class="page-xy"></span></p>
+        <p> screen x,y : <span class="screen-xy"></span></p>
+        <p> offset x,y : <span class="offset-xy"></span></p>
+    </div>
+</body>
+</html>

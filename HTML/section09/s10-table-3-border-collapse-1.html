@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        .t1 {
+            caption-side: top; /* 기본값 */
+            border: 2px solid black;
+            border-collapse: collapse;  /* 테이블 속성 */
+        }
+
+        .t1 th, td {
+            border: 1px dotted royalblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>border-collapse - 표 테두리 통합</h2>
+    <p>테이블의 테두리와 셀의 각 테두리를 하나로 합친다.</p>
+    <p>border-collpase: collapse | separate</p>
+    <ul>
+        <li>separate:기본값, 테두리를 분리 표시</li>
+        <li>collpase:테두리를 하나로 합쳐서 표시</li>
+    </ul>
+    <hr>
+    <table class="t1">
+        <caption>IT 전문 개발자 코스</caption>
+        <tr>
+            <th>과정</th>
+            <th>언어</th>
+        </tr>
+        <tr>
+            <td>분석과정</td>
+            <td>요구사항확인, 분석</td>
+        </tr>
+        <tr>
+            <td>개발자과정</td>
+            <td>프로그래밍 언어</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

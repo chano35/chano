@@ -1,0 +1,56 @@
+[색상]
+
+1. 16진수 표기법
+    - #RRGGBB : RGB
+        : R(Red), G(Green), B(Blue)
+        : RR(1Byte), GG(1Byte), BB(1Byte)
+    - #ffffff : 흰색(White)
+    - #000000 : 검은색(Black)
+
+2. rgb, rgba : 빛의 삼원색
+    - rgb(red, green, blue)    
+        : rgb(255,255,255), rgb(0,0,0), rgb(255,0,0)
+    - rgba(red, green, blue, alpha)
+        : alpha(불투명도) 
+          -> 0부터 1까지의 값
+          -> 1이면 완전불투명
+          -> 0이면 완전투명
+          -> 0.5이면 반투명
+        : rgba(255, 0, 0, 0.5)
+
+3. hsl, hsla : 색의 3요소
+    - hsl(360, 100%, 0%)
+    - hsla(260, 100%, 50%, 0.5)
+    - hsl(hue, saturation,lightness)        
+        : hue(색상), saturation(채도), lightness(밝기)
+    - hsla(hue, saturation,lightness, alpha)        
+        : hue(색상), saturation(채도), lightness(밝기)
+    - hsl : 0도에서 360도까지 색상이 둥글게 배치
+        -> 0, 360도 : red
+        -> 60도 : yellow
+        -> 120도 :  green
+        -> 180도 : cyan
+        -> 240도 : blue
+        -> 300도 : magenta
+    
+    - Saturation(채도): %로 표시, 순색(100%)
+        -> 색의 맑고 탁함, 순수한 정도, 색의 강약, 포화도를 나타내는 성질이다. 
+        -> 무채색으로부터의 거리를 척도화한 것이다.  
+        -> 0 ~ 100의 범위에서 100(순색)이 가장 높은 채도 0(회색톤)이 회색이다.
+
+    - Lightness(밝기) : %로 표시, 가장 밝음(100%)
+        -> 색의 밝기를 나타낸다.
+        -> 0 ~ 100의 범위에서 100가 가장 밝은 색상
+        -> 색조 및 채도에 관계없이 백색
+        -> 0은 가장 어두운 색 (검정)이다.
+
+4. 색상 이름 표기법
+    - 웹 안전 색상(web-safe color) : 16가지 색상을 포함해 모두 216가지
+    - 기본 16가지 웹 안전 색상
+        -> aqua, black, blue, fuchsia, gray, green, lime, maroon
+        -> navy, olive, purple, red, silver, teal, white, yellow
+
+
+
+5. 컬러 추출 사이트
+https://www.webfx.com/web-design/color-picker/

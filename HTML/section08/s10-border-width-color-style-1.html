@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border - Width, Color, Style</title>
+    <style>
+        div {
+            width : 400px;
+            height : 200px;
+            margin: 10px;
+        }
+
+        .border-all-1 { /* 네 방향 스타일이 다른 경우 */
+            border-top : 5px solid red;
+            border-right : 5px dotted green;
+            border-bottom : 5px dashed blue;
+            border-left : 5px double blueviolet;
+        }
+
+        .border-all-2 { /* 네 방향 스타일이 같은 경우 */
+            border : 5px red dotted;
+        }
+    </style>
+</head>
+<body>
+    <h1>테두리 두께, 색상, 스타일을 묶어서 지정</h1>
+    <p>테두리의 두께, 색상, 스타일을 하나로 묶어서 지정할 수 있다.</p>
+    <hr>
+    <p>border-top: 두께 | 색상 | 스타일</p>
+    <p>border-right: 두께 | 색상 | 스타일</p>
+    <p>border-bottom: 두께 | 색상 | 스타일</p>
+    <p>border-left: 두께 | 색상 | 스타일</p>
+    <p>border: 두께 | 색상 | 스타일</p>
+    <hr>
+    <div class="border-all-1"></div>
+    <div class="border-all-2"></div>
+</body>
+</html>

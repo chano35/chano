@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        div {
+            margin:50px;
+        }
+        .m1 {
+            box-sizing: content-box;
+            width:200px;
+            height:200px;
+            margin:10px;
+            padding:20px;
+            border:2px solid red;
+        }
+        .m2 {
+            box-sizing: border-box;
+            width:200px;
+            height:200px;
+            margin:10px;
+            padding:20px;
+            border:2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>box-sizing</h2>
+    <p>박스 너비 기준 : box-sizing : content-box | border-box</p>
+    <ul>
+        <li>contnet-box : 기본값, width 속성 값을 컨텐츠 너비 값으로 정함</li>
+        <li>border-box : width 속성 값을 컨텐츠 너비 + 테두리 포함</li>
+    </ul>
+    <hr>
+    <div class="m1">박스 너비 기준에 의한 전체 크기 비교</div>
+    <div class="m2">박스 너비 기준에 의한 전체 크기 비교</div>
+    
+</body>
+</html>

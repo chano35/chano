@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문(if)</title>
+</head>
+<body>
+    <h1>조건문(if)</h1>
+    <hr>
+    <p>조건식이 만족(참)하면 바로 다음에 나오는 블럭을 실행하고
+        조건식을 만족하지 않으면 else 블럭을 실행한다.
+    </p>
+    <ul>
+        <li>if(조건식) { ... }</li>
+        <li>if(조건식) { ... } else { ... }</li>
+        <li>if(조건식) { ... } else if(조건식) { ... } else { ... }</li>
+    </ul>
+    <hr>
+    <script>
+        var height = 170; // cm
+        var weight = 74;  // kg
+
+        var normal = (height - 100) * 0.9; // 기준체중
+        var underweight = normal - 10;      // 체중미달 기준
+        var overweight = normal + 10;       // 과체중 기준
+
+        /*
+        var result = (weight < underweight) ? "체중미달" : (weight > overweight) ? "과체중" : "정상체중";
+        */
+
+        var result;
+        if(weight > overweight) {
+            result = "과체중";
+        }
+        else if(weight < underweight) {
+            result = "체중미달";
+        }
+        else {
+            result = "정상체중";
+        }
+
+        document.write("height=", height, '<br>');
+        document.write("weight=", weight, '<br>');
+        document.write("normal=", normal, '<br>');
+        document.write("underweight=", underweight, '<br>');
+        document.write("overweight=", overweight, '<br>');
+        document.write("result=", result, '<br>');
+    </script>
+    
+</body>
+</html>

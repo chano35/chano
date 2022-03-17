@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h2>배열 - concat() 함수</h2>
+    <p>concat은 2개의 배열을 하나로 결합하여 새로운 배열을 리턴</p>
+    <ul>
+        <li>배열3 = 배열1.concat(배열2)</li>
+        <li>배열3 : 배열1과 배열2를 하나로 결합하여 리턴된 새로운 배열</li>
+    </ul>
+    <hr>
+    <script>
+        var arr1 = ["하나", "둘", "셋", "넷"];
+        var arr2 = ["one", "two", "three", "four"];
+
+        var arr3 = arr1.concat(arr2);
+        var arr4 = arr1 + arr2; // 배열을 문자열로 변환해서 하나의 문자열로 결합하여 리턴
+        document.write('배열1: ', arr1, '<br>');
+        document.write('배열2: ', arr2, '<br>');
+        document.write('배열3: length=', arr3.length, ', ', arr3, '<br>');
+        document.write('배열4: length=', arr4.length, ', ', arr4, '<br>');
+    </script>
+    
+</body>
+</html>

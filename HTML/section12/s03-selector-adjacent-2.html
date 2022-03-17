@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        h3+p { /* h3 요소 다음의 첫 번째 요소(p) */
+            color:red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>인접 형제 선택자(adjacent selector)</h1>
+    <p>인접 형제 선택자는 같은 부모 요소를 가지는 형제 요소 가운데 첫 번째 형제 요소가 선택된다.
+        <b>중간에 다른 요소가 있으면 선택되지 않는다.</b>
+    </p>
+    <hr>
+    <section id="container">
+        <header>
+            <h1>여행 가이드</h1>
+        </header>
+        <h3>동해안 해안길</h3>
+        <!-- <h5>상세설명</h5> --> <!-- 중간에 다른 요소가 있으면 선택되지 않는다 -->
+        <p>아름다운 동해의 해안길을 다양한 방법으로 체험할 수 있는 관광 상품입니다.</p>
+        <ul>
+            <li>해안 도로
+                <ul>
+                    <li>경포대</li>                        
+                    <li>해조대</li>
+                </ul>
+            </li>                
+            <li>해안 기찻길
+                <ul>
+                    <li>포항 기찻길</li>
+                    <li>영덕 기찻길</li>
+                </ul>
+            </li>
+        </ul>
+        <p>동해안 테마길</p>
+        <ul>
+            <li>해안 소나무길</li>
+            <li>해안 산책길</li>
+            <li>해안 백사장길</li>
+        </ul>
+</section>
+    
+</body>
+</html>

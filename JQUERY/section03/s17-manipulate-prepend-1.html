@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 선택된 요소 맨 앞에 새로운 요소를 추가 */
+            $("#container ul").prepend("<li class='elm'>추가요소</li>");
+        });
+    </script>
+    <style>
+        div {
+            background-color: darkcyan;
+        }
+        .elm {
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h2>요소의 맨 앞에 추가 - prepend</h2>
+    <p>선택된 요소 맨 앞에 새로운 요소를 추가</p>
+    <hr>
+    <div id="container">
+        <ul>
+            <li>엘리먼트1</li>
+            <li>엘리먼트2</li>
+            <li>엘리먼트3</li>
+            <li>엘리먼트4</li>
+        </ul>
+   </div>
+</body>
+</html>

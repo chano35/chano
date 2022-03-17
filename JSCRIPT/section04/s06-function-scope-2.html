@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Scope</title>
+    <script src="js/println.js"></script>
+</head>
+<body>
+    <h1>함수 스코프</h1>
+    <hr>
+    <script>
+        var gval = 99;
+
+        function compute() {
+            gval = 77; // 함수 외부에서 선언된 gval에 값을 세팅
+            printlist('[compute] ', 'gval: ', gval);
+        }
+
+        compute();
+
+        printlist('[global] ', 'gval: ', gval);
+
+    </script>
+    
+</body>
+</html>

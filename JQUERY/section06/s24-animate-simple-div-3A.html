@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css click event & background-color</title>
+   <script src="js/jquery.js"></script>
+
+  <style>
+    #box1 {
+      position:relative;
+      background-color:cadetblue;
+    }
+
+    #box2 {
+        position: absolute; /* 가장 가까운 부모요소나 조상 요소중 relative 요소 기준으로 좌표를 설정 */
+        background-color: #abc;
+        left: 70px;
+        top: 10px;
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+      }    
+  </style>
+   
+</head>
+<body>
+ 
+  <div id="box1">
+    <button id="left">&laquo;</button>
+    <button id="right">&raquo;</button>
+    <div id="box2" class="block"></div>
+  </div>
+   
+  <script>
+  $( "#right" ).click(function() {
+    $( ".block" ).animate({ "left": "+=50px" }, "slow" );
+  });
+   
+  $( "#left" ).click(function(){
+    $( ".block" ).animate({ "left": "-=50px" }, "slow" );
+  });
+  </script>     
+</body>
+</html>

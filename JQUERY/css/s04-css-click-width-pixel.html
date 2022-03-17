@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css click event & background-color</title>
+   <script src="js/jquery.js"></script>
+
+   <style>
+    #box {
+        background: black;
+        color: snow;
+        width: 100px;
+        padding: 10px;
+      }
+    </style>
+   
+</head>
+<body>
+ 
+  <div id="box">Click me to grow</div>
+ 
+  <script>
+    $( "#box" ).one( "click", function() {  /* 이벤트가 한 번만 처리 */
+      $( this ).css( "width", "+=200" );
+    });
+  </script>
+     
+   
+</body>
+</html>

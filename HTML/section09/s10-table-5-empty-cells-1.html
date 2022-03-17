@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        .t1 {
+            caption-side: top; /* 기본값 */
+            border: 2px solid black;
+            border-collapse: separate; /* 셀을 분리했을 때 border-spaceing이 적용 */
+        }
+
+        td {
+            border: 1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <h2>empty-cells - 빈 셀의 태두리 표시 여부</h2>
+    <p>empty-cells: show | hide</p>
+    <ul>
+        <li>show: 기본값, 빈 셀의 테두리를 표시</li>
+        <li>hide: 빈 셀의 테두리를 표시하지 않음</li>
+    </ul>
+    <p>빈 셀은 셀에 내용이 없는 경우 셀의 테두리의 표시 유무</p>
+    <hr>
+    <table class="t1">
+        <caption>IT 전문 개발자 코스</caption>
+        <tr>
+            <td>과정</td>
+            <td>언어</td>
+        </tr>
+        <tr>
+            <td>분석과정</td>
+            <td>요구사항확인</td>
+        </tr>
+        <tr>
+            <td>개발자과정</td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

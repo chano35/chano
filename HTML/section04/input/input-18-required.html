@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - required</title>
+</head>
+<body>
+    <h3>입력 태그 - 속성(required)</h3>
+    <hr>
+    <p>입력 태그의 속성(required)는 필수 필드 지정<br>
+    </p>
+    <ul>
+        <li>필드의 내용을 입력하도록 강제 한다.</li>
+        <li>submit 버튼을 클릭하여 폼을 서버로 전송하기 전에 검사하여
+            오류 메시지를 출력한다.
+        </li>
+        <li>속성 지정 방법은 다음과 같다.</li>
+        <ol>
+            <li>required</li>
+            <li>required="required"</li>
+            <li>required="true"</li>
+        </ol>
+    </ul>
+    <hr>
+    <form>
+        <label>아이디: <input type="text" name="userid" value="" required></label><br>
+        <label>이  름: <input type="text" name="username" value="" required="required"></label><br>
+        <label>주  소: <input type="text" name="address" value=""></label><br>
+        <label>전화번호: <input type="tel" name="usertel" required="true"></label><br>
+        <input type="submit" value="전송">
+    </form>
+</body>
+</html>

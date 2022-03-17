@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        var car = { /* 객체 리터널 */
+            color: "blue",
+            price: 25000000,
+            engine: 'GDI',
+            spec: function() {
+                document.write('<h2>[내부에서 출력]</h2>');
+                document.write('색상: ', this.color, '<br>');
+                document.write('가격: ', this.price, '<br>');
+                document.write('엔진: ', this.engine, '<br>');
+            }
+        }
+
+        /*
+         * [Call By Reference]
+         * 객체 타입은 참조에 의한 호출 방식
+         * 함수에 파라미터로 객체가 전달되면 참조에 의한 호출이 되어 전달된 객체의 값이 변경 된다.
+        */
+        function changeColor(obj, color) { 
+            obj.color = color;
+        }
+
+        /*
+         * [Call By Value]
+         * 기본타입은 값에 의한 호출 방식
+         * 함수에 파라미터로 기본타입이 전달되면 값에 의한 호출이 되어 값이 변경되지 않는다.
+        */
+        function changeValue(x, val) {
+            x = val;
+            document.write("changeValue: x=", x, '<br>')
+        }
+    </script>
+</head>
+<body>
+    <script>
+        car.spec();
+        changeColor(car, "red");
+        car.spec();
+
+        var x = 99;
+        document.write("x=", x, '<br>')
+        changeValue(x, 100);
+        document.write("x=", x, '<br>')
+    </script>
+    
+</body>
+</html>

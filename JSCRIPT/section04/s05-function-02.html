@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <script src="js/println.js"></script>
+    <script>
+        var colors = ['white', 'red',' blue', 'purple', 'orange'];
+
+        for(var cnt=0; cnt < colors.length; cnt++) {
+            println('color[' + cnt + '] : ', colors[cnt]);
+        }
+
+        var cnt = 0;
+        function changeColor() {
+            cnt++;
+            if(cnt >= colors.length) {
+                cnt=0;
+            }
+
+            var bodyTag = document.getElementById("colorBody");
+            bodyTag.style.backgroundColor = colors[cnt];
+        }
+    </script>
+</head>
+<body id="colorBody">
+    <h1>자바스크립트 배열을 이용한 배경색 변경</h1>
+    <button onclick="changeColor();">배경색 변경</button>
+</body>
+</html>

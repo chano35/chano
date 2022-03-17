@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist Tag</title>
+</head>
+<body>
+    <h3>Datalist 태그</h3>
+    <hr>
+    <p>Datalsit 태그는 데이터 목록중에서 값을 선택하여 
+        입력(input) 태그의 값으로 지정할 수 있다.</p>
+    <label>input 태그의 list 속성값과 datalist의 id 속성값을 동일하게 지정하여 연결한다.</label>
+    <hr>
+    <input type="text" list="langlist">
+    <datalist id="langlist">
+        <option value="java">자바 언어</option>
+        <option value="cpp">C++ 언어</option>
+        <option value="dbms">데이터베이스</option>
+        <option value="python">파이썬 언어</option>
+    </datalist>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 - 문제</title>
+    <style>
+        table {
+            caption-side: top; /* 기본값 */
+            border: 2px solid royalblue;
+            border-collapse: collapse;  /* 테이블 속성 */
+        }
+
+        table, th, td {
+            border: 1px solid royalblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .odd {
+            background-color:silver;
+        }
+
+        .even {
+            background-color:skyblue;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+
+        var cnt=1;
+        document.write("<table border='1'>");
+
+        for(var x=1; x <= 9; x++) {
+            if(x % 2 == 0) {
+                document.write("<tr class='even'>");
+            }
+            else {
+                document.write("<tr class='odd'>");
+            }
+
+            for(var y=1; y<=9; y++) {
+                document.write("<td>", cnt++, "</td>");
+            }
+
+            document.write("</tr>")
+        }
+
+        document.write("</table>");
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Statement</title>
+</head>
+<body>
+    <h1>반복문(while)</h1>
+    <p>while문은 조건이 만족하면 블럭을 계속 실행</p>
+    <p>while(조건문) { ... }</p>
+    <hr>
+    <script>
+        // 1부터 100까지 더하기
+        var n = 1;
+        var s = 0;
+
+        while(n <= 100) {
+            s += n;
+            n++;
+        }
+
+        document.write("1부터 ", n-1, "까지의 합은 ", s);
+    </script>
+</body>
+</html>

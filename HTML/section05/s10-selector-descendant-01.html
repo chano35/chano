@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selector</title>
+    <style>
+        #container ul { /* 하위 선택자, #container에 속한 모든 ul 태그에 적용*/
+            /*border: 2px dotted red; */
+            color:seagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>하위 선택자(Descendant Selector)</h1>
+    <h3>하위 선택자는 부모 요소에 포함된 모든 하위 요소에 적용된다.</h3>
+    <hr>
+    <section id="container">
+        <h1>자바 개발자 과정</h1>
+        <ul>
+            <li>프로그래밍 언어</li>
+                <ol>
+                    <li>자바</li>
+                    <li>자바스크립트</li>
+                </ol>
+            <li>데이터 베이스</li>
+                <ul>
+                    <li>오라클</li>
+                    <li>마이SQL</li>
+                    <li>MS-SQL</li>
+                </ul>
+            <li>요구사항</li>
+        </ul>
+
+        <h1>설계 과정</h1>
+        <ol>
+            <li>요구사항 분석</li>
+                <ul>
+                    <li>자바</li>
+                    <li>자바스크립트</li>
+                </ul>
+            <li>아키텍처</li>
+        </ol>        
+    </section>
+
+    <section>
+        <h1>실무자 과정</h1>
+        <ul>
+            <li>요구사항 분석</li>
+                <ul>
+                    <li>자바</li>
+                    <li>자바스크립트</li>
+                </ul>
+            <li>아키텍처</li>
+        </ul>
+    </section>    
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+BOM(Browser Object Model) 브라우저 객체 모델
+
+(브라우저 객체의 계층적 구조)
+   - window
+     - document
+     - screen
+     - location
+     - history
+     - navigator
+
+
+(window)
+1. open("url", "창이름, "옵션")
+2. alert(msg)
+3. prompt("질문", "답변")
+4. confirm("질문내용")
+5. moveTo(x, y)
+6. resizeTo(width, height)
+7. setInterval(function() {}, 시간간격)
+8. setTimeout(function() {}, 시간간격)

@@ -1,0 +1,26 @@
+/*
+ * 기본 자료형은 레퍼 클래스를 사용해야 한다.(wrapper class)
+ */
+package lists;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListInt02 {
+
+	public static void main(String[] args) {
+		List<Integer> lists = new ArrayList<>();
+		
+		lists.add(10);
+		lists.add(20);
+		
+		for(int x : lists) {
+			System.out.println(x);
+		}
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeof</title>
+</head>
+<body>
+    <h1>typeof</h1>
+    <p>데이터나 변수에 저장된 자료형 검사</p>
+    <hr>
+    <script>
+        var nullval = null;
+        var nulltof = typeof(nullval);
+
+        document.write('typeof(nullval) : ', typeof(nullval), '<br>');
+        document.write('typeof(nulltof) : ', nulltof, '<br>');
+
+        if(nullval === null) {
+            document.write("result: typeof(nullval) is object(null)", '<br>');
+        }
+
+    </script>
+    
+</body>
+</html>

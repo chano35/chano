@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sibling Selector</title>
+    <style>
+        h2~ul { /* 형제 선택자(h2에 인접한 하위의 모든 ul 태그 요소) */
+            border: 2px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <h1>형제 선택자(Sibling Selector)</h1>
+    <h3>형제 선택자는 모든 형제 요소에 적용된다.</h3>
+    <p>동일 레벨에 있는 모든 <span style="color:red; font-weight: bold;">하위의</span> 
+        태그가 선택되어 스타일이 적용된다.
+        자신은 포함되지 않는다.
+    </p>
+    <hr>
+    <section id="container">
+        <h1>자바 개발자 과정</h1>
+        <ul>
+            <li>프로그래밍 언어</li>
+            <ul>
+                <li>자바</li>
+                <li>자바스크립트</li>
+            </ul>
+        </ul>
+        <h2>개발자 과정</h2> <!-- 동일 레벨에 있는 하위의 ul 태그가 선택 -->
+        <ol>
+            <li>심화학습</li>
+            <li>포트폴리오</li>
+        </ol>
+        <ul>
+            <li>데이터베이스</li>
+            <ul>
+                <li>오라클</li>
+                <li>마이SQL</li>
+                <li>MS-SQL</li>
+            </ul>
+            <li>빅데이터 처리</li>
+        </ul>
+        <ol>
+            <li>심화학습</li>
+            <li>포트폴리오</li>
+        </ol>
+        <ul>
+            <li>데이터베이스</li>
+            <ul>
+                <li>오라클</li>
+                <li>마이SQL</li>
+                <li>MS-SQL</li>
+            </ul>
+            <li>빅데이터 처리</li>
+        </ul>
+
+    </section>
+</body>
+</html>

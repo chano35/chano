@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Interval</title>
+    <script>
+        /*
+         * 작업시작, 작업중지 버튼을 만들어 처리
+        */
+        var sumfunc = null;
+        var sumtime = 2000;  // 2초(2000ms) 간격으로 실행
+        var sum = 0;
+
+        function startWorking() {
+            if(sumfunc != null) {
+                return;
+            }
+
+            if(sum > 0) {
+                console.log("작업재개...");
+            }
+            else {
+                console.log("작업시작...");
+            }
+
+            sumfunc = setInterval(function() {
+                for(var cnt=1; cnt<=10; cnt++) {
+                    sum += cnt;
+                }
+                console.log("sum=", sum, '<br>');
+            }, sumtime);
+        }
+
+        function stopWorking() {
+            console.log("작업중지...");
+            clearInterval(sumfunc);
+            sumfunc = null;
+        }
+    </script>
+</head>
+<body>
+    <h2>인터벌(interval) 테스트</h2>
+    <button onclick="startWorking()">작업시작</button>
+    <button onclick="stopWorking()">작업중지</button>
+</body>
+</html>

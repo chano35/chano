@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(".btn1").click(function() {
+                $(".btn1").parent().next().css({"color": "#f00"})
+            });
+
+            $(".btn2").on({
+                "mouseover focus" : function() {
+                    $(".btn2").parent().next().css({"color":"#00f"});
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>이벤트 - off</h1>
+    <hr>
+    <p>이벤트 제거</p>
+    <p>
+        <button class="btn1">버튼1</button>
+    </p>
+    <p>버튼1 클릭에 의한 내용</p>
+    <p>
+        <button class="btn2">버튼2</button>
+    </p>
+    <p>버튼2 클릭에 의한 내용</p>
+</body>
+</html>

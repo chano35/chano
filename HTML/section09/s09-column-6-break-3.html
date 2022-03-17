@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단 편집</title>
+    <style>
+        .multi-col {
+            column-count: 4;
+            column-gap: 20px;
+            column-rule: 2px dashed grey;
+            background:rgb(231, 229, 229);
+        }
+
+        #co {
+            break-after: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>다단 위치 지정 - 다단을 어디부터 시작할지 지정</h2>
+    <p>break-before: 특정 요소 앞</p>
+    <p>break-after: 특정 요소 뒤</p>
+    <p>break-inside: 특정 요소 안</p>
+    <p>다단을 어디부터 시작할지 지정</p>
+    <p>속성값: column(단 나눔) | avoid-column(단을 나누지 않음)</p>
+    <hr>
+    <h2>개발자 코스</h2>
+    <h3>자바웹 과정</h3>
+    <p>자바웹 과정을 풀 스텍과정으로 자바를 기반으로 HTML을 포함한 프론트엔드 과정과
+        JAVA 언어를 기반으로한 백엔드 과정으로 구성되어 있습니다.
+    </p>
+    <h4 id="co">커리큘럼</h4>
+    <div class="multi-col">
+        <h3>자바언어</h3>
+        <p>자바언어는 업무용 프로그램밍을 위한 기본으로 데이터 처리에 최적화된 언어이다.</p>
+        <h3>데이터베이스</h3>
+        <p>데이터베이스는 데이터 처리를 위한 DBMS 과정으로 오라클과 같은 데이터베이스 시스템을 학습하는 과정이다.</p>
+        <h3>HTML</h3>
+        <p>HTML은 웹을 위한 마크업 언어로서 사용자 인터페이스를 제공하는 방법을 학습하는 과정이다.</p>
+    </div>
+    <hr>
+</body>
+</html>

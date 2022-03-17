@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+
+        td {
+            height: 200px;
+            padding: 20px;
+        }
+
+        .vt-top {
+            vertical-align: top;
+        }
+
+        .vt-middle {
+            vertical-align: middle;
+        }
+
+        .vt-bottom {
+            vertical-align: bottom;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>vertical-align - 셀 안에서 수직 정렬</h2>
+    <p>vertical-align: top | bottom | middle | ...</p>
+    <hr>
+    <table>
+        <tr>
+            <td class="vt-top"> 테이블은 시각적 의사소통과 자료의 정렬 양식이다.</td>
+            <td class="vt-middle"> 테이블은 시각적 의사소통과 자료의 정렬 양식이다.</td>
+            <td class="vt-bottom"> 테이블은 시각적 의사소통과 자료의 정렬 양식이다.</td>
+        </tr>
+    </table>
+</body>
+</html>

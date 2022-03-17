@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 40px;
+        }
+
+        #k1 {
+            background-color: forestgreen;
+            border: 1px solid fuchsia;
+            animation-name: ani-kf1;
+            animation-duration: 3s;
+            animation-iteration-count: 5; /* 5회 반복 */
+        }
+
+        #k2 {
+            background-color: gold;
+            border: 1px double blue;
+            animation-name: ani-kf2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite; /* 무한반복 */
+        }
+
+        @keyframes ani-kf1 {
+            from {
+                border: 1px solid blue;
+            }
+
+            to {
+                border: 1px solid blue;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes ani-kf2 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(70deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="k1"></div>
+    <div id="k2"></div>
+</body>
+</html>

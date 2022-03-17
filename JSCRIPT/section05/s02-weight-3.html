@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Object</title>
+    <script>
+        function Weight(name, height, weight) {
+            this.name = name;
+            this.height = height;
+            this.weight = weight;
+
+            this.infomation = function() {
+                document.write('이름: ', this.name, '<br>');
+                document.write('신장: ', this.height, '<br>');
+                document.write('무게: ', this.weight, '<br>');
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var park = new Weight('박세리', 167, 61);
+        park.infomation();
+
+        var lee = new Weight('이영화', 177, 75);
+        lee.infomation();
+    </script>
+    
+</body>
+</html>

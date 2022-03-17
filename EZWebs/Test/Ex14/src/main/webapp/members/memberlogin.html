@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>멤버 로그인</title>
+	<style>
+	table {
+		width : 30%;
+		border : 1px solid #444444;
+		margin : auto;
+	}
+	td {
+	border : 1px solid #444444;
+	padding : 10px;
+	}
+	tr{
+	text-align: center;
+	background-color : skyblue;
+	}
+	</style>
+</head>
+<body>
+	<form name="login" method="POST" action="memberlogin.jsp">
+		<h1 style="text-align:center" >맴버 로그인</h1>
+		<table>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="userid"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="userpw"></td>
+			</tr>
+			<tr>
+			<td><input type="submit" value="맴버 가입" formaction="memberreg.html"></td>
+			<td><input type="submit" value="로 그 인" formaction="memberlogin.jsp"></td>
+			</tr>	
+		</table>
+	</form>
+	<hr>
+	
+</body>
+</html>

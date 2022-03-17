@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating Linear Gradient</title>
+    <style>
+        div {
+            width : 500px;
+            height: 500px;
+        }
+        .radial-gradient {
+            background: repeating-linear-gradient(blue, red); /* 한 번 */
+        }
+        .radial-gradient-20px {
+            background: repeating-linear-gradient(blue, red 20px); /* blue 20px, red 20px -> gradient -> repeating) */
+        }
+    </style>
+</head>
+<body>
+    <h1>그러데이션 반복</h1>
+    <hr>
+    <div class="radial-gradient"></div>
+    <div class="radial-gradient-20px"></div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+HTML 이벤트(event)
+
+(마우스 이벤트)
+마우스의 버튼이나 휠 버튼을 조작할 때 발생
+click     : 마우스를 눌렀을 때 발생(클릭, mousedown + mouseup -> click)
+dblclick  : 마우스를 두 번 눌렀을 때 발생(더블 클릭, 시간간격 일정한 수준 안에서 이루어 져야 한다.)
+mousedown : 마우스를 누르고 있을 때 발생
+mousemove : 마우스의 포인터 이동할 때 발생
+mouseover : 마우스 포인터가 요소 위로 옮겨질 때 발생
+mouseout  : 마우스 포인터가 요소에서 벗어날 때 발생
+mouseup   : 마우스의 버튼을 눌렀다 놓을 때 발생
+
+(키보드 이벤트)
+keypress : 키를 눌렀을 때 발생(keydown + keyup -> keypress)
+keydown  : 키를 누르고 있는 동안 발생
+keyup    : 키를 눌렀다 뗄 때 발생
+
+(문서 로딩 이벤트)
+서버에서 웹 문서를 가져오거나 문서를 위아래로 스크롤 할 때 
+브라우저 창에 보여 주는 것과 관련된 이벤트
+
+abort  : 웹 문서가 완전히 로딩되기 전에 불러오기를 멈췄을 때 (중지되었을 때)
+error  : 문서 로딩 중 오류가 발생되었을 때
+load   : 문서 로딩이 끝났을 때
+resize : 문서 화면 크기가 바뀌었을 때
+scroll : 문서 화면이 스크롤되었을 때
+unload : 문서를 벗어날 때
+
+(폼 이벤트)
+폼(Form) 요소에 내용을 입력하면서 발생하는 이벤트
+폼관련 태그 : input, select, textarea, label, button
+
+blur   : 폼 요소에 포커스를 잃었을 때
+change : 목록이나 체크 싱태등이 변경되었을 때
+focus  : 폼 요소에 포커스가 놓였을 때
+reset  : 폼이 다시 시작되었을 때
+submit : submit 버튼을 눌렀을 때

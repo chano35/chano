@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Effect</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(".txt1").animate({marginLeft: "300px"}, 1000);    /* 지연 시간 없이 곧 바로 실행 */
+            $(".txt2").delay(3000).animate({marginLeft:"300px"}, 3000); /* 3초 후에 실행 */
+            $(".txt5").delay(3000).animate({marginLeft:"300px"}, 3000); /* 3초 후에 실행 */
+
+            $(".btn1").on("click", function() {
+                $(".txt2").stop();  /* 애니메이션2 정지, 진행중인 애니메이션만 정지, 큐에 대기중인 애니메이션은 계속 실행 */
+            });
+
+            $(".btn2").on("click", function() {
+                $(".txt3").animate({marginLeft: "+=50px"}, 500);
+
+                $(".txt4").animate({marginLeft: "+=50px"}, 500);
+                $(".txt4").stop();  /* 애니메이션 정지 */
+
+                $(".txt5").stop(true, true); /* 진행중인 애니메이션과 큐에 있는 대기중인 애니메이션도 정지 */
+            });
+
+            $(".btn3").on("click", function() {
+                $(".txt4").stop();              /* 애니메이션 정지 */
+                $(".txt5").stop(true, true);    /* 진행중인 애니메이션과 큐에 있는 대기중인 애니메이션도 정지 */
+            });
+        });
+    </script>
+
+    <style>
+        p { width: 100px; text-align: center;}
+
+        .txt1 {background-color: cyan;}
+        .txt2 {background-color: darkgoldenrod;}
+        .txt3 {background-color: darkorange;}
+        .txt4 {background-color: darkorchid;}
+        .txt5 {background-color: deeppink;}
+    </style>
+</head>
+<body>
+    <p class="txt1">애니메이션 1</p>
+    <p><button class="btn1">애니메이션2 정지</button></p>
+    <p class="txt2">애니메이션 2</p>
+    <p><button class="btn2">전진(애니메이션3)</button></p>
+    <p><button class="btn3">정지(애니메이션4,5)</button></p>
+    <p class="txt3">애니메이션 3</p>
+    <p class="txt4">애니메이션 4</p>
+    <p class="txt5">애니메이션 5</p>
+</body>
+</html>

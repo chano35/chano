@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In Function</title>
+</head>
+<body>
+    <h1>Built-In Function - isNaN()</h1>
+    <p>isNaN(값) : is Not a Number, 숫자가 아니면 true</p>
+    <p>Boolean = isNaN(값)</p>
+    <script>
+        var val1 = "123.567";
+        var val2 = "150px";
+        var val3 = "px150";
+        
+        var int1 = parseInt(val1);
+        var float1 = parseFloat(val1);
+        var num3 = Number(val3);
+
+        document.write(int1, '->', isNaN(int1), '<br>'); 
+        document.write(float1, '->', isNaN(float1), '<br>');
+        document.write(num3, '->', isNaN(num3), '<br>');
+    </script>
+    
+</body>
+</html>

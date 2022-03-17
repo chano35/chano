@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Justify</title>
+    <style>
+        p.none { text-justify:none; }
+        p.auto { text-justify:auto; }
+        p.inter-word { text-justify:inter-word; }
+        p.distribute { text-justify:distribute; }
+    </style>
+</head>
+<body>
+    <h2>Text Justify은 텍스트를 정렬할 때 공백 조절</h2>
+    <hr>
+    <p>text-justify: auto | none | inter-word | distribute
+    <hr>
+    <ul>
+        <li>none: 정렬하지 않음</li>
+        <li>auto: 자동 지정, 웹 브라우저에서 자동으로 지정(문자 간격)</li>
+        <li>inter-word: 단어 사이의 공백을 조절해서 정렬(단어 간격)</li>
+        <li>distribute: 인접한 글자 사이의 공백을 똑같이 맞춰서 정렬(문자와 단어 간격)</li>
+    </ul>
+    <hr>
+    <p class="none">none: 정렬하지 않음, 테스트를 위한 텍스트 문자열입니다.</p>
+    <p class="auto">auto: 자동 지정,  테스트를 위한 텍스트 문자열입니다.</p>
+    <p class="inter-word">inter-word: 단어 사이의 공백을 조절해서 정렬, 테스트를 위한 텍스트 문자열입니다.</p>
+    <p class="distribute">distribute: 인접한 글자 사이의 공백을 똑같이 맞춰서 정렬, 테스트를 위한 텍스트 문자열입니다.</p>
+</body>
+</html>

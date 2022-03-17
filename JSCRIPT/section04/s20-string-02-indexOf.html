@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - indexOf(문자열) 함수</h2>
+    <p>지정된 문자열에서 제일 처음 만나는 찾을 문자열의 위치를 리턴</p>
+    <ul>
+        <li>위치 = 문자열.indexOf(찾을문자열)</li>
+        <li>위치 : 찾은 문자열의 위치(0부터 길이 - 1))</li>
+        <li>찾지 못하면 -1을 리턴</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "영일이삼사오육칠팔구십";
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var findpos = str.indexOf("칠");
+        var findflt = str.indexOf("사랑");
+        document.write('찾은 위치: [', findpos, ']', '<br>');
+        document.write('찾은 위치: [', findflt, ']', '<br>');
+    </script>
+    
+</body>
+</html>

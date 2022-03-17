@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;webapp&apos;&#x0D;&#x0A;- Original project: &apos;Todolist&apos;&#x0D;&#x0A;- Destination element: &apos;webapp&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     join.html&#x0D;&#x0A;     login.jsp&#x0D;&#x0A;     login.html" description="Copy files" element1="src/main/webapp/join.html" element2="src/main/webapp/login.jsp" element3="src/main/webapp/login.html" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1644819087088" target="/Ex14/src/main/webapp" units="0" version="1.0"/>
+</session>

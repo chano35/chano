@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <link rel="stylesheet" type="text/css" href="../common/menu.css">
+    <link rel="stylesheet" type="text/css" href="../common/main.css">
+    <script src="../js/jquery.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery(function($) {
+                $.fn.getUrlParameter = function(sParam) {
+                    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                        sURLVariables = sPageURL.split('&'), // a,b,c,d split(',') ==> [a,b,c,d]
+                        sParameterName,
+                        i;
+                    console.log("PageUrl : ", sURLVariables)
+                    for (i = 0; i < sURLVariables.length; i++) {
+                        sParameterName = sURLVariables[i].split('='); //[id,585083]
+                        console.log("sParam : ", sParam)
+                        console.log("sParameterName : ", sParameterName)
+                        if (sParameterName[0] === sParam) {
+                            return sParameterName[1] === undefined ? true : sParameterName[1];
+                        }
+
+                    }
+                };
+                var movieId = $.fn.getUrlParameter('id');
+                // var name = $.fn.getUrlParameter('name');
+                // console.log("name : ", name)
+                getMovieInfo(movieId);
+            });
+        })
+
+        function getMovieInfo(movieId) {
+
+            $.get("https://api.themoviedb.org/3/movie/" + movieId + "?api_key=c1558d92add0b7f72649e80c62af548f", function(data) {
+                console.log(data)
+                var html = [];
+                // $.each(data.results, (i, item) => {
+                //     html.push("<a href='./MovieDetail.html?id=" + item.id + "'><img src='http://image.tmdb.org/t/p/w500" + item.backdrop_path + "'/></a>")
+                // })
+                // $('#contianer').html(html.join(''))
+                $("#poster_img").attr("src", "http://image.tmdb.org/t/p/w500" + data.backdrop_path);
+                $("#title").text(data.title)
+                $("#content").text(data.overview);
+            });
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="tab_menu">
+        <div class="logo_img_box">
+            <img class="logo_img" src="../common/images/samsung_logo.png" />
+
+        </div>
+        <ul class="list">
+            <li class="is_on">
+                <a href="#" class="btn">Pitcher</a>
+            </li>
+            <li>
+                <a href="./Hitter.html" class="btn">Hitter</a>
+            </li>
+            <li>
+                <a href="./Coach.html" class="btn">Coach</a>
+            </li>
+        </ul>
+    </div>
+    <div class="img_box" style="position: relative;">
+        <img id="poster_img" src="" alt="No Image" style="width: 100%;">
+        <div id="title" style="text-shadow: 2px 2px 2px gray;font-weight: bold;margin: 10px;position: absolute; font-size: 2.4rem; top:0%; bottom: 0%; color: #fafafa;"></div>
+    </div>
+    <div class="content_box">
+        <p id="content"></p>
+    </div>
+
+
+</body>
+
+</html>

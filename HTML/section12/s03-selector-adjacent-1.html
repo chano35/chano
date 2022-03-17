@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        header+p { /* header 요소 다음의 첫 번째 요소(p) */
+            color:red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>인접 형제 선택자(adjacent selector)</h1>
+    <p>인접 형제 선택자는 같은 부모 요소를 가지는 형제 요소 가운데 첫 번째 형제 요소가 선택된다.</p>
+    <hr>
+    <section id="container">
+        <header>
+            <h1>여행 가이드</h1>
+        </header>
+        <p>동해안 해안길</p>
+        <ul>
+            <li>해안 도로
+                <ul>
+                    <li>경포대</li>                        
+                    <li>해조대</li>
+                </ul>
+            </li>                
+            <li>해안 기찻길
+                <ul>
+                    <li>포항 기찻길</li>
+                    <li>영덕 기찻길</li>
+                </ul>
+            </li>
+        </ul>
+        <p>동해안 테마길</p>
+        <ul>
+            <li>해안 소나무길</li>
+            <li>해안 산책길</li>
+            <li>해안 백사장길</li>
+        </ul>
+</section>
+    
+</body>
+</html>

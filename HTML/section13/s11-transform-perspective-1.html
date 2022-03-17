@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotatex {
+            transform: rotateX(50deg);
+        }
+
+        #pers {
+            perspective: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>perspective - 원근감 표현</h1>
+    <p>perspective : 크기 | none(기본값)</p>
+    <p>3차원 변형에서 사용,
+        원래 위치에서 사용자가 있는 방향이나 반대방향으로 잡아 당기거나 밀어서 원근감을 표현한다.
+        속성값은 0보다 커야 하며 클수록 사용자로부터 멀어진다.
+    </p>
+    <hr>
+    <div class="origin">
+        <div>
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatex">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatex">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div id="pers" class="origin">
+        <div class="rotatex">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

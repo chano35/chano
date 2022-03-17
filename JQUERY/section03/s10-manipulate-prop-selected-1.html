@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        function setForm() { /* 상태값을 지정 */
+            $("#langsel").prop("selectedIndex", 2);
+        }
+
+        function getForm() { /* 상태값을 가져옴 */
+            var selindex = $("#langsel").prop("selectedIndex");
+            var java = $("#java").prop("selected");
+            var javascript = $("#js").prop("selected");
+            var html = $("#html").prop("selected");
+
+            var desc = "[selected] ";
+            desc += "index(" + selindex;
+            desc += "), ";
+            desc += "java(" + java;
+            desc += "), ";
+            desc += "javascript(" + javascript;
+            desc += "), ";
+            desc += "html(" + html;
+            desc += ")";
+            $("#desc").html("<p>" + desc + "</p>");
+        }
+
+    </script>
+</head>
+<body>
+    <h1>객체 조작 - prop</h1>
+    <p>폼에서 상태값을 가져오거나 지정한다.</p>
+    <hr>
+    <form id="formLang">
+        <select id="langsel">
+            <option id="java" value="java">자바</option>
+            <option id="js" value="javascript" selected>자바스크립트</option>
+            <option id="html" value="html">웹</option>
+        </select>
+    </form>
+    <button onclick="setForm()">지정</button>
+    <button onclick="getForm()">조회</button>
+    <div id="desc"></div>
+</body>
+</html>

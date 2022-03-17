@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Selector Style</title>
+    <style>
+        #container { /* 아이디 선택자 */
+            width:500px;
+            padding: 15px;
+            border: 1px dotted gray;
+            color: blueviolet;
+       }
+
+       section { /* 태그 선택자 */
+            width:500px;
+            padding: 15px;
+            border: 1px dotted gray;
+            color:darkgoldenrod;
+        }
+
+        div {
+            border:1px solid yellowgreen;
+        }
+
+      </style>
+</head>
+<body>
+    <h1>아이디(ID) 선택자</h1>
+    <hr>
+    <p>아이디(ID) 선택자는 중복해서 사용할 수 없기 때문에 
+        주로 문서의 레이아웃과 관련된 스타일을 지정하거나
+        자바스크립트 프로그램에서 웹 요소들을 구별하기 위해 사용한다.
+    </p>
+    <p>컨테이너(div, section, ...) 태그에 스타일을 적용하면 포함된 태크들에 모두 부모의 스타일이 적용된다.</p>
+
+    <hr>
+    <div id="container">
+        <h2>성공의 길</h2>
+        <h3>공부의 왕도는 없다.</h3>
+        <h4>성공의 지름은 없다.</h4>
+        <h5>이루고자 하는 희망을 끝까지 추구하는 것 만이 성공으로 가는 길이다.</h5>
+        <h6>그렇게 하기 위해서는 좋은 습관을 가져야 한다.</h6>
+    </div>
+
+    <section>
+        <h2>성공의 길</h2>
+        <h3>공부의 왕도는 없다.</h3>
+        <h4>성공의 지름은 없다.</h4>
+        <div>
+            <h5>이루고자 하는 희망을 끝까지 추구하는 것 만이 성공으로 가는 길이다.</h5>
+            <h6>그렇게 하기 위해서는 좋은 습관을 가져야 한다.</h6>
+        </div>
+    </section>
+
+</body>
+</html>

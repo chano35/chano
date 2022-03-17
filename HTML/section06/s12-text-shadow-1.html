@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+        .sd1 {
+            color:coral;
+            text-shadow: 2px 2px;
+        }
+
+        .sd2 {
+            text-shadow: 5px 5px 3px #f00;
+        }
+
+        .sd3 {
+            color: rgb(56, 29, 180);
+            text-shadow: 7px -7px 5px #000;
+        }
+
+        .sd4 {
+            text-shadow: 0px 5px 5px rgb(96, 46, 177);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Text Shadow</h2>
+    <p>텍스트에 그림자 효과 추가
+        text-shadow : none | 가로거리 세로거리 번짐정도 색상 
+    </p>
+    <ul>
+        <li>가로거리: 텍스트로부터 그림자까지의 가로 거리, 필수속성</li>
+        <li>세로거리: 텍스트로부터 그림자까지의 세로 거리, 필수속성</li>
+        <li>번짐정도: 그림자의 번지는 정도, 기본값 0</li>
+        <li>색상: 그림자의 색상, 기본값은 현재 글자 색</li>
+    </ul>
+    <h1 class="sd1">TEXT SHADOW</h1>
+    <h1 class="sd2">TEXT SHADOW</h1>
+    <h1 class="sd3">TEXT SHADOW</h1>
+    <h1 class="sd4">TEXT SHADOW</h1>
+</body>
+</html>

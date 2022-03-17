@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>css click event & background-color</title>
+   <script src="js/jquery.js"></script>
+  <style>
+   div {
+    position: relative; /* 이전요소에 연결시켜서 좌표값을 지정 */
+    background-color: #abc;
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin: 5px;
+  }
+  </style>
+</head>
+<body>
+  <h2></h2>
+  <p>Animates the first div's left property and synchronizes the remaining divs, 
+    using the step function to set their left properties at each stage of the animation.</p>
+  <hr>
+  <p><button id="go">Run »</button></p>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+  <div class="block"></div>
+   
+  <script>
+    $( "#go" ).click(function() {
+      $( ".block" ).first().animate(
+        {
+          left: 100 }, 
+        {
+          duration: 1000,
+          step: function( now, fx ) {
+            $( ".block" ).slice( 1 ).css( "left", now );
+          }
+        });
+    });
+  </script>
+   
+</body>
+</html>

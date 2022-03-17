@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - type</title>
+</head>
+<body>
+    <h3>입력 태그 - 타입(search, url, email, tel)</h3>
+    <hr>
+    <p>입력 태그의 타입(search, url, email, tel)은 
+        검색, 주소, 이메일, 전화번호를 입력 받는 필드이다.
+    </p>
+    <ul>
+        <li>search: 검색어 지우기 버튼</li>
+        <li>url: http://으로 시작</li>
+        <li>email: '@' 문자 포함</li>
+        <li>tel: 전화번호라는 필드로 지정하며 특별히 체크하지 않음</li>
+    </ul>
+    <hr>
+    <form>
+        <label>검색<input type="search" name="s1" value="맛집"></label><br>
+        <label>주소<input type="url" name="s2" value="https://daum.net"></label><br>
+        <label>이메일 주소<input type="email" name="s3" value="ez@ezenac.co.kr"></label><br>
+        <label>전화번호<input type="tel" name="s4" value="032-123-7866"></label><br>
+        <input type="submit" value="확인">
+    </form>
+</body>
+</html>

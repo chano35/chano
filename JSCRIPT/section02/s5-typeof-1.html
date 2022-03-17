@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typeof</title>
+</head>
+<body>
+    <h1>typeof</h1>
+    <p>데이터나 변수에 저장된 자료형 검사</p>
+    <hr>
+    <script>
+        var str = "javascript";
+        var num = 1234;
+        var real = 1.2345;
+        var bool = false;
+        var unval = undefined; // 초기값을 주지 않는 경우는 undefined를 쓰는 것을 권고
+
+        document.write('typeof(str) : ', typeof(str), '<br>');
+        document.write('typeof(num) : ', typeof(num), '<br>');
+        document.write('typeof(real) : ', typeof(real), '<br>');
+        document.write('typeof(bool) : ', typeof(bool), '<br>');
+        document.write('typeof("abc") : ', typeof('abc'), '<br>');
+        document.write('typeof(unval) : ', typeof unval, '<br>');
+
+    </script>
+    
+</body>
+</html>

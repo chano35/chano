@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Screen</title>
+    <script>
+        var sysinfo = navigator.userAgent.toLowerCase(); // 소문자로 변환
+        if(sysinfo.indexOf('windows') >= 0) {
+            document.write("O/S: Windows <br>");
+        }
+        else if(sysinfo.indexOf('maintosh') || sysinfo.indexOf('maxos') >= 0) {
+            document.write("O/S: MacOS <br>");
+        }
+        else if(sysinfo.indexOf('iphone')) {
+            document.write("O/S: iPhone <br>");
+        }
+        else if(sysinfo.indexOf('android')) {
+            document.write("O/S: Android <br>");
+        }
+
+        document.write("화면 해상도(너비): ", screen.width, "<br>");
+        document.write("화면 해상도(높이) :", screen.height, "<br>")
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

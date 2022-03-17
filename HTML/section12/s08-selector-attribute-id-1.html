@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자(Attribute Selector)</title>
+    <style>
+        ul {
+            list-style:none; /* 블릿 */
+        }
+
+        li {
+            width:100px;
+            display: inline-block;
+            margin: 10px;
+            /*background-color:burlywood; */
+            text-align: center;
+        }
+
+        li a {
+            padding: 4px 10px;
+            font-size: 20px;
+            color: blue;
+            text-decoration: none; /* 하이퍼 링크의 언더라인 */
+        }
+        
+        a[target="_blank"] { /* 속성선택자: a 태그에서 속성(target)의 값이 "_blank"인 것만 배경색을 적용 */
+            background-color: green;
+            color:honeydew;
+        }
+
+        .menu { /* 속성선택자: a 태그에서 속성이 href인 것만 배경색을 적용 */
+            background-color: gold;
+        }
+
+        [id |= "menu"] { /* 속성 id가 단어 "menu"이면 선택, '-' 포함 */
+            border: 2px solid black;
+            box-shadow: rgba(0,0,0,0.5) 5px 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>속성 선택자</h1>
+    <p>특정한 값을 포함하고 있는 속성에 스타일을 적용</p>
+    <hr>
+    <ul>
+        <li><a target="_blank">홈화면</a></li>
+        <li><a id="menu-file" href="#">파일</a></li>
+        <li><a id="menu-edit" href="#">편집</a></li>
+        <li><a id="menu-view" href="#">보기</a></li>
+        <li><a id="menu-run" href="#">실행</a></li>
+        <li><a id="menu-option" href="#">옵션</a></li>
+        <li><a id="menu-help" href="#">도움말</a></li>
+    </ul>
+    
+</body>
+</html>

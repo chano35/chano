@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Direction</title>
+    <style>
+        .dirrtl { 
+            direction: rtl; 
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <h2>글자 쓰기 방향</h2>
+    <hr>
+    <ul>
+        <li>ltr: Left To Right, 왼쪽에서 오른쪽으로 텍스트를 표시, 기본값</li>
+        <li>rtl: Right To Left, 오른쪽에서 왼쪽으로 텍스트를 표시(아랍어)하며 
+            영문, 숫자, 특수문자의 출력되는 위치 변경된다.</li>
+    </ul>
+    <p class="dirrtl">direction은 기본값이 ltr과 rtl이 있으며 기본값은 ltr이다.<br>
+        텍스트가 출력되는 방향을 지정한다.<br>
+        [ENGLISH][한글][12345]<br>
+        안녕하세요 HELLO 12345<br>
+        12345 ENGLISH 54321 한글
+    </p>
+</body>
+</html>

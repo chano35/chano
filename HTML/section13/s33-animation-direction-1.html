@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 40px;
+        }
+
+        #k1 {
+            background-color: forestgreen;
+            border: 1px solid fuchsia;
+            animation-name: ani-kf1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; /* 무한 반복 */
+            animation-direction: alternate; /* 끝까지 실행 후에 다시 왔던 방향으로 되돌아가면서 실행 */
+        }
+
+        @keyframes ani-kf1 {
+            from {
+                width: 100px;
+                background-color: blueviolet;
+                border: 1px solid blue;
+                opacity: 0.5;
+                transform: scale(0.5) rotate(45deg);
+            }
+
+            to {
+                width: 500px;
+                border: 1px solid blue;
+                border-radius: 50%;
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="k1"></div>
+</body>
+</html>

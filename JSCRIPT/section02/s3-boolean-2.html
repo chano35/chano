@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Type</title>
+</head>
+<body>
+    <h1>논리형(Boolean) 타입</h1>
+    <hr>
+    <script>
+        var t = Boolean("abc");
+        var f = Boolean(0);
+        var n = Boolean(null);
+        var h = Boolean("한글");
+        var u = Boolean(undefined);
+        var s = Boolean(' ');
+        var e; //undefined
+        var x = Boolean(e);
+
+        document.write("t('abc')=", t, "<br>");
+        document.write("f(0)=", f, "<br>");
+        document.write("n(null)=", n , "<br>");
+        document.write("h(한글)=", h , "<br>");
+        document.write("u(undefined)=", u , "<br>");
+        document.write("s(' ')=", s, "<br>");
+        document.write("x(e)=", x);
+
+    </script>
+    
+</body>
+</html>

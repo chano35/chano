@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - trim() 함수</h2>
+    <p>문자열에서 앞과 뒤의 공백(스페이스)을 제거</p>
+    <ul>
+        <li>문자열 = 문자열.trim()</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "    Good Morning!    ";
+
+        document.write('원본: [', str, ']', 'length=', str.length, '<br>');
+
+        var strtrim = str.trim();
+        document.write('결과: [', str, ']', 'length=', str.length, '<br>');
+        document.write('리턴: [', strtrim, ']', strtrim.length, '<br>');
+    </script>
+    
+</body>
+</html>

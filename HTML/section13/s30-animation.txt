@@ -1,0 +1,37 @@
+[애니메이션]
+
+1. 트랜지션은 시작지점과 종료지점 사이에 자동으로 진행
+   중간을 제어할 수가 없다.
+
+2. 애니메이션은 원하는 지점을 정해서 변화를 줄 수 있다.
+   - 키프레임(keyframe)을 통해 미세하게 조정
+   - 키프레임은 애니메이션이 바뀌는 지점을
+
+3. 애니메이션 속성   
+   - @keyframes : 바뀌는 지점을 설정
+   - animation-delay : 지연 시간
+   - animation-diretion : 애니메이션이 종료된 후 처음부터 시작할지, 역방향으로 진행할지 지정
+     animation-diretion : normal | alternate
+     normal : 기본값
+     altername : 왔던 방향으로 되돌아 가면서 실행
+   - animation-duration : 실행 시간
+     animation-duration : 시간
+   - animation-fill-mode : 애니메이션이 종료되었거나 진연되어 실행이 되지 않는 상태일 때 태그(요소)의 스타일
+   - animation-iteration-count : 반복 횟수 지정
+     animation-iteration-count : 반복횟수 | infinite
+     반복회수 : 숫자
+     infinite : 무한반복
+   - animation-name : @keyframes으로 설정해 놓은 이름
+   - animation-play-state : 멈추거나 다시 시작
+   - animation-timing-function : 속도 곡선
+     animation-timing-function : linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n)
+   - animation : 애니메이션 속성들을 한 번에 묶어서 지정
+
+4. @keyframes
+   - 바뀌는 지점을 설정
+   - 비율로 지정 : 0%, 30%, 40%, 90%, 100%
+   - 키워드 지정 : from, to
+
+   @keyframes 이름 {
+       선택자 { 스타일}
+   }

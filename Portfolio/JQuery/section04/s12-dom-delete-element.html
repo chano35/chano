@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - delete element</title>
+    <style>
+        .del {
+            font-size:20px;
+            text-align:center;
+            background:transparent;
+            float:right;
+            margin-right:10px;
+        }
+
+        .del:hover {
+            color:crimson;
+            background-color: darkturquoise;
+            cursor: pointer;
+        }
+
+        .del:acitve {
+            outline:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>유저 목록 생성</h1>
+        <form action="">
+            <input type="text" id="username" placeholder="이름" required autocomplete="off">
+            <button onclick="newUsername();">신청</button>
+        </form>
+        <hr>
+        <div id="userlist"></div>
+    </div>
+
+    <script>
+        function newUsername() {
+            var userElem = document.createElement("p");
+            var userName = document.querySelector("#username");
+            var userText = document.createTextNode(userName.value);
+            userElem.appendChild(userText); // <p>userName.value</p>
+
+            var delBtn = document.createElement("span");
+            var delTxt = document.createTextNode("<삭제>");
+            delBtn.setAttribute("class", "del");
+            delBtn.appendChild(delTxt);
+            userElem.appendChild(delBtn);
+
+            var userList = document.querySelector("#userlist");
+            // userlist.insertBefore(userElem, userlist.childNodes[0]);
+            userlist.appendChild(userElem);
+            username.value = "";
+
+            var removeBtns = document.querySelectorAll(".del");
+            for(var cnt=0; cnt < removeBtns.length; cnt++) {
+                removeBtns[cnt].addEventListener("click", function() {
+                    // this(span) -> userElem(p) -> userList(#userlist) 
+                    if(this.parentNode.parentNode) { 
+                        console.log("this:", this);
+                        console.log("this.parentNode:", this.parentNode);
+                        console.log("this.parentNode.parentNode:", this.parentNode.parentNode);
+
+                        this.parentNode.parentNode.removeChild(this.parentNode);
+                    }
+                });
+            }
+        }
+    </script>
+    
+</body>
+</html>

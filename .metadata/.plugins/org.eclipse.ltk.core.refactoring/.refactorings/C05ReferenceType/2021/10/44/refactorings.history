@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;C05ReferenceType/PACKGE.txt&apos; to &apos;README.txt&apos;" description="Rename resource &apos;PACKGE.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="PACKGE.txt" name="README.txt" stamp="1635198876252" updateReferences="true"/>
+</session>

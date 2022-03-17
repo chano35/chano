@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px;
+            /*perspective: 180px; */
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotate:hover {
+            transform: rotateZ(45deg); /* z축을 기준으로 시계 방향으로 45도 회전 */
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Transform - rotate</h1>
+    <p>rotate 함수는 지정한 각도만큼 회전</p>
+    <ul>
+        <li>rotateZ(각도) : z축을 기준으로 각도 만큼 회전</li>
+    </ul>
+    <p>z축을 기준으로 45도를 회전하면 중심축을 기준으로 45도 시계방향으로 회전하는 효과가 있다.
+    </p>
+    <hr>
+    <div class="org">
+        <div class="rotate">
+            <img src="../images/image3.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

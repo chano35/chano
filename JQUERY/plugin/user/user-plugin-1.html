@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title> Plugin - User </title>
+<script src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		/* 플러그인 기능 */
+		$.fn.open = function(eventType, message) {
+			var ts = $(this);
+
+			$.each(ts, function(index, obj){
+				$(obj).on(eventType, function(){
+						alert(message);
+				});
+			});
+		}
+
+		/* 플러그인 사용 */
+		$(".btn1").open("mouseover", "welcome!");
+		$(".btn2").open("click", "hello!");
+	});
+</script>
+</head>
+<body>
+	<h2>사용자 플러그인</h2>
+	<hr>
+	<p><button class="btn1">버튼1</button></p>
+	<p><button class="btn2">버튼2</button></p>
+	<p><button class="btn3">버튼3</button></p>
+</body>
+</html>

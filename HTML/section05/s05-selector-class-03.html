@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector Style</title>
+    <style>
+        h4.redtext { /* 태그의 클래스 선택자 */
+            color:red;
+        }
+  
+    </style>
+</head>
+<body>
+    <h1>태그의 클래스 선택자</h1>
+    <hr>
+    <p>태그의 클래스 선택자는 선택된 태그의 클래스로 명시된 태그들에 적용된다.
+        태그이름 뒤에 마침표(.)를 찍고 클래스 이름으로 정의한다.
+        태그의 속성에 class="클래스이름"을 명시하면 클래스 선택자가 적용된다.
+    </p>
+    <p>예제는 모든 태그(Hn)가 클래스명으로 redtext로 지정되어 있지만 
+        태그(h4)만 스타일이 적용된다.
+    </p>
+    <hr>
+    <h2 class="redtext">간절함은 성공의 자극제이다.</h2>
+    <h3 class="redtext">공부의 <span class="redtext">왕도</span>는 없다.</h3>
+    <h4 class="redtext">성공의 지름은 없다.</h4>
+    <h5 class="redtext">이루고자 하는 희망을 끝까지 추구하는 것 만이 성공으로 가는 길이다.</h5>
+    <h6 class="redtext">그렇게 하기 위해서는 <span style="color:blue">좋은 습관</span>을 가져야 한다.</h6>
+</body>
+</html>

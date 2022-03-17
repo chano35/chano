@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Object - Prototype</title>
+    <script>
+        function Weight(name, height, weight) {
+            this.name = name;
+            this.height = height;
+            this.weight = weight;
+            this.normal = (this.height - 100) * 0.9;
+        }
+
+        Weight.prototype.information = function() {
+                document.write('이    름: ', this.name, '<br>');
+                document.write('신    장: ', this.height, '<br>');
+                document.write('몸 무 게: ', this.weight, '<br>');
+                document.write('기준체중: ', this.normal, '<br>');
+        }
+
+        Weight.prototype.getCheck = function(val) {
+                document.write('가중치: ', val, '<br>');
+                if(this.weight < (this.normal - val)) {
+                    return -1;
+                }
+                else if(this.weight > (this.normal + val)) {
+                    return 1;
+                }
+                else {
+                    return 0;
+                }
+        }
+
+        Weight.prototype.printval = function(val) {
+            document.write(this.name, ': ', 
+            (val < 0) ? '체중미달' : 
+            (val > 0) ? '과체중' : '정상체중', '<br>');
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var park = new Weight('박세리', 167, 61);
+        park.information();
+        var resultPark = park.getCheck(5);
+        park.printval(resultPark);
+
+        var lee = new Weight('박세리', 177, 80);
+        lee.information();
+        var resultLee = lee.getCheck(10);
+        lee.printval(resultLee);
+
+        document.write("park === lee : ", park === lee, '<br>');
+        document.write("park.name === lee.name : ", park.name === lee.name, '<br>');
+        document.write("park.information === lee.information : ", park.information === lee.information, '<br>');
+        document.write("park.getCheck === lee.getCheck : ", park.getCheck === lee.getCheck, '<br>');
+        document.write("park.printval === lee.printval : ", park.printval === lee.printval, '<br>');
+    </script>
+    
+</body>
+</html>

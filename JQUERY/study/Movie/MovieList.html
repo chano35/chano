@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../common/menu.css">
+    <link rel="stylesheet" type="text/css" href="../common/main.css">
+
+    <title>Movie List</title>
+    <script src="../js/jquery.js"></script>
+    <script>
+        var pageNum = 1;
+
+        function getMovieList(page) {
+            $.get("https://api.themoviedb.org/3/movie/popular?api_key=c1558d92add0b7f72649e80c62af548f&language=en-US&page=" + page, function(data) {
+                console.log(data)
+                var html = [];
+                $.each(data.results, (i, item) => {
+                    html.push("<a href='./MovieDetail.html?id=" + item.id + "'><img src='http://image.tmdb.org/t/p/w500" + item.backdrop_path + "'/></a>")
+                })
+                $('#contianer').html(html.join(''))
+            });
+        }
+
+        jQuery(document).ready(function() {
+            getMovieList(pageNum);
+        })
+
+        function next() {
+            console.log("Next : ", pageNum)
+            if (pageNum >= 10) {
+                alert("마지막 페이지 입니다.")
+            } else {
+                getMovieList(++pageNum)
+            }
+
+        }
+
+        function previous() {
+            if (pageNum <= 1) {
+                alert("첫 페이지 입니다.")
+            } else {
+                getMovieList(--pageNum)
+            }
+        }
+    </script>
+</head>
+<!-- https://api.themoviedb.org/3/movie/popular?api_key=c1558d92add0b7f72649e80c62af548f&language=en-US&page=1 -->
+
+<body>
+    <div class="tab_menu">
+        <div class="logo_img_box">
+            <img class="logo_img" src="../common/images/samsung_logo.png" />
+        </div>
+        <ul class="list">
+            <li class="is_on">
+                <a href="#" class="btn">Pitcher</a>
+            </li>
+            <li>
+                <a href="./Hitter.html" class="btn">Hitter</a>
+            </li>
+            <li>
+                <a href="./Coach.html" class="btn">Coach</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="container" id="contianer">
+
+        </div>
+        <button class="btn_more" id="btn_pre" onclick="previous()"> Previous </button>
+
+        <button class="btn_more" id="btn_next" onclick="next()"> next </button>
+
+    </div>
+
+
+</body>
+
+
+</html>

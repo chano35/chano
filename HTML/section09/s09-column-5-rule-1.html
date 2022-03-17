@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다단 편집</title>
+    <style>
+        .multi-col {
+            column-count: 3;
+            column-gap: 20px;
+            column-rule: 2px dashed grey;
+            background:rgb(231, 229, 229);
+        }
+    </style>
+</head>
+<body>
+    <h2>column-rule: 단과 단 사이의 스타일을 지정</h2>
+    <p>column-rule-color: <색상></p>
+    <p>column-rule-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</p>
+    <p>column-rule-width: <크기> | thin | medium | thick</p>
+    <p>column-rule: <너비> <스타일> <색상></p>
+    <hr>
+    <div class="multi-col">
+        <p>column-rule은 단과 단 사이의 색상이나 스타일 또는 너비를 지정하여
+            선이나 색상을 줘서 단을 구분할 수있다. 그렇게 하므로 가독성 높일 수 있다.
+        </p>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <script>
+        function version(str, ver) {
+            if(typeof(ver) == "number") {
+                return ver;
+            }
+            else if(typeof(ver) == "string") {
+                return str +  '-' + ver;
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var ver50 = version('javascript', 5);
+        var ver51 = version('javascript', 5.1);
+        var ver52 = version('javascript', '5.x');
+
+        document.write(ver50, '<br>');
+        document.write(ver51, '<br>');
+        document.write(ver52, '<br>');
+
+    </script>
+
+    
+</body>
+</html>

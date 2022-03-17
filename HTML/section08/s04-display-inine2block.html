@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Attribute</title>
+    <style>
+        div {
+            background-color:rgb(105, 80, 80);
+            margin: 10px;
+        }
+
+        #inline img { /* id선택자 자식선택자(img) */
+            margin: 10px;
+        }
+
+        #block img { /* id선택자 자식선택자(img) */
+            display: block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>화면 배치 방법</h1>
+    <hr>
+    <p>블록 레벨과 인라인 레벨의 속성을 변경할 수 있다.</p>
+    <labe>display : none | content | block | inline | inline-block | table | table-cell ...</labe>
+    <hr>
+    <div id="inline"> <!-- img 태그가 inline 레벨이므로 가로로 출력 -->
+        <img src="images/image1.jpg">
+        <img src="images/image2.jpg">
+        <img src="images/image3.jpg">
+        <img src="images/image4.jpg">
+    </div>
+    <hr>
+    <div id="block"> <!-- img 태그 display 속성을 block으로 지정하여 블록 레벨로 만들어 세로로 출력 -->
+        <img src="images/image1.jpg">
+        <img src="images/image2.jpg">
+        <img src="images/image3.jpg">
+        <img src="images/image4.jpg">
+    </div>
+
+</body>
+</html>

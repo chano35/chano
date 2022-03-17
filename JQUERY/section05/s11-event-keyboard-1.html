@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Event</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() {
+            $(document).on("keydown", function(evt) {
+                var keycode = "";
+
+                switch(evt.keyCode) {
+                    case 0x71: keycode = "F2"; break;
+                    case 37: keycode = "LEFT"; break;
+                    case 38: keycode = "TOP"; break;
+                    case 39: keycode = "RIGHT"; break;
+                    case 40: keycode = "BOTTOM"; break;
+                }
+
+                if(keycode) {
+                    $("#keycode").val(keycode);
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+    <h1>keyboard event</h1>
+    <hr>
+    <p><input type="text" id="keycode"></p>
+</body>
+</html>

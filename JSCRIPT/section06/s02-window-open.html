@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Open</title>
+    <script>
+        function popup() {
+            window.open("s02-window-popup.html", "pop-help", 
+                "location=no, scrollbars=no, width=600, height=400, left=200, top=200");
+        }
+        function help() {
+            window.open("s02-window-popup.html", "pop-help", 
+                "width=600, height=400, left=200, top=200");
+        }
+    </script>
+</head>
+<body>
+    <h2>윈도우 창 열기 - open()</h2>
+    <p>open(url, 창이름, 옵션)</p>
+    <ul>
+        <li>url : 창을 오픈하여 연결할 주소</li>
+        <li>창이름 : 새 창의 이름, 문자열</li>
+        <li>[옵션]</li>
+        <ul>
+            <li>width: 창의 너비</li>
+            <li>height: 창의 높이</li>
+            <li>left: 창의 위치(x축)</li>
+            <li>top: 창의 위치(y축)</li>
+            <li>location: 창의 주소 입력 출력 유무(yes or no)</li>
+            <li>scrollbars : 창의 스크롤바 출력 유무(yes or no)</li>
+            <li>status : 창의 상태 바 출력 유무(yes or no)</li>
+            <li>toolbas : 창의 도구 상자 출력 유무(yes or no)</li>
+        </ul>
+    </ul>
+    <hr>
+    <button onclick="popup()">새창</button>
+    <button onclick="help()">도움말</button>
+</body>
+</html>

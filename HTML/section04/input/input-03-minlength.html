@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tag - minlength</title>
+</head>
+<body>
+    <h3>입력 태그 - minlength</h3>
+    <hr>
+    <p>입력 태그의 minlength 속성은 입력할 수 있는 최소 문자수를 지정한다.<br>
+        아무값도 입력하지 않으면 minlength를 체크하지 않으므로
+        required 속성으로 필수 항목으로 지정해야 한다.
+        minlength만 주고 required는 주지 않으면 그냥 넘어간다.        
+    </p>
+    <hr>
+    <form>
+        <label>*아이디<input type="text" name="userid" minlength="4" maxlength="10" required></label><br>
+        <label>*비밀번호<input type="password" name="userpw" minlength="5" maxlength="12" required></label><br>
+        <label>힌트1<input type="text" name="userhint" minlength="10" maxlength="20"></label><br>
+        <label>*힌트2<input type="text" name="userhint" maxlength="20" required></label><br>
+        <input type="submit" value="로그인">
+    </form>
+</body>
+</html>

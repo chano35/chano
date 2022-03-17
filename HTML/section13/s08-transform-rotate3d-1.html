@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px;
+            /*perspective: 300px;*/
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotate:hover {
+            transform: rotate3d(1, 2, -3, 45deg); /* x축으로 1, y축으로 2, z축을 -3만큼, 45도 회전 */
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Transform - rotate</h1>
+    <p>rotate 함수는 지정한 각도만큼 회전</p>
+    <ul>
+        <li>rotate3d(rx, ry, rz, 각도) : 3차원 회전, 기준점을 rx, ry, rz에서 각도 만큼 회전</li>
+    </ul>
+    </p>
+    <hr>
+    <div class="org">
+        <div class="rotate">
+            <img src="../images/image3.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

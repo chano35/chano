@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+    <h1>swithc 문</h1>
+    <p>switch(변수) { <br>
+        case 값1: 코드1; <br>
+            break; <br>
+        case 값2: 코드2; <br>
+            break; <br>
+        default: 코드3; <br>
+    }</p>
+    <hr>
+    <script>
+        // var site = '다음';
+        var site = '네이버';
+        // var site;
+        var url;
+
+        switch(site) {
+            case '다음': url = "www.daum.net";
+                break;
+            case '네이버' : url = 'www.naver.com';
+                break;
+            default:
+                document.write("<h3 style='color:red'>존재하지 않는 사이트입니다.</h3>");
+        }
+
+        if(url) {
+            location.href = 'http://' + url;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        div { 
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-left: 100px;
+            perspective: 300px;
+            float: left;
+        }
+
+        .box {
+            background: blueviolet;
+            transform: rotateY(120deg);
+        }
+
+        #back-visible:hover {
+            backface-visibility: visible;
+        }
+
+        #back-hidden:hover {
+            backface-visibility: hidden;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>backface-visibility - 뒷면 표시 유무</h1>
+    <p>backface-visibility : visible | hidden</p>
+    <ul>
+        <li>visible : 기본값, 뒷면을 표시</li>
+        <li>hidden  : 뒷면을 표시하지 않음</li>
+    </ul>
+    <hr>
+    <div class="container">
+        <div class="box" id="back-visible">
+            <h1>안녕하세요.</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box" id="back-hidden">
+            <h1>안녕하세요.</h1>
+        </div>
+    </div>
+</body>
+</html>

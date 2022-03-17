@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tag</title>
+</head>
+<body>
+    <h3>Progress 태그</h3>
+    <hr>
+    <p>Progress 태그는 진행 상태를 보여준다.</p>
+    <ul>
+        <li>value: 작업 진행 상태 값, 0보다 크거나 값고 max본 작거나 같아야 한다.</li>
+        <li>max: 최종 완료 값, 0보다 큰 부동 소수점</li>
+        <li>max값을 지정하지 않으면 기본값으로 1.0이다. 
+            그러므로 value값은 1.0보다 작거나 같아야 한다.
+        </li>
+    </ul>
+    <hr>
+    <label>작업진행 상태(50%): </label>
+    <progress value="50" max="100"></progress><br>
+
+    <label>작업진행 상태(0.3): </label>
+    <progress value="0.3"></progress>
+    
+</body>
+</html>

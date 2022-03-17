@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+            border : 1px solid rgb(10, 89, 141);
+            border-collapse : collapse; /*중복되는 표와 셀의 테두리를 한 줄로 표시*/
+        }
+        td{
+            padding : 5px;
+        }
+    </style>
+    <title>Table colgroup Tag</title>
+</head>
+<body>
+    <h3>Table colgroup 태그</h3>
+    <hr>
+    <p>
+        테이블 컬럼 그룹 태그는 표에서 하나의 열에 스타일을 지정하거나
+        열을 묶어서 스타일을 한 번에 지정할 수 있다.
+    </p>
+    <hr>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color:rgb(187, 181, 100);">     <!--첫, 두 번째 칼럼-->
+            <col>   <!--세번째 컬럼-->
+            <col style="background-color:rgb(143, 143,201);">       <!--네번째 칼럼-->
+            <!--다섯번째 칼럼은 지정하지 않음(기본값)-->
+        </colgroup>
+        <caption>테이블 컬럼 그룹</caption>
+        <tr>
+            <td>컬럼1</td>
+            <td>컬럼2</td>
+            <td>컬럼3</td>
+            <td>컬럼4</td>
+            <td>컬럼5</td>
+        </tr>
+        <tr>
+            <td>컬럼1</td>
+            <td>컬럼2</td>
+            <td>컬럼3</td>
+            <td>컬럼4</td>
+            <td>컬럼5</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

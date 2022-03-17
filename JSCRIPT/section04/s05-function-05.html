@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function</title>
+    <style>
+        * { margin:0; padding:0;}
+        #gallery { text-align:center;}
+        #gallery input[type="image"] { margin:0 8px; }
+    </style>
+    <script>
+        var num = 1;
+        var maxphoto = 5;
+        function gallery(direct) {
+            if(direct) { // 다음버튼(1)
+                if(num >= maxphoto) {
+                    return;
+                }
+                num++;
+            }
+            else { // 이전버튼(0)
+                if(num <= 1) {
+                    return ;
+                }
+                num--;
+            }
+
+            var imgTag = document.getElementById("photo");
+            imgTag.setAttribute("src", "images/photo-" + num + ".jpg");
+        }
+    </script>
+</head>
+<body>
+    <h1>자바스크립트 함수 예제(갤러리)</h1>
+    <hr>
+    <div id="gallery">
+        <p><img id="photo" src="images/photo-1.jpg"></p>
+        <p>
+            <button onclick="gallery(false)">이전사진</button>
+            <button onclick="gallery(true)">다음사진</button>
+        </p>
+    </div>
+</body>
+</html>

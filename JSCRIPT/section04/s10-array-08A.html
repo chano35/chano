@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <h2>배열(array)</h2>
+    <p>배열은 동일한 자료형이 아닌 여러 자료형을 요소에 넣을 수 있다.
+    </p>
+    <hr>
+    <script>
+        var arr = [1, 'two', 5.123, true, [2,4,6], 'END']; 
+
+        document.write('arr.length=', arr.length, '<br>');
+        document.write(arr, '<br>');
+
+        for(var cnt=0; cnt < arr.length; cnt++) {
+            document.write("[", cnt, "] =(", arr[cnt], '), typeof(', typeof arr[cnt], ')', '<br>');
+            
+            if(typeof arr[cnt] == 'object' && arr[cnt].length > 1) {
+                var arr2 = arr[cnt];
+                for(var cnt2 = 0; cnt2 < arr2.length; cnt2++) {
+                    document.write('\t cnt2[' + cnt2 + ']=', arr2[cnt2], '<br>');
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

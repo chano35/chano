@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            float: left;
+            margin: 40px;
+        }
+
+        #k1 {
+            animation: ani-kf1 3s infinite 
+        }
+
+        @keyframes ani-kf1 {
+            from {
+                background-color: blue;
+            }
+
+            30% {
+                background-color: blueviolet;
+            }
+
+            50% { /* 중간지점 */
+                background-color: yellow;
+            }
+
+            75% {
+                background-color:chocolate;
+            }
+
+            to {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="k1"></div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+자바스크립트 내장객체(Built-In Object)
+
+1. 문자열(String)
+2. 날짜(Date)
+3. 배열(Array)
+4. 수학(Math)
+5. 정규표현식(RegExp)

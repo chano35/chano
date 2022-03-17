@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        div {
+            width:200px;
+            height:100px;
+            margin:20px;
+            border: 2px solid;
+            border-radius: 20px;
+        }
+
+        .box-shadow-1 {
+            box-shadow: 2px -2px 5px 0px black;
+        }
+
+        .box-shadow-2 {
+            box-shadow: 5px 5px 15px 5px gray inset;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>그림자 효과</h1>
+    <h3>다양한 태그에 그림자 효과를 줄 수 있다.</h3>
+    <p>box-shadow: none | 그림자값 [, 그림자값];</p>
+    <p>그림자값: 수평거리 수직거리 흐림정도 번짐정도 색상 inset</p>
+    <ul>
+        <li>수평거리: 그림자의 수평 옵셋 거리, 양수(오른쪽 그림자), 음수(왼쪽 그림자)</li>
+        <li>수직거리: 그림자의 수직 옵셋 거리, 양수(오른쪽 그림자), 음수(왼쪽 그림자)</li>
+        <li>흐림정도: 그림자의 흐림정도(blur radius), 값이 커질 수록 부드러운 그림자</li>
+        <li>번짐정도: 그림자의 번지는 정도</li>
+        <li>색상: 그림자의 색상</li>
+        <li>inset: 안쪽 그림자</li>
+    </ul>
+    <hr>
+    <div class="box-shadow-1"></div>
+    <div class="box-shadow-2"></div>
+</body>
+</html>

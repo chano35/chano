@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+</head>
+<body>
+    <h2>문자열 - search(문자열) 함수</h2>
+    <p>지정된 문자열에서 찾을 문자열과 일치하는 인덱스의 위치를 리턴</p>
+    <ul>
+        <li>위치 = 문자열.search(찾을문자열)</li>
+        <li>위치 : 왼쪽부터 찾은 문자열을 탐색하여 처음 만나는 인덱스</li>
+        <li>찾지 못하면 -1을 리턴</li>
+    </ul>
+    <hr>
+    <script>
+        var str = "http://abc.com/upfile/filename.txt";
+
+        document.write('원본: length(', str.length, ') : ', str, '<br>');
+
+        var pos1 = str.search("upfile");
+        var pos2 = str.search("dnfile");
+        document.write('찾은 위치: [', pos1, ']', '<br>');
+        document.write('찾지 못함: [', pos2, ']', '<br>');
+    </script>
+    
+</body>
+</html>

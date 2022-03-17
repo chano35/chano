@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Height</title>
+    <style>
+        p.height1 { line-height: 20px; }
+        p.height2 { line-height: 200%; }    /* 글자 크기의 2배만큼 줄 간격 */
+        p.height3 { line-height: 4.0; }     /* 글자 크기의 4배만큼 줄 간격 */
+        p {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Line Height은 텍스트와 텍스트 사이의 줄 간격 조절</h2>
+    <hr>
+    <p>line-height: normal | 숫자 | 크기 | 백분율 | inherit
+    <hr>
+    <ul>
+        <li>normal: 기본값</li>
+        <li>숫자: 글자의 크기를 기준으로 한 값, 몇 배수</li>
+        <li>크기: 실제 크기(px, ...)</li>
+        <li>백분율: 글자의 크기를 기준으로 한 비율(%)</li>
+        <li>inherit: 상속 받은 값</li>
+    </ul>
+    <hr>
+    <p class="height1">텍스트의 줄 간격 테스트를 위한 텍스트 문자열입니다. 줄 간격을 조절하여 가독성을 높일 수 있으며 읽기 편하게 제공할 수 있다.</p>
+    <p class="height2">텍스트의 줄 간격 테스트를 위한 텍스트 문자열입니다. 줄 간격을 조절하여 가독성을 높일 수 있으며 읽기 편하게 제공할 수 있다.</p>
+    <p class="height3">텍스트의 줄 간격 테스트를 위한 텍스트 문자열입니다. 줄 간격을 조절하여 가독성을 높일 수 있으며 읽기 편하게 제공할 수 있다.</p>
+</body>
+</html>

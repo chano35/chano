@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            background:darkgoldenrod;
+        }
+
+        .m1 {
+            background: darkorange;
+            margin:20px;
+        }
+
+        .m2 {
+            background: darkslategrey;
+            margin:40px;
+        }
+
+        .m3 {
+            background:deeppink;
+            margin:60px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Margin - 바깥 여백</h2>
+    <p>박스 모델의 마진은 마진 중첩이 된다.<br>
+        세로방향: 마진중첩(margin overlap), 마진상쇄(margin collapse)가 발생하여 겹치는 부분은 큰 값이 적용<br>
+        가로방향: 마진중첩이이 되지 않는다.
+    </p>
+    <hr>
+    <div class="m1"></div>
+    <div class="m2"></div>
+    <div class="m3"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - Manipulate</title>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function() { /* 선택한 요소의 모든 하위 요소를 새로운 요소로 감쌈 */
+            $("#container1").wrapInner("<div id='container2' />");
+        });
+    </script>
+    <style>
+        #container2 {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h2>선택한 요소의 하위 요소를 새 요소로 감쌈 - wrapInner</h2>
+    <p>선택된 요소의 모든 하위 요소들을 새로운 요소로 감싼다.</p>
+    <hr>
+    <div id="container1">
+        <h3>제목1</h3>
+        <ul>
+            <li>엘리먼트1</li>
+            <li>엘리먼트2</li>
+            <li>엘리먼트3</li>
+            <li>엘리먼트4</li>
+        </ul>
+        <h3>제목2</h3>
+        <ul>
+            <li>엘리먼트1</li>
+            <li>엘리먼트2</li>
+            <li>엘리먼트3</li>
+            <li>엘리먼트4</li>
+        </ul>
+    </div>
+</body>
+</html>

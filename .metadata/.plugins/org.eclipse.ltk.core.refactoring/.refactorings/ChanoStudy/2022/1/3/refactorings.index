@@ -1,0 +1,28 @@
+1641724769279	Rename package 'eco'
+1641725014889	Rename package 'echo'
+1641725025029	Rename type 'Echo'
+1641725325125	Rename type 'socketClient'
+1641725411115	Rename type 'SocketServer'
+1641726407617	Rename type 'socketEchoClient'
+1641902801606	Delete element
+1641903429001	Copy package
+1641903589799	Delete element
+1641903664649	Rename compilation unit 'DowhileTest1.java'
+1641903787938	Delete element
+1641903789982	Delete element
+1641907882288	Rename package 'study02.ch5'
+1641911021404	Rename compilation unit 'Q1.java'
+1641911065165	Rename type 'Q1Test'
+1641911391675	Rename type 'Q2'
+1641911398343	Rename type 'Q2Test'
+1641987709401	Rename type 'BrirhDay'
+1641988060482	Rename type 'BrithDay'
+1642076767209	Rename package 'study02.ch17'
+1642079290261	Move compilation unit
+1642079557878	Move compilation unit
+1642079560624	Delete element
+1642082091923	Move compilation unit
+1642082677056	Delete element
+1642083154544	Copy compilation unit
+1642232629112	Rename type 'ArrayList'
+1642233462988	Rename type 'StudentTest'

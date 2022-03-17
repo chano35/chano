@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element</title>
+</head>
+<body>
+    <div id="container">
+        <h1>컴퓨터 매장</h1>
+        <div id="sample">
+            <img src="images/sample-1.jpg" alt="일체형 컴퓨터">
+        </div>
+
+        <div id="desc">
+            <h2 id="spec">상세정보</h2>
+            <p>이 컴퓨터는 일체형으로서 아름다운 디자인과 
+               <span class="accent">공간절약형</span>데스크톱 컴퓨터입니다.
+               <span class="accent">성능은 모듈형</span>과 차이가 없습니다.
+            </p>
+            <p>
+                <ul>
+                    <li>RAM: 32GB</li>
+                    <li>HDD: 4TB</li>
+                    <li>SDD: 1TB</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("spec").onclick = function() {
+            this.style.fontSize = "3em";
+            this.style.color = (this.style.color == "red") ? "blue" : "red";
+
+            var accents = document.getElementsByClassName("accent");
+            for(var cnt=0; cnt<accents.length; cnt++) {
+                accents[cnt].style.color = this.style.color;
+                accents[cnt].style.textDecoration = "underline";
+            }
+        }
+    </script>
+    
+</body>
+</html>

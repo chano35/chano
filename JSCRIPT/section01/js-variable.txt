@@ -1,0 +1,24 @@
+[자바스크립트 변수]
+
+1. 자료형
+   - 문자형(String) : 문자, 문자열
+   - 숫자형(Number) : 정수, 실수
+   - 논리형(Boolean) : true, false
+   - 무효형(Null) : var x = null;
+   - 미지정(Undefined) : var x;
+
+2. 변수 선언
+   - 자료형은 변수에 대입되는 값으로 결정
+   - var 변수명;
+     예) var x;
+         x = 1234;
+   - var 변수명=초기값;
+   - var str = "문자열";
+   - var num = 1234;
+   - var pi = 3.14;
+
+3. 변수명
+   - 첫글자 : $, 언더바(_), 영문자
+   - 변수명 : $, 언더바(_), 영문자, 숫자
+   - 예약어는 사용할 수 없다. : document, location, window, ...
+   - 대소문자 구분 : abc, Abc, ABC는 모두 다른 변수로 취급

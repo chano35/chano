@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .org {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .skew:hover {
+            transform: skew(-15deg, -25deg);
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Transform - skew</h1>
+    <p>skew 함수는 2차원 비틀기</p>
+    <ul>
+        <li>skew(ax, ay) : x축, y축에서 왜곡 각도</li>
+        <li>skewX(ax) : x축에서만 주어진 각도만큼 왜곡</li>
+        <li>skewY(ay) : y축에서만 주어진 각도만큼 왜곡</li>
+    </ul>
+    </p>
+    <hr>
+    <div class="org">
+        <div class="skew">
+            <img src="../images/image4.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

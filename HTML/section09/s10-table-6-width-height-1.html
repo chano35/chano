@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Style</title>
+    <style>
+        table {
+            width: 400px;
+        }
+        .t1 {
+            caption-side: top; /* 기본값 */
+            border: 2px solid black;
+            border-collapse: separate; /* 셀을 분리했을 때 border-spaceing이 적용 */
+        }
+
+        td {
+            border: 1px dotted black;
+            width: 200px;
+        }
+
+        #t-show td {
+            empty-cells: show;
+        }
+
+        #t-hide td {
+            empty-cells: hide;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>width & height - 테이블의 너비와 높이 지정</h2>
+    <ul>
+        <li>width: 테이블의 너비</li>
+        <li>height: 테이블의 높이</li>
+    </ul>
+    <p>너비와 높이를 지정하지 않으면 셀에 있는 내용에 의해서 결정</p>
+    <p>셀의 너비와 높이를 지정하지 않으면 셀에 있는 내용과 테이블의 지정된 크기의 비율에 의해서 결정</p>
+    <hr>
+    <table class="t1" id="t-show">
+        <caption>IT 전문 개발자 코스</caption>
+        <tr>
+            <td>과정</td>
+            <td>언어</td>
+        </tr>
+        <tr>
+            <td>분석과정</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>개발자과정</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table class="t1" id="t-hide">
+        <caption>IT 개발자 코스</caption>
+        <tr>
+            <td>과정</td>
+            <td>언어</td>
+        </tr>
+        <tr>
+            <td>분석과정</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>개발자과정</td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</html>

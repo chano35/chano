@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotatex {
+            transform: rotateX(50deg);
+        }
+
+        #pers:hover {
+            perspective: 200px;
+            perspective-origin: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>perspective-origin - 원근감 표현</h1>
+    <p>perspective-orgin : x축 | y축</p>
+    <p>perspective-orgin은 perspective와 함께 지정을 해야한다.
+        조망의 위치를 변경하여 높은 곳에서 원근을 조절 할 수 있다.
+    </p>
+    <hr>
+    <div class="origin">
+        <div>
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatex">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatex">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+    <div id="pers" class="origin">
+        <div class="rotatex">
+            <img src="../images/image1.jpg">
+        </div>
+    </div>
+
+</body>
+</html>
